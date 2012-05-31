@@ -1,0 +1,979 @@
+---
+# This is configuration file for font builder and other support scripts.
+# Format is descriped below.
+#
+#
+# # metadata, to generate demo & fontello info dialogs
+# meta:
+#
+#  author: Daniel Buce
+#  homepage: http://...
+#  email: ...
+#  twitter: http://twitter.com/...
+#  dribble: http://dribbble.com/...
+#  licence: SIL
+#  licence_url: http://scripts.sil.org/OFL
+#
+#   css-prefix: "icon-"             # prefix for css-generated classes
+#   demo-columns: 4                 # used for html demo page generation
+#
+# # Font headers. All vars from here will be used as font
+# # params in fontforge http://fontforge.sourceforge.net/python.html
+# font:
+#
+#   version: "1.0"
+#
+#   # use !!!small!!! letters a-z, or Opera will fail under OS X
+#   # fontname will be also used as file name.
+#   fontname: myfont
+#
+#   fullname: MyFont
+#   familyname: Myfont
+#
+#   copyright: Copyright (C) 2012 by xxxxxxxx
+#
+#   ascent: 1638
+#   descent: 410
+#   weight: Regular
+#
+#
+# #
+# # Optional. You can apply global rescale + offset to all font glyphs.
+# # Param values ar 0..1, where 1 = 100%. 
+# #
+# transform:
+#   baseline: 0.2                 # baseline for rescale symmetry. Default value
+#                                 # calculated from ascent/decsent
+#   rescale: 0.68                 # rescale glyphs and center around baseline
+#   offset: -0.1                  # shift up/down
+#
+# glyphs:
+#   - file: glyph1_file           # file name, without extention
+#     from: 0xNNN                 # Source code for remapper or merge tool
+#     code: 0xNNN                 # Symbol code 0x - hex
+#     css: icon-gpyph1-name       # For generated CSS
+#     search: [word1, word2]      # Search aliases (array). CSS name will be
+#                                 # included automatically
+#     src: first_font_alias       # alias to font for merge tool
+#                                 # list of aliases in src_fonts section
+#
+#     #
+#     # local transformations, only for this glyph (optional)
+#     #
+#     transform:                  # personal glyph transformation.
+#       rescale_rel               # *_rel - applyed after global.
+#       offset: 0.2               # without *_rel - override global
+#
+# #
+# # Fonts aliases used only in font merge tool
+# #
+# src_fonts:
+#   first_font_alias: "/absolute/path/to/first/font.ttf"
+ 
+################################################################################
+#
+
+
+meta:
+  author: Stephen Hutchings
+  homepage: http://typicons.com/
+  twitter: https://twitter.com/Typicons/
+  licence: CC BY-SA 3.0
+  licence_url: http://creativecommons.org/licenses/by-sa/3.0/
+
+  css_prefix: "icon-"
+  columns: 4
+
+transform:
+  baseline: 0.5
+  rescale: 0.36
+  offset: -0.85
+
+font:
+  version: "1.0"
+
+  # use !!!small!!! letters a-z, or Opera will fail under OS X
+  # fontname will be also used as file name.
+  fontname: typicons
+
+  fullname: Typicons Regular
+  familyname: Typicons
+
+  copyright: (c) Stephen Hutchings 2012
+
+  ascent: 800
+  descent: -200
+  weight: Book
+
+
+glyphs:
+
+  - css: glyph3
+    code: 0x0020
+    uuid: 5ggesf5nabeu6gdzr3qil3uf5z9j33sp
+    from: 0x0020
+    search:
+
+  - css: glyph4
+    code: 0x0022
+    uuid: 9x8p16w516pn1b19chr85japkedporm7
+    from: 0x0022
+    search:
+
+  - css: glyph5
+    code: 0x0023
+    uuid: lu2wqmd7v9zp21knhy4eifo41wjp4cnx
+    from: 0x0023
+    search:
+
+  - css: glyph6
+    code: 0x0024
+    uuid: upidp9k72x66utj5w89oyq65tp6r2tpe
+    from: 0x0024
+    search:
+
+  - css: glyph7
+    code: 0x0025
+    uuid: eh1m4shhgsndy7pmdzx3ynrakadhozgr
+    from: 0x0025
+    search:
+
+  - css: glyph8
+    code: 0x0027
+    uuid: 2npqajwqwxy3kbchcht7tyupllg270hb
+    from: 0x0027
+    search:
+
+  - css: glyph9
+    code: 0x0028
+    uuid: 45g23adv6rwe7nokwek4d471h8y09ayz
+    from: 0x0028
+    search:
+
+  - css: glyph10
+    code: 0x0029
+    uuid: gr2i0fsmy50yfjhz6defsqkexnmctv8z
+    from: 0x0029
+    search:
+
+  - css: glyph11
+    code: 0x002a
+    uuid: 5rarhtgcreeh8evuaqd8zoekgehkt3mm
+    from: 0x002a
+    search:
+
+  - css: glyph12
+    code: 0x002b
+    uuid: xoidjr6q3rzi7tpw6hci1k6srz15g11l
+    from: 0x002b
+    search:
+
+  - css: glyph13
+    code: 0x002c
+    uuid: 7yekfd0qlkgp6emwfbo10sjdmf8pewli
+    from: 0x002c
+    search:
+
+  - css: glyph14
+    code: 0x002d
+    uuid: gz5flrq210wzbyafnerm4e0aublo7qwb
+    from: 0x002d
+    search:
+
+  - css: glyph15
+    code: 0x002e
+    uuid: 3fzybskyukolbvmshoyord1b254366gh
+    from: 0x002e
+    search:
+
+  - css: glyph16
+    code: 0x002f
+    uuid: ivmsk67zo1yb1tthd3ugi4xnb3get418
+    from: 0x002f
+    search:
+
+  - css: glyph17
+    code: 0x0030
+    uuid: f378encthmyxe8mfi1ute1knv09ggkar
+    from: 0x0030
+    search:
+
+  - css: glyph18
+    code: 0x0031
+    uuid: jslb32twsd38zgx4v3sm5upu0t6wirtm
+    from: 0x0031
+    search:
+
+  - css: glyph19
+    code: 0x0032
+    uuid: g43j86b0hso37oir42285zjo3nhd7m08
+    from: 0x0032
+    search:
+
+  - css: glyph20
+    code: 0x0033
+    uuid: 7wc8mz5d93cbka5pscqjhsej173tqmbs
+    from: 0x0033
+    search:
+
+  - css: glyph21
+    code: 0x0034
+    uuid: bc1u8zgs4wteyj0u35n943k3jzx5olkm
+    from: 0x0034
+    search:
+
+  - css: glyph22
+    code: 0x0035
+    uuid: 1gf923f9wvaezxmfon515dglxa3drf0e
+    from: 0x0035
+    search:
+
+  - css: glyph23
+    code: 0x0036
+    uuid: 1dq4tek4k8ea7zlj4kc3w83itnutaxg5
+    from: 0x0036
+    search:
+
+  - css: glyph24
+    code: 0x0037
+    uuid: 6zhrgcf3co77hnljttd3b2mrc8z5fiq5
+    from: 0x0037
+    search:
+
+  - css: glyph25
+    code: 0x0038
+    uuid: wlri7uftq4zbi82q2xuf08ayd8kpijlk
+    from: 0x0038
+    search:
+
+  - css: glyph26
+    code: 0x0039
+    uuid: 1e77a2yvsq3owssduo2lcgsiven57iv5
+    from: 0x0039
+    search:
+
+  - css: glyph27
+    code: 0x003a
+    uuid: t6cy82vd3t5piy0j3uknrlrzpg1ld8y3
+    from: 0x003a
+    search:
+
+  - css: glyph28
+    code: 0x003b
+    uuid: hi76m8qggwn5lbl286oeqp64q0n8kusy
+    from: 0x003b
+    search:
+
+  - css: glyph29
+    code: 0x003d
+    uuid: vyuzsm6wijlfwtjo4ifkoblfmsepk6g8
+    from: 0x003d
+    search:
+
+  - css: glyph30
+    code: 0x003f
+    uuid: 28r0xthd180mg0wnfh8ek3mtn761hs11
+    from: 0x003f
+    search:
+
+  - css: glyph31
+    code: 0x0040
+    uuid: 7p5gflyid3o4gtesy94a6erq94e4pz7u
+    from: 0x0040
+    search:
+
+  - css: glyph32
+    code: 0x0041
+    uuid: gjt8ba5q0n3nn8ptw6324sflr8qoaeam
+    from: 0x0041
+    search:
+
+  - css: glyph33
+    code: 0x0042
+    uuid: 24eiet6l58t0myywueih34b0e5a30bw1
+    from: 0x0042
+    search:
+
+  - css: glyph34
+    code: 0x0043
+    uuid: w3nzesrlbezu6f30q7ytyq919p6gdlb6
+    from: 0x0043
+    search:
+
+  - css: glyph35
+    code: 0x0044
+    uuid: aklhk54yg779pgovdsjr9r9w22hej00n
+    from: 0x0044
+    search:
+
+  - css: glyph36
+    code: 0x0045
+    uuid: qqsxko9kqxh5g53lz33yonkpc2rpkvkn
+    from: 0x0045
+    search:
+
+  - css: glyph37
+    code: 0x0046
+    uuid: 4oaz56fmzfvx7vry2o540n9l4z79fz8t
+    from: 0x0046
+    search:
+
+  - css: glyph38
+    code: 0x0047
+    uuid: mj2pxhfj0eumtbzirpdokhtzk00480uo
+    from: 0x0047
+    search:
+
+  - css: glyph39
+    code: 0x0048
+    uuid: xq9z5jujkqhrf97s70hjek6otohmhr1y
+    from: 0x0048
+    search:
+
+  - css: glyph40
+    code: 0x0049
+    uuid: 5qynhqqaenby227l5kogqj8sdk5s4e7h
+    from: 0x0049
+    search:
+
+  - css: glyph41
+    code: 0x004a
+    uuid: mqlxga8x57rhlfv44zsvmz1reex8lbqg
+    from: 0x004a
+    search:
+
+  - css: glyph42
+    code: 0x004b
+    uuid: yanxf73xqqdn7n46mywpa1ltymlui9gu
+    from: 0x004b
+    search:
+
+  - css: glyph43
+    code: 0x004c
+    uuid: em9mdmyhjwd003ndercv4r08h0ai31tl
+    from: 0x004c
+    search:
+
+  - css: glyph44
+    code: 0x004d
+    uuid: 36m3wq83tio3uymjbu44su7ior03u9cc
+    from: 0x004d
+    search:
+
+  - css: glyph45
+    code: 0x004e
+    uuid: 3o0pu4qbmgvcv8zqb5o3qh8vttzvhpy7
+    from: 0x004e
+    search:
+
+  - css: glyph46
+    code: 0x004f
+    uuid: dpxunrtmigvk6jm0ieo7axfsgzx4awll
+    from: 0x004f
+    search:
+
+  - css: glyph47
+    code: 0x0050
+    uuid: i7r8vgyqewsy2rlx0xhawybpw5uyss3z
+    from: 0x0050
+    search:
+
+  - css: glyph48
+    code: 0x0051
+    uuid: 5v7h140x5zz1acnzfzo36flbwar5tujm
+    from: 0x0051
+    search:
+
+  - css: glyph49
+    code: 0x0052
+    uuid: um6h7e9nfp79peah8uphjhismoa8owtu
+    from: 0x0052
+    search:
+
+  - css: glyph50
+    code: 0x0053
+    uuid: pdnk53e9ff0ck5q3b16vcm1hh1447j7e
+    from: 0x0053
+    search:
+
+  - css: glyph51
+    code: 0x0054
+    uuid: k7sao112253txym1egnte7822irbyphe
+    from: 0x0054
+    search:
+
+  - css: glyph52
+    code: 0x0055
+    uuid: 2039c86dq3jtfwqmgow2quvuzq3k34bu
+    from: 0x0055
+    search:
+
+  - css: glyph53
+    code: 0x0056
+    uuid: n1ld0w7zazkxq7bsqtksyez86sdufqgd
+    from: 0x0056
+    search:
+
+  - css: glyph54
+    code: 0x0057
+    uuid: wh8nbtrxjl2f67dpybsww6mri0xcaklm
+    from: 0x0057
+    search:
+
+  - css: glyph55
+    code: 0x0058
+    uuid: bczb7qup4axmc490xmuuv8qdhcnbgeyf
+    from: 0x0058
+    search:
+
+  - css: glyph56
+    code: 0x0059
+    uuid: x8m4z7b33cv1h2s784tjlam56uq40wtd
+    from: 0x0059
+    search:
+
+  - css: glyph57
+    code: 0x005a
+    uuid: b1a40ej6b1xgsxjeh1b1urm8ptglt0hk
+    from: 0x005a
+    search:
+
+  - css: glyph58
+    code: 0x005b
+    uuid: wg849ixsobykxshs6efpc6fk4m0fq8bh
+    from: 0x005b
+    search:
+
+  - css: glyph59
+    code: 0x005c
+    uuid: b90868gfogj970a1g0dnot6hm5r4uj55
+    from: 0x005c
+    search:
+
+  - css: glyph60
+    code: 0x005d
+    uuid: z2kx6nr3u9112p0e1pfhxdhva9v7kd4k
+    from: 0x005d
+    search:
+
+  - css: glyph61
+    code: 0x005e
+    uuid: l11ixzfrief0chds7elurdm2ot98xp4l
+    from: 0x005e
+    search:
+
+  - css: glyph62
+    code: 0x005f
+    uuid: 1nkxlfe3u6kwarxqy3g4z3c9lrsgdu5h
+    from: 0x005f
+    search:
+
+  - css: glyph63
+    code: 0x0061
+    uuid: dfhp68fdlvh9dknvxk4tkf8yy0h7vw3r
+    from: 0x0061
+    search:
+
+  - css: glyph64
+    code: 0x0062
+    uuid: tau7t0t38662eqxrb80ozeiase5em2x9
+    from: 0x0062
+    search:
+
+  - css: glyph65
+    code: 0x0063
+    uuid: ani12ucvy2plqmykysnk4zd9i24cmxqp
+    from: 0x0063
+    search:
+
+  - css: glyph66
+    code: 0x0064
+    uuid: 4i0s2bklai5fywieqm4dqqngfz9ptfab
+    from: 0x0064
+    search:
+
+  - css: glyph67
+    code: 0x0065
+    uuid: 493hui9b6xiqaf04slclmqnwpap3oxjj
+    from: 0x0065
+    search:
+
+  - css: glyph68
+    code: 0x0066
+    uuid: rp4bhvranczqlvvwzerni2uuanp2gvqb
+    from: 0x0066
+    search:
+
+  - css: glyph69
+    code: 0x0067
+    uuid: 43fl9m553j1z5937vfjz0lgolrlspxwl
+    from: 0x0067
+    search:
+
+  - css: glyph70
+    code: 0x0068
+    uuid: 0fg01d4656jzluy9fz6ee4ohdd3nt2pe
+    from: 0x0068
+    search:
+
+  - css: glyph71
+    code: 0x0069
+    uuid: a33vyvfsje6eklq8loqtzb1jcgo37onm
+    from: 0x0069
+    search:
+
+  - css: glyph72
+    code: 0x006a
+    uuid: 4x5p6fnblkhqsj4ibuc724faotghuiaq
+    from: 0x006a
+    search:
+
+  - css: glyph73
+    code: 0x006b
+    uuid: ygvgohzaooew2l8favz2xu2xi59w1hoo
+    from: 0x006b
+    search:
+
+  - css: glyph74
+    code: 0x006c
+    uuid: fhkechw94uv9ydw6tukba3ka2hhoif4n
+    from: 0x006c
+    search:
+
+  - css: glyph75
+    code: 0x006d
+    uuid: cdfalpadi7huwv9ah4fef2gpfpb4c6qm
+    from: 0x006d
+    search:
+
+  - css: glyph76
+    code: 0x006e
+    uuid: j6xzwioffey3gxe90yx3ie56j5dlt902
+    from: 0x006e
+    search:
+
+  - css: glyph77
+    code: 0x006f
+    uuid: pgdm1vsngqxmheo5xkjpbm5o8k81pawd
+    from: 0x006f
+    search:
+
+  - css: glyph78
+    code: 0x0070
+    uuid: cka09asalx8otiykquyp5d9tymlan1o3
+    from: 0x0070
+    search:
+
+  - css: glyph79
+    code: 0x0071
+    uuid: xzlln8s96kcutcubtwavdjt80tmhkbkq
+    from: 0x0071
+    search:
+
+  - css: glyph80
+    code: 0x0072
+    uuid: gruasbs60jlu9us53csv9q7nnwy4d990
+    from: 0x0072
+    search:
+
+  - css: glyph81
+    code: 0x0073
+    uuid: p57wgnf4glngbchbucdi029iptu8oxb8
+    from: 0x0073
+    search:
+
+  - css: glyph82
+    code: 0x0074
+    uuid: 43m0a70tvxqc6q7jxgzhz5lmlt3ce2iy
+    from: 0x0074
+    search:
+
+  - css: glyph83
+    code: 0x0075
+    uuid: okc52fdxu9uz2wnl0awdtv5373is429s
+    from: 0x0075
+    search:
+
+  - css: glyph84
+    code: 0x0076
+    uuid: igynut9bozd2s1mxnmkeeut1qou984gc
+    from: 0x0076
+    search:
+
+  - css: glyph85
+    code: 0x0077
+    uuid: jqzwo6i8oicjbn049sh2856d8anrqoli
+    from: 0x0077
+    search:
+
+  - css: glyph86
+    code: 0x0078
+    uuid: qab5uvjyoc3uu4d2pvt8soshtgkuvpak
+    from: 0x0078
+    search:
+
+  - css: glyph87
+    code: 0x0079
+    uuid: yb3vdwfxck5hmudxna4fq8fcwo9xari9
+    from: 0x0079
+    search:
+
+  - css: glyph88
+    code: 0x007a
+    uuid: jh3jpcb1t1bcm80gidkadilh080aq79h
+    from: 0x007a
+    search:
+
+  - css: glyph89
+    code: 0x007b
+    uuid: csuoy0rqoun3unhsgjoy2uumpldzbfmt
+    from: 0x007b
+    search:
+
+  - css: glyph90
+    code: 0x007c
+    uuid: 85fda3129wk4amvn25wrq843sbj3yzl0
+    from: 0x007c
+    search:
+
+  - css: glyph91
+    code: 0x007d
+    uuid: 3sl64gd9y68dl54i2g4vo3u57osdabft
+    from: 0x007d
+    search:
+
+  - css: glyph92
+    code: 0x007e
+    uuid: 2hqh2lidoqvaujgq29tdkrtiay5s6tyk
+    from: 0x007e
+    search:
+
+  - css: glyph93
+    code: 0x00a0
+    uuid: erw5z4xbwl2u35uwtobfift1n9xalmcd
+    from: 0x00a0
+    search:
+
+  - css: glyph94
+    code: 0x00aa
+    uuid: mqghxnu77gq4qutlr8ns4wsi764dnntn
+    from: 0x00aa
+    search:
+
+  - css: glyph95
+    code: 0x00ad
+    uuid: wvjbh4mkblbdefyv4o8ce0qrqg670iir
+    from: 0x00ad
+    search:
+
+  - css: glyph96
+    code: 0x00b2
+    uuid: rtvwcqbpckww70d45ye1g6wt7s1gl3hb
+    from: 0x00b2
+    search:
+
+  - css: glyph97
+    code: 0x00b3
+    uuid: ypardw3whjbzfwwxkyd8z7rjwm05uxv6
+    from: 0x00b3
+    search:
+
+  - css: glyph98
+    code: 0x00b9
+    uuid: nj81yajeqm6fpggg9aop89h9d7a771m8
+    from: 0x00b9
+    search:
+
+  - css: glyph99
+    code: 0x00ba
+    uuid: btnkkcp1cx6cne23lzgqwqj9s0fwt49w
+    from: 0x00ba
+    search:
+
+  - css: glyph100
+    code: 0x00c2
+    uuid: 810ldqi98hp6tgu6waz3wk23wz3fpicy
+    from: 0x00c2
+    search:
+
+  - css: glyph101
+    code: 0x00c3
+    uuid: sspcvrtkbh4fk1vln1scor14nf3cu8mn
+    from: 0x00c3
+    search:
+
+  - css: glyph102
+    code: 0x00ca
+    uuid: 60kzpacsfgyiefvobevmjbrfu6b7azth
+    from: 0x00ca
+    search:
+
+  - css: glyph103
+    code: 0x00ce
+    uuid: ndblgmm587sphq55loba5mwwx3huzcv1
+    from: 0x00ce
+    search:
+
+  - css: glyph104
+    code: 0x00d1
+    uuid: v3gc3ifz1jx5mnz8ucao4jmdgwn0y5k7
+    from: 0x00d1
+    search:
+
+  - css: glyph105
+    code: 0x00d4
+    uuid: z8z08lg4uqc24n184pq0tgkasg6bjw8z
+    from: 0x00d4
+    search:
+
+  - css: glyph106
+    code: 0x00d5
+    uuid: lyewfk533scnxhpyo7dxp39hao0xlji2
+    from: 0x00d5
+    search:
+
+  - css: glyph107
+    code: 0x00db
+    uuid: hu7ikt5xhr0pcx70ozn0mcgllxch2zv2
+    from: 0x00db
+    search:
+
+  - css: glyph108
+    code: 0x00e2
+    uuid: 475i9gl8y5v2370mbin8b6vl0y208lw0
+    from: 0x00e2
+    search:
+
+  - css: glyph109
+    code: 0x00e3
+    uuid: x1hyjs0a1haxbe1oucptnk3hqzwkjnlj
+    from: 0x00e3
+    search:
+
+  - css: glyph110
+    code: 0x00ea
+    uuid: zcxfpo8aejjck02dwcj3smsgwum6bir3
+    from: 0x00ea
+    search:
+
+  - css: glyph111
+    code: 0x00ee
+    uuid: ld29u7bq2ylr3y8fkd66w83cy2nzhggi
+    from: 0x00ee
+    search:
+
+  - css: glyph112
+    code: 0x00f1
+    uuid: o68bbal3nfchzbk40ad8f7k9m4wjjoxm
+    from: 0x00f1
+    search:
+
+  - css: glyph113
+    code: 0x00f4
+    uuid: khpgevks9gry0lzmc7fvatmz7ltutb7n
+    from: 0x00f4
+    search:
+
+  - css: glyph114
+    code: 0x00f5
+    uuid: i4kvq3s4t1v191st7rpz3wbhhtpd49c0
+    from: 0x00f5
+    search:
+
+  - css: glyph115
+    code: 0x00fb
+    uuid: tmx78kria3y0kd2oellflnv52lc7d0m9
+    from: 0x00fb
+    search:
+
+  - css: glyph116
+    code: 0x0152
+    uuid: bueu1wf9w4ec9wpps1e005zcypdvzkcr
+    from: 0x0152
+    search:
+
+  - css: glyph117
+    code: 0x0153
+    uuid: 727uspwfodus2mu0d350gok5hjp3xax1
+    from: 0x0153
+    search:
+
+  - css: glyph118
+    code: 0x02c6
+    uuid: t8dni9goom9smuk6l28nk061b7au65kv
+    from: 0x02c6
+    search:
+
+  - css: glyph119
+    code: 0x02dc
+    uuid: 3bu1gsyks68ep6d24a6319y9n295vhye
+    from: 0x02dc
+    search:
+
+  - css: glyph120
+    code: 0x2000
+    uuid: t8rrnr9zy019m6qr4fwkg4npdgsknwt9
+    from: 0x2000
+    search:
+
+  - css: glyph121
+    code: 0x2001
+    uuid: ja06us6jlvpotamx51mxzn7xskplk4oa
+    from: 0x2001
+    search:
+
+  - css: glyph122
+    code: 0x2002
+    uuid: 4fnthjcchm81fv6ae3iwqq0icrjlexsc
+    from: 0x2002
+    search:
+
+  - css: glyph123
+    code: 0x2003
+    uuid: c0mdpgucdej36xn9wfv01yqcfazc5t20
+    from: 0x2003
+    search:
+
+  - css: glyph124
+    code: 0x2004
+    uuid: xcv6r2chx5qwvh13zik7ubqedrz4zqrc
+    from: 0x2004
+    search:
+
+  - css: glyph125
+    code: 0x2005
+    uuid: qd5b948odz201sg2oxx5esk54xi7itpw
+    from: 0x2005
+    search:
+
+  - css: glyph126
+    code: 0x2006
+    uuid: wxdhfdv66346l69i4w494zybrexrthuh
+    from: 0x2006
+    search:
+
+  - css: glyph127
+    code: 0x2007
+    uuid: 27frdindbcy92u3n4p244irguio07e3r
+    from: 0x2007
+    search:
+
+  - css: glyph128
+    code: 0x2008
+    uuid: 8et0piaplq6fp8ck5lqprsdb0m9b0yir
+    from: 0x2008
+    search:
+
+  - css: glyph129
+    code: 0x2009
+    uuid: r9l0weixm3tdy9lltzp48ge9ejuuz0t1
+    from: 0x2009
+    search:
+
+  - css: glyph130
+    code: 0x200a
+    uuid: 6y5f4mefivxocfmzummnyvv85zut0fqj
+    from: 0x200a
+    search:
+
+  - css: glyph131
+    code: 0x2010
+    uuid: xmedvsyqzsuuwnp4izp1yq0tl1kqfw7a
+    from: 0x2010
+    search:
+
+  - css: glyph132
+    code: 0x2011
+    uuid: 4z4yx2mfx2d4z5nipmvxbl9j8mfg7mw1
+    from: 0x2011
+    search:
+
+  - css: glyph133
+    code: 0x2012
+    uuid: 9989x96gsa3j0e473hl28meum94ectpq
+    from: 0x2012
+    search:
+
+  - css: glyph134
+    code: 0x2013
+    uuid: qv98qt3r59gle7enearwm3f4n8oikktt
+    from: 0x2013
+    search:
+
+  - css: glyph135
+    code: 0x2014
+    uuid: yvzs6piw8riq3e5oot4n5u59h3zr5p03
+    from: 0x2014
+    search:
+
+  - css: glyph136
+    code: 0x2019
+    uuid: 8t76nt2e7nj1to5skk8mzo3jf69njxjv
+    from: 0x2019
+    search:
+
+  - css: glyph137
+    code: 0x201c
+    uuid: b7lykmqf9rki6wafj6ugi5g2c9tr642y
+    from: 0x201c
+    search:
+
+  - css: glyph138
+    code: 0x201d
+    uuid: cje39x3gz3goflg7v1eukohjnvyn00kn
+    from: 0x201d
+    search:
+
+  - css: glyph139
+    code: 0x2026
+    uuid: 8dy0wet8ybtbhtnf46bsb5m0zrjdn45f
+    from: 0x2026
+    search:
+
+  - css: glyph140
+    code: 0x202f
+    uuid: m5b8r5obphk2f2ut40n459eowb5z6099
+    from: 0x202f
+    search:
+
+  - css: glyph141
+    code: 0x205f
+    uuid: 9iex3d9g6n4ru1dwclr52hfht6ep4ucw
+    from: 0x205f
+    search:
+
+  - css: glyph142
+    code: 0x2122
+    uuid: 2klry8nobhzg0orkueyvl80cl3sc5cjh
+    from: 0x2122
+    search:
+
+  - css: glyph143
+    code: 0xe000
+    uuid: cfa67qzuwue2mph3km1qrqm55dykdt1x
+    from: 0xe000
+    search:
+
+  - css: glyph144
+    code: 0xfb01
+    uuid: 6hx382kcb1kggzxpdimchircx5tmdq3c
+    from: 0xfb01
+    search:
+
+  - css: glyph145
+    code: 0xfb02
+    uuid: rbzlh36ihjn0ahakswb72hmb7aczk13i
+    from: 0xfb02
+    search:
+
+  - css: glyph146
+    code: 0xfb03
+    uuid: i9hfj76e8tn8qe0tl9yqr2ml930s198v
+    from: 0xfb03
+    search:
+
+  - css: glyph147
+    code: 0xfb04
+    uuid: imwlwy9vojpzmauc6zp5gbwduamqkxse
+    from: 0xfb04
+    search:

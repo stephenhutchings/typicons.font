@@ -1,0 +1,3 @@
+[submodule "support/font-builder"]
+	path = support/font-builder
+	url = git://github.com/fontello/font-builder.git
