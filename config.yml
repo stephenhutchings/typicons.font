@@ -11,8 +11,8 @@
 #  email: ...
 #  twitter: http://twitter.com/...
 #  dribble: http://dribbble.com/...
-#  licence: SIL
-#  licence_url: http://scripts.sil.org/OFL
+#  license: SIL
+#  license_url: http://scripts.sil.org/OFL
 #
 #   css-prefix: "icon-"             # prefix for css-generated classes
 #   demo-columns: 4                 # used for html demo page generation
@@ -78,8 +78,8 @@ meta:
   author: Stephen Hutchings
   homepage: http://typicons.com/
   twitter: https://twitter.com/Typicons/
-  licence: CC BY-SA 3.0
-  licence_url: http://creativecommons.org/licenses/by-sa/3.0/
+  license: CC BY-SA 3.0
+  license_url: http://creativecommons.org/licenses/by-sa/3.0/
 
   css_prefix: "icon-"
   columns: 4
