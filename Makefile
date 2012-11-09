@@ -37,7 +37,8 @@ font:
 		echo "  make support" >&2 ; \
 		exit 128 ; \
 		fi
-	font_remap.py -c ./config.yml -i ./src/original/typicons-regular-webfont.ttf -o ./font/$(FONT_NAME).ttf
+	fontbuild.py -c ./config.yml -t ./src/font_template.sfd -i ./src/svg -o ./font/$(FONT_NAME).ttf
+	# font_remap.py -c ./config.yml -i ./src/original/typicons-regular-webfont.ttf -o ./font/$(FONT_NAME).ttf
 	font_transform.py -c ./config.yml -i ./font/$(FONT_NAME).ttf -o ./font/$(FONT_NAME)-transformed.ttf
 	mv ./font/$(FONT_NAME)-transformed.ttf ./font/$(FONT_NAME).ttf
 	ttfautohint --latin-fallback --hinting-limit=200 --hinting-range-max=50 --symbol ./font/$(FONT_NAME).ttf ./font/$(FONT_NAME)-hinted.ttf

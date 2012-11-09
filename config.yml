@@ -69,7 +69,7 @@
 # #
 # src_fonts:
 #   first_font_alias: "/absolute/path/to/first/font.ttf"
- 
+
 ################################################################################
 #
 
@@ -86,8 +86,8 @@ meta:
 
 transform:
   baseline: 0.5
-  rescale: 0.60
-  offset: -0.44
+  rescale: 1.2
+  #offset: -0.44
 
 font:
   version: "1.0"
@@ -101,8 +101,8 @@ font:
 
   copyright: (c) Stephen Hutchings 2012
 
-  ascent: 800
-  descent: 200
+  ascent: 850
+  descent: 150
   weight: Book
 
 
@@ -506,10 +506,16 @@ glyphs:
     from: 0x004a
     search: [reload, refresh, update, sync]
 
-  - file: loop
+  - css: loop
     code: 0x1f501
     uid: em9mdmyhjwd003ndercv4r08h0ai31tl
     from: 0x004c
+    search: [arrow, loop, reload, refresh]
+
+  - css: loop-alt
+    code: 0xe700
+    uid: jskdfgyhjwd003ndercv4r08h0ai3dfg
+    from: 0x004b
     search: [arrow, loop, reload, refresh]
 
   - css: shuffle
@@ -590,7 +596,7 @@ glyphs:
     search: [ajust, contrast]
 
 
-  - file: globe
+  - css: globe
     code: 0x1d30d
     uid: igynut9bozd2s1mxnmkeeut1qou984gc
     from: 0x0076
@@ -602,7 +608,7 @@ glyphs:
     from: 0x0061
     search: [globe]
 
-  - file: flash
+  - css: flash
     code: 0x26a1
     uid: pgdm1vsngqxmheo5xkjpbm5o8k81pawd
     from: 0x006f
