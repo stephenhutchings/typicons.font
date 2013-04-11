@@ -7,9 +7,10 @@ FONT_NAME   := typicons
 ################################################################################
 
 
-TMP_PATH    := /tmp/${PROJECT}-$(shell date +%s)
-REMOTE_NAME ?= origin
-REMOTE_REPO ?= $(shell git config --get remote.${REMOTE_NAME}.url)
+TMP_PATH    			:= /tmp/${PROJECT}-$(shell date +%s)
+REMOTE_NAME 			?= origin
+REMOTE_REPO 			?= $(shell git config --get remote.${REMOTE_NAME}.url)
+FONT_BUILDER_PATH ?= ./support/font-builder/bin/
 
 
 # Add local versions of ttf2eot nd ttfautohint to the PATH
@@ -37,13 +38,12 @@ font:
 		echo "  make support" >&2 ; \
 		exit 128 ; \
 		fi
-	fontbuild.py -c ./config.yml -t ./src/font_template.sfd -i ./src/svg -o ./font/$(FONT_NAME).ttf
-	# font_remap.py -c ./config.yml -i ./src/original/typicons-regular-webfont.ttf -o ./font/$(FONT_NAME).ttf
-	font_transform.py -c ./config.yml -i ./font/$(FONT_NAME).ttf -o ./font/$(FONT_NAME)-transformed.ttf
+	$(FONT_BUILDER_PATH)fontbuild.py -c ./config.yml -t ./src/font_template.sfd -i ./src/svg -o ./font/$(FONT_NAME).ttf
+	$(FONT_BUILDER_PATH)font_transform.py -c ./config.yml -i ./font/$(FONT_NAME).ttf -o ./font/$(FONT_NAME)-transformed.ttf
 	mv ./font/$(FONT_NAME)-transformed.ttf ./font/$(FONT_NAME).ttf
 	ttfautohint --latin-fallback --hinting-limit=200 --hinting-range-max=50 --symbol ./font/$(FONT_NAME).ttf ./font/$(FONT_NAME)-hinted.ttf
 	mv ./font/$(FONT_NAME)-hinted.ttf ./font/$(FONT_NAME).ttf
-	fontconvert.py -i ./font/$(FONT_NAME).ttf -o ./font
+	$(FONT_BUILDER_PATH)fontconvert.py -i ./font/$(FONT_NAME).ttf -o ./font
 	ttf2eot < ./font/$(FONT_NAME).ttf >./font/$(FONT_NAME).eot
 
 
@@ -69,7 +69,7 @@ support:
 html:
 	CONFIG=$$(js-yaml --to-json ./config.yml) && \
 		jade --pretty --obj "$$CONFIG" --out ./font ./src/demo.jade
-	fontdemo.py -c ./config.yml ./src/css.mustache ./font/$(FONT_NAME).css
+	$(FONT_BUILDER_PATH)fontdemo.py -c ./config.yml ./src/css.mustache ./font/$(FONT_NAME).css
 
 
 gh-pages:
