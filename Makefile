@@ -7,19 +7,25 @@ FONT_NAME   := typicons
 ################################################################################
 
 
-TMP_PATH    			:= /tmp/${PROJECT}-$(shell date +%s)
-REMOTE_NAME 			?= origin
-REMOTE_REPO 			?= $(shell git config --get remote.${REMOTE_NAME}.url)
-FONT_BUILDER_PATH ?= ./support/font-builder/bin/
+TMP_PATH    := /tmp/${PROJECT}-$(shell date +%s)
+REMOTE_NAME ?= origin
+REMOTE_REPO ?= $(shell git config --get remote.${REMOTE_NAME}.url)
+FONTBUILDER ?= ./support/font-builder/bin/
 
 
-# Add local versions of ttf2eot nd ttfautohint to the PATH
-PATH := $(PATH):./support/font-builder/support/ttf2eot
-PATH := $(PATH):./support/font-builder/support/ttfautohint/frontend
+# Add local versions of ttf2eot and ttfautohint to the PATH
+PATH := $(PATH):./support/font-builder/support/ttf2eot/ttf2eot
+PATH := $(PATH):./support/font-builder/support/ttfautohint/ttfautohint
 PATH := $(PATH):./support/font-builder/bin
 
 
 dist: font html
+
+dump:
+	rm -r ./src/svg/
+	mkdir ./src/svg/
+	font-dump.js --hcrop -c config.yml -f -i ./src/original/Entypo.svg -o ./src/svg/ -d diff.yml
+	font-dump.js --hcrop -c config.yml -f -i ./src/original/EntypoSocial.svg -o ./src/svg/ -d diff.yml
 
 
 font:
@@ -38,12 +44,10 @@ font:
 		echo "  make support" >&2 ; \
 		exit 128 ; \
 		fi
-	$(FONT_BUILDER_PATH)fontbuild.py -c ./config.yml -t ./src/font_template.sfd -i ./src/svg -o ./font/$(FONT_NAME).ttf
-	$(FONT_BUILDER_PATH)font_transform.py -c ./config.yml -i ./font/$(FONT_NAME).ttf -o ./font/$(FONT_NAME)-transformed.ttf
-	mv ./font/$(FONT_NAME)-transformed.ttf ./font/$(FONT_NAME).ttf
+	$(FONTBUILDER)fontbuild.py -c ./config.yml -t ./src/font_template.sfd -i ./src/svg -o ./font/$(FONT_NAME).ttf
 	ttfautohint --latin-fallback --hinting-limit=200 --hinting-range-max=50 --symbol ./font/$(FONT_NAME).ttf ./font/$(FONT_NAME)-hinted.ttf
 	mv ./font/$(FONT_NAME)-hinted.ttf ./font/$(FONT_NAME).ttf
-	$(FONT_BUILDER_PATH)fontconvert.py -i ./font/$(FONT_NAME).ttf -o ./font
+	$(FONTBUILDER)fontconvert.py -i ./font/$(FONT_NAME).ttf -o ./font
 	ttf2eot < ./font/$(FONT_NAME).ttf >./font/$(FONT_NAME).eot
 
 
@@ -67,9 +71,7 @@ support:
 
 
 html:
-	CONFIG=$$(js-yaml --to-json ./config.yml) && \
-		jade --pretty --obj "$$CONFIG" --out ./font ./src/demo.jade
-	$(FONT_BUILDER_PATH)fontdemo.py -c ./config.yml ./src/css.mustache ./font/$(FONT_NAME).css
+	$(FONTBUILDER)tpl-render.js --locals config.yml --input ./src/demo/demo.jade --output ./font/demo.html
 
 
 gh-pages:
@@ -89,5 +91,4 @@ gh-pages:
 	rm -rf ${TMP_PATH}
 
 
-.SILENT: dev-deps
-.PHONY: font support
+.PHONY: font npm-deps support

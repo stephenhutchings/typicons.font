@@ -1,0 +1,665 @@
+---
+# This is configuration file for font builder and other support scripts.
+# Format is descriped below.
+#
+#
+# # metadata, to generate demo & fontello info dialogs
+# meta:
+#
+#  author: Daniel Buce
+#  homepage: http://...
+#  email: ...
+#  twitter: http://twitter.com/...
+#  dribble: http://dribbble.com/...
+#  license: SIL
+#  license_url: http://scripts.sil.org/OFL
+#
+#   css-prefix: "icon-"             # prefix for css-generated classes
+#   demo-columns: 4                 # used for html demo page generation
+#
+# # Font headers. All vars from here will be used as font
+# # params in fontforge http://fontforge.sourceforge.net/python.html
+# font:
+#
+#   version: "1.0"
+#
+#   # use !!!small!!! letters a-z, or Opera will fail under OS X
+#   # fontname will be also used as file name.
+#   fontname: myfont
+#
+#   fullname: MyFont
+#   familyname: Myfont
+#
+#   copyright: Copyright (C) 2012 by xxxxxxxx
+#
+#   ascent: 1638
+#   descent: 410
+#   weight: Regular
+#
+#
+# #
+# # Optional. You can apply global rescale + offset to all font glyphs.
+# # Param values ar 0..1, where 1 = 100%. 
+# #
+# transform:
+#   baseline: 0.2                 # baseline for rescale symmetry. Default value
+#                                 # calculated from ascent/decsent
+#   rescale: 0.68                 # rescale glyphs and center around baseline
+#   offset: -0.1                  # shift up/down
+#
+# glyphs:
+#   - file: glyph1_file           # file name, without extention
+#     from: 0xNNN                 # Source code for remapper or merge tool
+#     code: 0xNNN                 # Symbol code 0x - hex
+#     css: icon-gpyph1-name       # For generated CSS
+#     search: [word1, word2]      # Search aliases (array). CSS name will be
+#                                 # included automatically
+#     src: first_font_alias       # alias to font for merge tool
+#                                 # list of aliases in src_fonts section
+#
+#     #
+#     # local transformations, only for this glyph (optional)
+#     #
+#     transform:                  # personal glyph transformation.
+#       rescale_rel               # *_rel - applyed after global.
+#       offset: 0.2               # without *_rel - override global
+#
+# #
+# # Fonts aliases used only in font merge tool
+# #
+# src_fonts:
+#   first_font_alias: "/absolute/path/to/first/font.ttf"
+
+################################################################################
+#
+
+
+meta:
+  author: Stephen Hutchings
+  homepage: http://typicons.com/
+  twitter: https://twitter.com/Typicons/
+  license: CC BY-SA 3.0
+  license_url: http://creativecommons.org/licenses/by-sa/3.0/
+
+  css_prefix: "icon-"
+  columns: 4
+
+transform:
+  baseline: 0.5
+  rescale: 1.2
+  #offset: -0.44
+
+font:
+  version: "1.0"
+
+  # use !!!small!!! letters a-z, or Opera will fail under OS X
+  # fontname will be also used as file name.
+  fontname: typicons
+
+  fullname: Typicons
+  familyname: Typicons
+
+  copyright: (c) Stephen Hutchings 2012
+
+  ascent: 850
+  descent: 150
+  weight: Book
+
+
+glyphs:
+
+  - css: music
+    code: 0x266b
+    uid: 5rarhtgcreeh8evuaqd8zoekgehkt3mm
+    from: 0x002a
+    search: [music, note, song, sound]
+
+  - css: search
+    code: 0x1f50d
+    uid: t6cy82vd3t5piy0j3uknrlrzpg1ld8y3
+    from: 0x003a
+    search: [search, find]
+
+  - css: mail
+    code: 0x2709
+    uid: wg849ixsobykxshs6efpc6fk4m0fq8bh
+    from: 0x005b
+    search: [mail, email]
+
+  - css: heart
+    code: 0x2665
+    uid: hi76m8qggwn5lbl286oeqp64q0n8kusy
+    from: 0x003b
+    search: [heart]
+
+  - css: star
+    code: 0x2605
+    uid: vyuzsm6wijlfwtjo4ifkoblfmsepk6g8
+    from: 0x003d
+    search: [star]
+
+  - css: user
+    code: 0x1f464
+    uid: bczb7qup4axmc490xmuuv8qdhcnbgeyf
+    from: 0x0058
+    search: [profile, contact, user]
+
+  - css: users
+    code: 0x1f465
+    uid: x8m4z7b33cv1h2s784tjlam56uq40wtd
+    from: 0x0059
+    search: [users, contacts, friends]
+
+  - css: camera
+    code: 0x1f4f7
+    uid: aklhk54yg779pgovdsjr9r9w22hej00n
+    from: 0x0044
+    search: [camera, photo]
+
+  - css: th
+    code: 0x268f
+    uid: 9x8p16w516pn1b19chr85japkedporm7
+    from: 0x0022
+    search: [image, list, thumbnails]
+
+  - css: th-list
+    code: 0x2630
+    uid: lu2wqmd7v9zp21knhy4eifo41wjp4cnx
+    from: 0x0023
+    search: [list]
+
+
+  - css: ok
+    code: 0x2713
+    uid: 43fl9m553j1z5937vfjz0lgolrlspxwl
+    from: 0x0067
+    search: [ok, yes, check, mark]
+
+  - css: cancel
+    code: 0x2715
+    uid: 1dq4tek4k8ea7zlj4kc3w83itnutaxg5
+    from: 0x0036
+    search: [close, cancel, reject]
+
+  - css: cancel-alt
+    code: 0xe7b7
+    uid: l11ixzfrief0chds7elurdm2ot98xp4l
+    from: 0x005e
+    search: [close, cancel]
+
+
+
+  - css: plus
+    code: 0x2b
+    uid: 1gf923f9wvaezxmfon515dglxa3drf0e
+    from: 0x0035
+    search: [plus]
+
+  - css: minus
+    code: 0x2d
+    uid: qab5uvjyoc3uu4d2pvt8soshtgkuvpak
+    from: 0x0078
+    search: [minus]
+
+  - css: eq
+    code: 0x003d
+    uid: yb3vdwfxck5hmudxna4fq8fcwo9xari9
+    from: 0x0079
+    search: [equal]
+
+
+  - css: help
+    code: 0x2753
+    uid: 3sl64gd9y68dl54i2g4vo3u57osdabft
+    from: 0x007d
+    search: [help, question]
+
+  - css: info
+    code: 0x2139
+    uid: 85fda3129wk4amvn25wrq843sbj3yzl0
+    from: 0x007c
+    search: [info]
+
+
+  - css: home
+    code: 0x2302
+    uid: w3nzesrlbezu6f30q7ytyq919p6gdlb6
+    from: 0x0043
+    search: [home]
+
+  - css: link
+    code: 0x1f517
+    uid: 45g23adv6rwe7nokwek4d471h8y09ayz
+    from: 0x0028
+    search: [link, url]
+
+  - css: lock
+    code: 0x1f512
+    uid: 4x5p6fnblkhqsj4ibuc724faotghuiaq
+    from: 0x006a
+    search: [lock]
+
+  - css: lock-open
+    code: 0x1f513
+    uid: a33vyvfsje6eklq8loqtzb1jcgo37onm
+    from: 0x0069
+    search: [lock, unlock]
+
+  - css: pin
+    code: 0x1f4cc
+    uid: p57wgnf4glngbchbucdi029iptu8oxb8
+    from: 0x0073
+    search: [pin, pushpin]
+
+  - css: eye
+    code: 0xe70a
+    uid: k7sao112253txym1egnte7822irbyphe
+    from: 0x0054
+    search: [eye, subscribe]
+
+  - css: tag
+    code: 0xe70c
+    uid: z2kx6nr3u9112p0e1pfhxdhva9v7kd4k
+    from: 0x0064
+    search: [tag, category, price, offer]
+
+  - css: bookmark
+    code: 0x1f516
+    uid: gr2i0fsmy50yfjhz6defsqkexnmctv8z
+    from: 0x0029
+    search: [bookmark]
+
+  - css: flag
+    code: 0x2691
+    uid: 4i0s2bklai5fywieqm4dqqngfz9ptfab
+    from: 0x007b
+    search: [flag]
+
+  - css: thumbs-up
+    code: 0x1f44d
+    uid: tau7t0t38662eqxrb80ozeiase5em2x9
+    from: 0x0062
+    search: [thumbs, up, like, vote]
+
+  - css: thumbs-down
+    code: 0x1f44e
+    uid: ani12ucvy2plqmykysnk4zd9i24cmxqp
+    from: 0x0063
+    search: [thumbs, down, unlike, vote]
+
+  - css: download
+    code: 0x1f4e5
+    uid: 7yekfd0qlkgp6emwfbo10sjdmf8pewli
+    from: 0x002c
+    search: [download]
+
+
+  - css: reply
+    code: 0xe712
+    uid: 28r0xthd180mg0wnfh8ek3mtn761hs11
+    from: 0x003f
+    search: [reply]
+
+  - css: forward
+    code: 0x27a6
+    uid: 7p5gflyid3o4gtesy94a6erq94e4pz7u
+    from: 0x0040
+    search: [forward]
+
+  - css: export
+    code: 0xe715
+    uid: wh8nbtrxjl2f67dpybsww6mri0xcaklm
+    from: 0x0057
+    search: [export, share]
+
+  - css: pencil
+    code: 0x270e
+    uid: 1e77a2yvsq3owssduo2lcgsiven57iv5
+    from: 0x0039
+    search: [pencil, write, reply, edit]
+
+  - css: edit
+    code: 0x270d
+    uid: jqzwo6i8oicjbn049sh2856d8anrqoli
+    from: 0x0077
+    search: [pencil, write, reply, edit]
+
+  - css: comment
+    code: 0xe718
+    uid: b90868gfogj970a1g0dnot6hm5r4uj55
+    from: 0x005c
+    search: [comment, reply, write]
+
+  - css: chat
+    code: 0xe720
+    uid: 2hqh2lidoqvaujgq29tdkrtiay5s6tyk
+    from: 0x007e
+    search:
+    search: [comment, reply, chat, talk]
+
+
+  - css: attention
+    code: 0x26a0
+    uid: rp4bhvranczqlvvwzerni2uuanp2gvqb
+    from: 0x0066
+    search: [attention, warning, alert]
+
+  - css: address
+    code: 0xe723
+    uid: gruasbs60jlu9us53csv9q7nnwy4d990
+    from: 0x0072
+    search: [address]
+
+  - css: location
+    code: 0xe724
+    uid: gjt8ba5q0n3nn8ptw6324sflr8qoaeam
+    from: 0x0041
+    search: [location, mark, marker]
+
+  - css: direction
+    code: 0x27a2
+    uid: cka09asalx8otiykquyp5d9tymlan1o3
+    from: 0x0070
+    search: [direction]
+
+
+  - css: trash
+    code: 0xe729
+    uid: csuoy0rqoun3unhsgjoy2uumpldzbfmt
+    from: 0x005d
+    search: [trash, delete]
+
+
+  - css: rss
+    code: 0xe73a
+    uid: 3o0pu4qbmgvcv8zqb5o3qh8vttzvhpy7
+    from: 0x004e
+    search: [rss]
+
+  - css: phone
+    code: 0x1f4de
+    uid: 24eiet6l58t0myywueih34b0e5a30bw1
+    from: 0x0042
+    search:
+
+  - css: cog
+    code: 0x2699
+    uid: dpxunrtmigvk6jm0ieo7axfsgzx4awll
+    from: 0x004f
+    search: [settings, cog, gear]
+
+  - css: wrench
+    code: 0x1f527
+    uid: i7r8vgyqewsy2rlx0xhawybpw5uyss3z
+    from: 0x0050
+    search: [settings, wrench]
+
+
+  - css: mic
+    code: 0x1f3a4
+    uid: b1a40ej6b1xgsxjeh1b1urm8ptglt0hk
+    from: 0x005a
+    search: [mic]
+
+  - css: volume-off
+    code: 0x1f507
+    uid: 43m0a70tvxqc6q7jxgzhz5lmlt3ce2iy
+    from: 0x0074
+    search: [volume, sound, mute]
+
+  - css: volume-up
+    code: 0x1f50a
+    uid: okc52fdxu9uz2wnl0awdtv5373is429s
+    from: 0x0075
+    search: [volume, sound]
+
+
+  - css: clock
+    code: 0x1f554
+    uid: eh1m4shhgsndy7pmdzx3ynrakadhozgr
+    from: 0x0025
+    search: [clock, time]
+
+  - css: block
+    code: 0x1f6ab
+    uid: j6xzwioffey3gxe90yx3ie56j5dlt902
+    from: 0x006e
+    search: [block, deny]
+
+
+  - css: resize-full
+    code: 0xe744
+    uid: cdfalpadi7huwv9ah4fef2gpfpb4c6qm
+    from: 0x006d
+    search: [resize, fullscreen]
+
+  - css: move
+    code: 0xf047
+    uid: fhkechw94uv9ydw6tukba3ka2hhoif4n
+    from: 0x006c
+    search: [move]
+
+
+  - css: zoom-in
+    code: 0xe750
+    uid: dfhp68fdlvh9dknvxk4tkf8yy0h7vw3r
+    from: 0x0056
+    search: [zoom. scale, in]
+
+  - css: zoom-out
+    code: 0xe751
+    uid: 1nkxlfe3u6kwarxqy3g4z3c9lrsgdu5h
+    from: 0x0055
+    search: [zoom. scale, out]
+
+
+  - css: popup
+    code: 0xe74c
+    uid: 493hui9b6xiqaf04slclmqnwpap3oxjj
+    from: 0x0065
+    search: [popup, window]
+
+
+  - css: left-open
+    code: 0xe75d
+    uid: wlri7uftq4zbi82q2xuf08ayd8kpijlk
+    from: 0x0038
+    search: [arrow, left]
+  - css: right-open
+    code: 0xe75e
+    uid: 6zhrgcf3co77hnljttd3b2mrc8z5fiq5
+    from: 0x0037
+    search: [arrow, right]
+
+  - css: down
+    code: 0x2193
+    uid: xq9z5jujkqhrf97s70hjek6otohmhr1y
+    from: 0x0048
+    search: [arrow, down]
+  - css: left
+    code: 0x2190
+    uid: qqsxko9kqxh5g53lz33yonkpc2rpkvkn
+    from: 0x0045
+    search: [arrow, left]
+  - css: right
+    code: 0x2192
+    uid: 4oaz56fmzfvx7vry2o540n9l4z79fz8t
+    from: 0x0046
+    search: [arrow, right]
+  - css: up
+    code: 0x2191
+    uid: mj2pxhfj0eumtbzirpdokhtzk00480uo
+    from: 0x0047
+    search: [arrow, up]
+
+
+
+  - css: cw
+    code: 0x27f3
+    uid: 5qynhqqaenby227l5kogqj8sdk5s4e7h
+    from: 0x0049
+    search: [reload, redo, repeat]
+
+  - css: arrows-cw
+    code: 0xe760
+    uid: mqlxga8x57rhlfv44zsvmz1reex8lbqg
+    from: 0x004a
+    search: [reload, refresh, update, sync]
+
+  - css: loop
+    code: 0x1f501
+    uid: em9mdmyhjwd003ndercv4r08h0ai31tl
+    from: 0x004c
+    search: [arrow, loop, reload, refresh]
+
+  - css: loop-alt
+    code: 0xe700
+    uid: jskdfgyhjwd003ndercv4r08h0ai3dfg
+    from: 0x004b
+    search: [arrow, loop, reload, refresh]
+
+  - css: shuffle
+    code: 0x1f500
+    uid: 36m3wq83tio3uymjbu44su7ior03u9cc
+    from: 0x004d
+    search: [shuffle]
+
+
+  - css: eject
+    code: 0x23cf
+    uid: ygvgohzaooew2l8favz2xu2xi59w1hoo
+    from: 0x006b
+    search: [eject, player]
+
+
+  - css: list
+    code: 0xe782
+    uid: jh3jpcb1t1bcm80gidkadilh080aq79h
+    from: 0x007a
+    search: [editor, list]
+
+
+  - css: bat-empty
+    code: 0xe772
+    uid: f378encthmyxe8mfi1ute1knv09ggkar
+    from: 0x0030
+    search: [battery]
+
+  - css: bat-third
+    code: 0xe7af
+    uid: jslb32twsd38zgx4v3sm5upu0t6wirtm
+    from: 0x0031
+    search: [battery]
+
+  - css: bat-half
+    code: 0xe773
+    uid: g43j86b0hso37oir42285zjo3nhd7m08
+    from: 0x0032
+    search: [battery]
+
+  - css: bat-full
+    code: 0xe774
+    uid: 7wc8mz5d93cbka5pscqjhsej173tqmbs
+    from: 0x0033
+    search: [battery]
+
+  - css: bat-charge
+    code: 0xe775
+    uid: bc1u8zgs4wteyj0u35n943k3jzx5olkm
+    from: 0x0034
+    search: [battery, charge]
+
+
+  - css: target
+    code: 0x1f3af
+    uid: xzlln8s96kcutcubtwavdjt80tmhkbkq
+    from: 0x0071
+    search: [target]
+
+  - css: mobile
+    code: 0x1f4f1
+    uid: gz5flrq210wzbyafnerm4e0aublo7qwb
+    from: 0x002d
+    search: [mobile, iphone]
+
+
+  - css: sun
+    code: 0x263c
+    uid: ivmsk67zo1yb1tthd3ugi4xnb3get418
+    from: 0x002f
+    search: [weather, sun, brightness]
+
+  - css: ajust
+    code: 0xe793
+    uid: 3fzybskyukolbvmshoyord1b254366gh
+    from: 0x002e
+    search: [ajust, contrast]
+
+
+  - css: globe
+    code: 0x1d30d
+    uid: igynut9bozd2s1mxnmkeeut1qou984gc
+    from: 0x0076
+    search: [globe]
+
+  - css: globe-alt
+    code: 0x1f310
+    uid: n1ld0w7zazkxq7bsqtksyez86sdufqgd
+    from: 0x0061
+    search: [globe]
+
+  - css: flash
+    code: 0x26a1
+    uid: pgdm1vsngqxmheo5xkjpbm5o8k81pawd
+    from: 0x006f
+    search: [flash, bolt]
+
+
+  - css: chart
+    code: 0x1f4c8
+    uid: pdnk53e9ff0ck5q3b16vcm1hh1447j7e
+    from: 0x0053
+    search: [chart, pie, diagram]
+
+  - css: chart-bar
+    code: 0x1f4ca
+    uid: 5v7h140x5zz1acnzfzo36flbwar5tujm
+    from: 0x0051
+    search: [chart, bar, diagram]
+
+  - css: chart-pie
+    code: 0xe7a2
+    uid: um6h7e9nfp79peah8uphjhismoa8owtu
+    from: 0x0052
+    search: [chart, pie, diagram]
+
+  - css: key
+    code: 0x1f511
+    uid: upidp9k72x66utj5w89oyq65tp6r2tpe
+    from: 0x0024
+    search: [key]
+
+  - css: scissors
+    code: 0x2702
+    uid: 2npqajwqwxy3kbchcht7tyupllg270hb
+    from: 0x0027
+    search: [scissors]
+
+  - css: flask
+    code: 0x0068
+    uid: 0fg01d4656jzluy9fz6ee4ohdd3nt2pe
+    from: 0x0068
+    search: [flask]
+
+  - css: puzzle
+    code: 0xe7b6
+    uid: xoidjr6q3rzi7tpw6hci1k6srz15g11l
+    from: 0x002b
+    search: [puzzle, plugin]
+
+  - css: infinity
+    code: 0x221e
+    uid: 2039c86dq3jtfwqmgow2quvuzq3k34bu
+    from: 0x005f
+    search:
+

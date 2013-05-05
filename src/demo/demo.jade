@@ -1,0 +1,88 @@
+!!! 5
+html
+  head
+    //if lt IE 9
+      script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+
+    meta(charset='UTF-8')
+
+    :stylus
+      @import "bootstrap"
+
+      body
+        margin-top 90px
+
+      .header
+        position fixed
+        top: 0
+        left 50%
+        margin-left -480px
+        background-color #fff
+        border-bottom 1px solid #ddd
+        padding-top 10px
+        z-index 10
+
+      .the-icons li
+        font-size 12px
+        line-height 24px
+        height 24px
+
+      .switch
+        position absolute
+        right 0
+        bottom 10px
+        color #888
+        input
+          margin-right .3em
+
+      .codesOn
+        .i-name
+          display none
+        .i-code
+          display inline
+      .i-code
+      .i-name
+        display none
+
+    include demo.codes.jade
+
+    script
+      function toggleCodes(on) {
+        var obj = document.getElementById('icons');
+
+        if (on) {
+          obj.className += ' ' + 'codesOn';
+        } else {
+          obj.className = obj.className.replace(' codesOn', '');
+        }
+      }
+
+  body
+    .container.header
+      h1 #{font.fullname}
+        |  
+        small font demo
+      label.switch
+        input(type='checkbox', onclick='toggleCodes(this.checked)')
+        | show codes
+
+    #icons.container
+      .row
+        - var col_class = "span" + Math.ceil(12 / meta.columns)
+        - var chunk_size = Math.ceil(glyphs.length / meta.columns)
+        - for (var i = 0; i < meta.columns; i++)
+
+          
+            //- ul.the-icons.unstyled
+
+            - var offset = i * chunk_size
+            - for (var c = 0; c < chunk_size && glyphs[offset + c]; c++)
+              - var g = glyphs[offset + c]
+              - var css_class = meta.css_prefix + (g.css || g.file)
+              - var code = g.code.toString(16)
+                //- div(title='Code: 0x#{code}')
+                div.icon
+                  i(class=css_class)
+                  |  
+                  span.i-name #{g.css}
+                  span.i-code 0x#{code}
