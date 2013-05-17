@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 16.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="24px" height="24px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" xml:space="preserve">
 <g>
-	<path d="M12,8c2.206,0,4,1.794,4,4s-1.794,4-4,4s-4-1.794-4-4S9.794,8,12,8 M12,6c-3.314,0-6,2.686-6,6c0,3.312,2.686,6,6,6
-		c3.312,0,6-2.688,6-6C18,8.686,15.312,6,12,6L12,6z"/>
+	<path d="M18,12c0-1.657-0.672-3.157-1.757-4.243C15.157,6.672,13.657,6,12,6c-1.656,0-3.156,0.672-4.242,1.757
+		C6.672,8.843,6,10.343,6,12c0,1.656,0.672,3.156,1.758,4.242S10.344,18,12,18c1.657,0,3.157-0.672,4.243-1.758
+		C17.328,15.156,18,13.656,18,12z"/>
 </g>
 </svg>

@@ -7,41 +7,67 @@ html
     meta(charset='UTF-8')
 
     :stylus
-      @import "bootstrap"
+      body {
+        margin: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        line-height: 18px;
+        color: #333333;
+        background-color: #ffffff;
+      }
 
-      body
-        margin-top 90px
-
-      .header
+      .page-header
+        width 100%
         position fixed
-        top: 0
-        left 50%
-        margin-left -480px
-        background-color #fff
-        border-bottom 1px solid #ddd
-        padding-top 10px
+        background white
         z-index 10
+        top 0
 
-      .the-icons li
-        font-size 12px
-        line-height 24px
-        height 24px
+        small
+          font-size 0.6em
+          color #666
+          font-weight normal
+
+        .container
+          border-bottom 1px solid #ddd
+          padding 12px 0
+
+      .container,
+      #preview
+        width 940px
+        margin auto
+        position relative
+
+      #icons 
+        margin-top 112px
 
       .switch
         position absolute
         right 0
-        bottom 10px
+        bottom 24px
         color #888
+
         input
           margin-right .3em
+
+      .icon
+        padding 12px
+        float left
 
       .codesOn
         .i-name
           display none
         .i-code
-          display inline
-      .i-code
+          display block
+
       .i-name
+      .i-code
+        color #666
+        font-size 11px
+        display block
+        line-height 1.2em
+
+      .i-code
         display none
 
     include demo.codes.jade
@@ -58,31 +84,26 @@ html
       }
 
   body
-    .container.header
-      h1 #{font.fullname}
-        |  
-        small font demo
-      label.switch
-        input(type='checkbox', onclick='toggleCodes(this.checked)')
-        | show codes
+    .page-header
+      .container
+        h1 #{font.fullname}
+          |  
+          small font demo
+        label.switch
+          input(type='checkbox', onclick='toggleCodes(this.checked)')
+          | show codes
 
-    #icons.container
-      .row
+    #icons
+      #preview.clearfix
         - var col_class = "span" + Math.ceil(12 / meta.columns)
         - var chunk_size = Math.ceil(glyphs.length / meta.columns)
         - for (var i = 0; i < meta.columns; i++)
 
-          
-            //- ul.the-icons.unstyled
-
-            - var offset = i * chunk_size
-            - for (var c = 0; c < chunk_size && glyphs[offset + c]; c++)
-              - var g = glyphs[offset + c]
-              - var css_class = meta.css_prefix + (g.css || g.file)
-              - var code = g.code.toString(16)
-                //- div(title='Code: 0x#{code}')
-                div.icon
-                  i(class=css_class)
-                  |  
-                  span.i-name #{g.css}
-                  span.i-code 0x#{code}
+          - var offset = i * chunk_size
+          - for (var c = 0; c < chunk_size && glyphs[offset + c]; c++)
+            - var g = glyphs[offset + c]
+            - var css_class = meta.css_prefix + '-' + (g.css || g.file)
+            - var code = g.code.toString(16)
+            - var match = g.search + ' ' + g.css.split('-').join(' ')
+              .icon(data-name='#{g.css}', data-code='#{code}', data-match='#{match} ')
+                span(class=meta.css_prefix + ' ' + css_class)

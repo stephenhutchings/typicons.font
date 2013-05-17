@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 16.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="24px" height="24px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" xml:space="preserve">
 <g>
 	<path d="M18,7c0.542,0,1,0.458,1,1v7c0,0.542-0.458,1-1,1h-8H9.171L9,16.171V16H7H6c-0.542,0-1-0.458-1-1V8c0-0.542,0.458-1,1-1H18
-		 M18,5H6C4.35,5,3,6.35,3,8v7c0,1.65,1.35,3,3,3h1v3l3-3h8c1.65,0,3-1.35,3-3V8C21,6.35,19.65,5,18,5L18,5z"/>
+		 M18,5H6C4.35,5,3,6.35,3,8v7c0,1.65,1.35,3,3,3h1v3l3-3h8c1.65,0,3-1.35,3-3V8C21,6.35,19.65,5,18,5z"/>
 </g>
 </svg>

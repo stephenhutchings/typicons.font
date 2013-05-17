@@ -1,15 +1,15 @@
 Development docs
 ================
 
-Set of scripts to easily build webfonts from SVG images
+Set of scripts to easily build webfonts from SVG images.
+For a detailed description of how Typicons were made, see [here](http://www.typicons.com/more/making-typicons/).
 
 Installation
 ------------
 
 ### Ubuntu
 
-**(!)** Use Ubuntu **12.04**. Or you will have to manually install fresh
-freetype library, to build ttfautohint.
+**(!)** Use Ubuntu **12.04**. Or you will have to manually install fresh freetype library, to build ttfautohint.
 
 Install dependencies (fontforge & python modules):
 
@@ -22,7 +22,7 @@ Build additional software (ttf2eot, ttfautohint):
 
 ### Mac
 
-TBD. Anyone, please help.
+See the font-builder README for additional steps to build for OSX.
 
 
 ### Windows
@@ -51,5 +51,5 @@ It's convenient to make height = 1000px. Default font baseline will be 20% from
 the bottom.
 
 In most cases it's ok to visually allign icons to middle line, not to baseline.
-If you are not shure, how to start - make image with 10% top/bottom padding.
+If you are not sure, how to start - make image with 10% top/bottom padding.
 Then generate demo page and tune scale/offset.

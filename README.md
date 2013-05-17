@@ -1,18 +1,20 @@
-Repacked Typicons font. Mostly, for use in fontello. If you plan to use it
-in your project - see license details on [original page](http://typicons.com/).
+### Typicons
 
-Note, that ALL requests about artwork should be sent into original project.
+Version 2.0 of Typicons, including source SVG files and the Fontello script used to generate the font files. Visit the [website](http://typicons.com/) for information on how to use Typicons on your website, a decription of how the font was made and more resources.
 
+If you wish to contact me regarding Typicons you can hit me up on [Twitter](http://twitter.com/typicons/).
 
 Info
 ----
 
-Difference from original:
+What's new in Typicons
 
-- mapped to fit unicode 6.1 standard (where possible)
+- added 104 new icons
+- added a second style
+- improved quality of vector artwork
+- mapped in the Private Use Area of Unicode to avoid being read by screen readers
 - rehinted with `ttfautohint`
 - grouped glyphs on demo page, for convenience
-  (and synced order with other iconic fonts)
 - changed css glyphs names, to be more semantic
 
 License
@@ -23,12 +25,12 @@ License
 Artwork (and original font) by Stephen Hutchings:
 
 - [website](http://typicons.com/)
-- [twitter](http://twitter.com/fortaweso_me/)
+- [twitter](http://twitter.com/typicons/)
 
 Distributed under
 [CC BY-SA](http://creativecommons.org/licenses/by-sa/3.0/) licence.
 
 ### Scripting
 
-This project uses [font-builder](https://github.com/fontello/font-builder) scripts to generate data.
+This project uses [font-builder](https://github.com/fontello/font-builder) scripts to generate data. See DEVELOPMENT.MD for more information on how to build the font.
 

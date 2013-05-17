@@ -1,32 +1,33 @@
 PROJECT     := $(notdir ${PWD})
 FONT_NAME   := typicons
 
-
 ################################################################################
 ## ! DO NOT EDIT BELOW THIS LINE, UNLESS YOU REALLY KNOW WHAT ARE YOU DOING ! ##
 ################################################################################
-
 
 TMP_PATH    := /tmp/${PROJECT}-$(shell date +%s)
 REMOTE_NAME ?= origin
 REMOTE_REPO ?= $(shell git config --get remote.${REMOTE_NAME}.url)
 FONTBUILDER ?= ./support/font-builder/bin/
 
-
 # Add local versions of ttf2eot and ttfautohint to the PATH
 PATH := $(PATH):./support/font-builder/support/ttf2eot/ttf2eot
 PATH := $(PATH):./support/font-builder/support/ttfautohint/ttfautohint
 PATH := $(PATH):./support/font-builder/bin
 
-
 dist: font html
+
 
 dump:
 	rm -r ./src/svg/
 	mkdir ./src/svg/
-	font-dump.js --hcrop -c config.yml -f -i ./src/original/Entypo.svg -o ./src/svg/ -d diff.yml
-	font-dump.js --hcrop -c config.yml -f -i ./src/original/EntypoSocial.svg -o ./src/svg/ -d diff.yml
+	font-dump.js --hcrop -c config.yml -f -i ./src/original/Typicons.svg -o ./src/svg/ -d diff.yml
 
+solid:
+	STYLE = solid
+
+line:
+	STYLE = line
 
 font:
 	@if test ! -d support/font-builder/bin ; then \

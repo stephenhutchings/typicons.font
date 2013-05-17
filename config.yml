@@ -1,798 +1,1562 @@
 meta:
-  author: Stephen Hutchings
-  homepage: http://typicons.com/
-  twitter: https://twitter.com/Typicons/
-  license: CC BY-SA 3.0
-  license_url: http://creativecommons.org/licenses/by-sa/3.0/
-
-  css_prefix: "typcn-"
+  author: 'Stephen Hutchings'
+  homepage: 'http://typicons.com/'
+  twitter: 'https://twitter.com/Typicons/'
+  license: 'CC BY-SA 3.0'
+  license_url: 'http://creativecommons.org/licenses/by-sa/3.0/'
+  css_prefix: typcn
   columns: 12
-
 transform:
-  baseline: 0.5
-  rescale: 1.2
-
+  baseline: 0.2
+  rescale: 1
+  offset: 0
 font:
-  version: "2.0"
-
-  # lowercase only
+  version: '2.0'
   fontname: typicons
-
   fullname: Typicons
   familyname: Typicons
-
-  copyright: (c) Stephen Hutchings 2012
-
-  ascent: 850
-  descent: 150
+  copyright: '(c) Stephen Hutchings 2012'
+  ascent: 800
+  descent: 200
   weight: Book
-
 glyphs:
-  - uid: c2c0dca2cbf54863aad7e8b645fc81ee
+  -
+    css: adjust-brightness
+    code: '0xe000'
+    search: []
+    uid: 0f4de625e529962f9edc742b963619ca
+  -
     css: adjust-contrast
-    code: 0x2710
+    code: '0xe001'
     search: []
-  - uid: cad24dc427004a65a45cc8e31385e77d
+    uid: 54d2f33a61170adae963bb78a6782198
+  -
+    css: anchor-outline
+    code: '0xe002'
+    search: []
+    uid: 290997df2ba74157c72a87272f8debe3
+  -
     css: anchor
-    code: 0x2711
+    code: '0xe003'
     search: []
-  - uid: 2d655bf0f4194021a131a7ffd03d3352
+    uid: 6dbd847b1811c4d9b2b88ea1b1620be7
+  -
     css: archive
-    code: 0x2712
+    code: '0xe004'
     search: []
-  - uid: 8ea5621f4cc64187a33096adad5dbc53
+    uid: 59eb025e81f1cfb06904b11200a66870
+  -
+    css: arrow-back-outline
+    code: '0xe005'
+    search: []
+    uid: 56f5fea94a35c641807f472cebd21647
+  -
     css: arrow-back
-    code: 0x2713
+    code: '0xe006'
     search: []
-  - uid: ec8a6127d5234dbfaaf3fa6f57190e57
+    uid: 2e20d196c1f33efe74795eb8efe3db34
+  -
+    css: arrow-down-outline
+    code: '0xe007'
+    search: []
+    uid: 6ed5b59d0092475bd11cd69986d668a1
+  -
+    css: arrow-down-thick
+    code: '0xe008'
+    search: []
+    uid: ea3a80b4184a72db08c1b0c779509bb3
+  -
     css: arrow-down
-    code: 0x2714
+    code: '0xe009'
     search: []
-  - uid: d766b6bd63a645349f510eddeb721e8d
+    uid: 5dad8ed31963535b640631fc854da0a5
+  -
+    css: arrow-forward-outline
+    code: '0xe00a'
+    search: []
+    uid: 34dae51c41bf41a8988d92c23de98ac2
+  -
     css: arrow-forward
-    code: 0x2715
+    code: '0xe00b'
     search: []
-  - uid: 563f269c4fe1496593242f070d439139
+    uid: ab670c35d06c3056472fbd735973e843
+  -
+    css: arrow-left-outline
+    code: '0xe00c'
+    search: []
+    uid: 8442d28d94dc97508e3998804f8df46b
+  -
+    css: arrow-left-thick
+    code: '0xe00d'
+    search: []
+    uid: ff228084bbee6ff235b816def1e1b308
+  -
     css: arrow-left
-    code: 0x2716
+    code: '0xe00e'
     search: []
-  - uid: ad98787397d640358eec2efbdf13fb3c
-    css: arrow-line-down
-    code: 0x2717
+    uid: 30e0245a3af82a1d3a4cef2a066b8819
+  -
+    css: arrow-loop-outline
+    code: '0xe00f'
     search: []
-  - uid: 072a6e053c72495897820fa84cb93a3c
-    css: arrow-line-left
-    code: 0x2718
-    search: []
-  - uid: 21817868005843e3bfccec9a9caf258d
-    css: arrow-line-right
-    code: 0x2719
-    search: []
-  - uid: bd025684aade4db2a42ebde4c37bc102
-    css: arrow-line-up
-    code: 0x271a
-    search: []
-  - uid: ea11c8b4bb4c4807bdf63b6348c14cd6
+    uid: 61a86cc1a93603563aec92d33a791b7e
+  -
     css: arrow-loop
-    code: 0x271b
+    code: '0xe010'
     search: []
-  - uid: 9f7c629d49624c24a8d7305ce59b3b1e
+    uid: 5b346926e19a8eae052d7b53ce73ce84
+  -
+    css: arrow-maximise-outline
+    code: '0xe011'
+    search: []
+    uid: b4fc373dd60b1d59b02ee7eca1db8a44
+  -
     css: arrow-maximise
-    code: 0x271c
+    code: '0xe012'
     search: []
-  - uid: f9b5af4ee455469c909ce116f006d6b4
-    css: arrow-merge
-    code: 0x271d
+    uid: db0fcbf2888d263a3b231614a0d74e29
+  -
+    css: arrow-minimise-outline
+    code: '0xe013'
     search: []
-  - uid: 3a9e752906964175b3860adc5bfa8d20
+    uid: 48caac0a666466056a8ace4cb487bb8b
+  -
     css: arrow-minimise
-    code: 0x271e
+    code: '0xe014'
     search: []
-  - uid: b0d4a6be75d1493aa56e1338e037557d
+    uid: 67062aa93dcaa54dffa5c73cf691e5f8
+  -
+    css: arrow-move-outline
+    code: '0xe015'
+    search: []
+    uid: 5235389bd43411a30d18f0937de85d89
+  -
     css: arrow-move
-    code: 0x271f
+    code: '0xe016'
     search: []
-  - uid: c88126f3900a4c09b7f9e30b867b19ad
+    uid: 1d7d3f018dff065a9db6cf95a225cc4b
+  -
+    css: arrow-repeat-outline
+    code: '0xe017'
+    search: []
+    uid: 7ef05a8800f24b8fd4e9b232fa9f4b66
+  -
     css: arrow-repeat
-    code: 0x2720
+    code: '0xe018'
     search: []
-  - uid: 99127c73de7b496aa7338a3191eee29c
+    uid: 884fb8e6972ff9b0c3ff0555401be820
+  -
+    css: arrow-right-outline
+    code: '0xe019'
+    search: []
+    uid: 3e0494dca36dbef60d4059e520f05fb7
+  -
+    css: arrow-right-thick
+    code: '0xe01a'
+    search: []
+    uid: 637491f63bf7d389c4306eb9bce4de83
+  -
     css: arrow-right
-    code: 0x2721
+    code: '0xe01b'
     search: []
-  - uid: dda55d8d0493473ebaa62a39299a1036
+    uid: 5504aff4cb78784efac4a44d9dcd0c1c
+  -
     css: arrow-shuffle
-    code: 0x2722
+    code: '0xe01c'
     search: []
-  - uid: ed66f42a199d4490af61f1b6529957a8
-    css: arrow-split
-    code: 0x2723
+    uid: 1b8bb8ada61b0335ad563259644e77c6
+  -
+    css: arrow-sync-outline
+    code: '0xe01d'
     search: []
-  - uid: e130f482fe754ec5a4baa8f0a34e2f76
+    uid: 758d9ed729ded71dc6d46ef4fb71c638
+  -
     css: arrow-sync
-    code: 0x2724
+    code: '0xe01e'
     search: []
-  - uid: 2bf1099608344996a7295227f68b2940
+    uid: be42e6c04daa28b1d370c6551079873f
+  -
+    css: arrow-up-outline
+    code: '0xe01f'
+    search: []
+    uid: 6656b0295002e7e8818df8458d983a98
+  -
+    css: arrow-up-thick
+    code: '0xe020'
+    search: []
+    uid: 18026fb7dc0cf62e5140ff225eb2b7d3
+  -
     css: arrow-up
-    code: 0x2725
+    code: '0xe021'
     search: []
-  - uid: eeb4f77ef0264ec9a9b3eab632df105f
+    uid: b481df2348865b9ebc7f6888cb2c7afb
+  -
     css: at
-    code: 0x2726
+    code: '0xe022'
     search: []
-  - uid: 80e3f29dc698493f80914c631e627a62
+    uid: 589e365295a4d02137b55941847aeeab
+  -
+    css: attachment-outline
+    code: '0xe023'
+    search: []
+    uid: e781cbe4b6917c332d68a049c3070dd0
+  -
     css: attachment
-    code: 0x2727
+    code: '0xe024'
     search: []
-  - uid: c58d17932d794f3ebe776ec160db5a40
+    uid: 81975b63ffd13eac3d980151791b209a
+  -
+    css: backspace-outline
+    code: '0xe025'
+    search: []
+    uid: a35d04cc15ef880d9c33a10bf96f185d
+  -
     css: backspace
-    code: 0x2728
+    code: '0xe026'
     search: []
-  - uid: 2ee5270b8bb64fe79fe8127a302d75e1
+    uid: 877ecf88c0511d1ecbb4d491abfd2928
+  -
     css: battery-charge
-    code: 0x2729
+    code: '0xe027'
     search: []
-  - uid: 4746b000c4a646a4a32c37da49d178a3
+    uid: 2dac378422ff7c5907bb176665835c9f
+  -
     css: battery-full
-    code: 0x272a
+    code: '0xe028'
     search: []
-  - uid: 91e00849ea4b4bf0bb5c2ad60d4da6aa
+    uid: 1f67de6954500e7b8d6d437e5a556a80
+  -
     css: battery-high
-    code: 0x272b
+    code: '0xe029'
     search: []
-  - uid: 8201c3379ae047fd9c38c449e428477e
+    uid: 013f6ef705929bc048669869d260eabe
+  -
     css: battery-low
-    code: 0x272c
+    code: '0xe02a'
     search: []
-  - uid: dbc5d9d1b7f841f2be75a27b472be082
+    uid: 24d23d7fba43e36858d6c14a9ee4029b
+  -
     css: battery-mid
-    code: 0x272d
+    code: '0xe02b'
     search: []
-  - uid: 761608d879ff49ed8fb2c80ee6ce71aa
+    uid: 1a5fb72029e1d7b54c1cd276cdf14e55
+  -
     css: beaker
-    code: 0x272e
+    code: '0xe02c'
     search: []
-  - uid: d97a161538b0469e9ef9f0c5911aa40d
+    uid: abdf3520138709a6db0a9c69fc2eaf5f
+  -
     css: beer
-    code: 0x272f
+    code: '0xe02d'
     search: []
-  - uid: aef7aaee06164fa993bf6ecda631c315
+    uid: 3918812a26d5a659d67dac4ed1392c6c
+  -
     css: bell
-    code: 0x2730
+    code: '0xe02e'
     search: []
-  - uid: b716a9d6c19f4204b61f2c055cf64275
+    uid: 3ef768faa6e9ebcc254d65b3d48cbf95
+  -
     css: book
-    code: 0x2731
+    code: '0xe02f'
     search: []
-  - uid: ae2108466e70400b91d85a76f7fab017
+    uid: 051e0cba93c5dcd17ca20143fc9ad066
+  -
     css: bookmark
-    code: 0x2732
+    code: '0xe030'
     search: []
-  - uid: 62daf7a5baef41be9f93ea18f5d4c0a0
+    uid: 14a4c3f531354758e4d79886971145bf
+  -
     css: briefcase
-    code: 0x2733
+    code: '0xe031'
     search: []
-  - uid: 72c653abb80e4343af0bdbd435b70628
+    uid: d39478b0af8da07ac66add398a2c645f
+  -
     css: brush
-    code: 0x2734
+    code: '0xe032'
     search: []
-  - uid: 6d6a2e74c6414f98ba74e3db16ef7705
+    uid: 23d47b50c5266a428e2915dedf113b29
+  -
     css: business-card
-    code: 0x2735
+    code: '0xe033'
     search: []
-  - uid: 8ec355a1bd17451bbac513d9dac25142
+    uid: c05b16c3028c1ef3b4b99f48999b4e63
+  -
     css: calculator
-    code: 0x2736
+    code: '0xe034'
     search: []
-  - uid: 75bd3c103536437a8bafa0e2f502dc04
+    uid: a8477b015465f79879fcebfc6921f2a1
+  -
+    css: calender-outline
+    code: '0xe035'
+    search: []
+    uid: f353af6f7726ffb889a78e247259d882
+  -
     css: calender
-    code: 0x2737
+    code: '0xe036'
     search: []
-  - uid: 81957220fdd94585ac9d492072ed5e1f
+    uid: 419bb169b48e8372d728df2110fcf11a
+  -
+    css: camera-outline
+    code: '0xe037'
+    search: []
+    uid: 232424cd5992744a397a99f70e6648fb
+  -
     css: camera
-    code: 0x2738
+    code: '0xe038'
     search: []
-  - uid: 833f0bee73034187a1e5d7d62225d0f6
+    uid: 8b38d0e5ece878a4939a4b29b0d94946
+  -
+    css: cancel-outline
+    code: '0xe039'
+    search: []
+    uid: 6c62139042407c04c84f49884502e7a9
+  -
+    css: cancel
+    code: '0xe03a'
+    search: []
+    uid: b1e675d61b8c8898180dcc2d5a770b7d
+  -
+    css: chart-area-outline
+    code: '0xe03b'
+    search: []
+    uid: 8fd5e061d6f3b50a6849a978c25286f5
+  -
     css: chart-area
-    code: 0x2739
+    code: '0xe03c'
     search: []
-  - uid: 5832584229024bbaa7fb58de3161cee2
+    uid: 8ad0718802a1d7838bf010d58f0d41c8
+  -
+    css: chart-bar-outline
+    code: '0xe03d'
+    search: []
+    uid: 64b293804d20f0670f6192b8ee7a1e3a
+  -
     css: chart-bar
-    code: 0x273a
+    code: '0xe03e'
     search: []
-  - uid: 652f983ef442468e8d75274418230bea
+    uid: 2bdf15dded894c2d36966fed87f6aaf9
+  -
+    css: chart-line-outline
+    code: '0xe03f'
+    search: []
+    uid: 240ad92c6e81ba7605b261385b83ee97
+  -
     css: chart-line
-    code: 0x273b
+    code: '0xe040'
     search: []
-  - uid: 79abf44d2bc7407cb82da2e44eb76195
+    uid: 36aac5b9d6e4fbd77db7dacfcc847983
+  -
+    css: chart-pie-outline
+    code: '0xe041'
+    search: []
+    uid: b8101d80403a6fe9a2aab52e2dce32ab
+  -
     css: chart-pie
-    code: 0x273c
+    code: '0xe042'
     search: []
-  - uid: d0dc86be39bf4c7dbaa040e889353cc5
-    css: chat-typing
-    code: 0x273d
+    uid: c4980bbcbb37ba49652deedd76800fdf
+  -
+    css: chevron-left-outline
+    code: '0xe043'
     search: []
-  - uid: d067143edab14ca8b908ea9f9ac8dca6
+    uid: 21399f90959affffeccdc2d6fcaa2337
+  -
     css: chevron-left
-    code: 0x273e
+    code: '0xe044'
     search: []
-  - uid: 7238ab9b2b104e118cabd5287ebd00cf
+    uid: c1c78e00e36dab34c2c04b2017e316f6
+  -
+    css: chevron-right-outline
+    code: '0xe045'
+    search: []
+    uid: be5990d7733fb30a78a22a3e7efd267d
+  -
     css: chevron-right
-    code: 0x273f
+    code: '0xe046'
     search: []
-  - uid: 4c6c397bd5e84bac8a2b1dbd80c4fa10
+    uid: e6dba4673154f5218bccb00c44750d0a
+  -
     css: clipboard
-    code: 0x2740
+    code: '0xe047'
     search: []
-  - uid: 0b24b308aa28455ba202e36b96169f0b
+    uid: a632b9fb6a3b858c6b139eedde38f82d
+  -
     css: cloud-storage
-    code: 0x2741
+    code: '0xe048'
     search: []
-  - uid: 06d55600d03c4e46ad640ebc8ce7e982
+    uid: 3db9212aa786d3cde9c9524f43fb2435
+  -
+    css: code-outline
+    code: '0xe049'
+    search: []
+    uid: 7e091c5aa1b7242e3973b3ab820d9407
+  -
     css: code
-    code: 0x2742
+    code: '0xe04a'
     search: []
-  - uid: bd11f9d8817245799117ba0a2287edae
+    uid: f97bf05cf8bb21f7163068700f682aed
+  -
     css: coffee
-    code: 0x2743
+    code: '0xe04b'
     search: []
-  - uid: c41816dc03944f7e89159ffbb5a7ab90
+    uid: bbba6d4f00e7d49161977d447b87103c
+  -
+    css: cog-outline
+    code: '0xe04c'
+    search: []
+    uid: a5cdfcad627fa9989aff3aef047bce33
+  -
     css: cog
-    code: 0x2744
+    code: '0xe04d'
     search: []
-  - uid: 239c6249d9404d90b0103fbfd8f1375d
+    uid: e6fbb39f3633aae214c410aff2f33ad0
+  -
     css: compass
-    code: 0x2745
+    code: '0xe04e'
     search: []
-  - uid: 4dd58d174cb143a0bd79db081d4d4a1b
+    uid: 0706d4edd4a2dd3e99cb2cece005f0d0
+  -
     css: contacts
-    code: 0x2746
+    code: '0xe04f'
     search: []
-  - uid: 68463a688d6a4bf388dd0ccabf0821f6
+    uid: 5b70bec17978d8990cb4c311553a0ffc
+  -
     css: credit-card
-    code: 0x2747
+    code: '0xe050'
     search: []
-  - uid: 4a38aec328394774b87333fcaf7afadf
+    uid: f867f47d44df55135a96dc966a93eead
+  -
+    css: cross
+    code: '0xe051'
+    search: []
+    uid: f2223286bc2850a3a562f1b7cba2c3a4
+  -
     css: database
-    code: 0x2748
+    code: '0xe052'
     search: []
-  - uid: be51654928274a9883cd94f418f44a84
+    uid: bcb228ef3be210d49c6fabc50b08a7c6
+  -
+    css: delete-outline
+    code: '0xe053'
+    search: []
+    uid: a5e396d2062af69c79eb9f832041ef32
+  -
     css: delete
-    code: 0x2749
+    code: '0xe054'
     search: []
-  - uid: 3a7cbcd9c57c40f8a82ea1f904c9b869
+    uid: 6fb8bed030e5e5c265d990bf6dc6ed7a
+  -
     css: device-desktop
-    code: 0x274a
+    code: '0xe055'
     search: []
-  - uid: 40307788aff0494cb09ad1e4136099a4
+    uid: 8f3c1d31754afae53030de50cb9a4dac
+  -
     css: device-laptop
-    code: 0x274b
+    code: '0xe056'
     search: []
-  - uid: 79da8747f37e4022b90d3343e49e7cca
+    uid: 8c2f633f6c33dc5167e3794f1c4ba73e
+  -
     css: device-phone
-    code: 0x274c
+    code: '0xe057'
     search: []
-  - uid: a920666f9461427c82e5e518c56952a8
+    uid: e2db5c535f1bad887271a434d88ff59c
+  -
     css: device-tablet
-    code: 0x274d
+    code: '0xe058'
     search: []
-  - uid: 2385255ea9da4df392699080a4c4f93a
+    uid: 53952ccdda25615f3ad4497fe2870be4
+  -
     css: directions
-    code: 0x274e
+    code: '0xe059'
     search: []
-  - uid: 0ac1aa6f5be240eea5ea9bd29a9a292f
+    uid: 7fa4551464cad8bdece4219c00f423ab
+  -
+    css: divide-outline
+    code: '0xe05a'
+    search: []
+    uid: bb8ad39358528f7643452eed18a402ed
+  -
     css: divide
-    code: 0x274f
+    code: '0xe05b'
     search: []
-  - uid: 766d96be9b7348f9a26e977d96b5a2b4
+    uid: e3dca15a26327843df3130e09bbd1343
+  -
     css: document-add
-    code: 0x2750
+    code: '0xe05c'
     search: []
-  - uid: 2542f7dfd1fa411ebe0f7d95fe4d3630
+    uid: b398f5ac06b8f03c104e18b8ed5cf678
+  -
     css: document-delete
-    code: 0x2751
+    code: '0xe05d'
     search: []
-  - uid: 7c449fbd473d44a1808b3c6925ce319a
+    uid: 21fc331108150938af40509a909eb76d
+  -
     css: document-text
-    code: 0x2752
+    code: '0xe05e'
     search: []
-  - uid: b5f7c6010d3447e39aee90777e871e55
+    uid: 3ff06e538096cde8aeeab08bdb0f773a
+  -
     css: document
-    code: 0x2753
+    code: '0xe05f'
     search: []
-  - uid: ce34443a806f49cd9b9a67e0461ee2a1
+    uid: 69ec1e73b5fc55506a62fbb4d2babf1f
+  -
+    css: download-outline
+    code: '0xe060'
+    search: []
+    uid: 77209f31543f2d9392719c3d02a6249e
+  -
     css: download
-    code: 0x2754
+    code: '0xe061'
     search: []
-  - uid: 0de03f3bab5e4f8d916c57f120ef26bf
+    uid: 7d143de27f38226a99d2283214792684
+  -
     css: edit
-    code: 0x2755
+    code: '0xe062'
     search: []
-  - uid: 5e223bfc72a14c5295a63ff0d850c750
+    uid: 4b92b58998b139a042ae79af5336518b
+  -
+    css: eject-outline
+    code: '0xe063'
+    search: []
+    uid: 49e077b5b0bc6362c76be5ce9ad2add2
+  -
     css: eject
-    code: 0x2756
+    code: '0xe064'
     search: []
-  - uid: 765918ba5773482082e4d3ea3149fc8e
+    uid: 903366f3d260127bc983542fd528812e
+  -
+    css: equals-outline
+    code: '0xe065'
+    search: []
+    uid: 5e067bd9af10eab17b0ef4fbc091b241
+  -
     css: equals
-    code: 0x2757
+    code: '0xe066'
     search: []
-  - uid: 6c61af2ad0e944e4abcbdd33cc03f49d
+    uid: a6bac1bb6bf6f48b16db867d1b12e869
+  -
+    css: export-outline
+    code: '0xe067'
+    search: []
+    uid: d5bb0070c399c06f1defb8b3cff402fa
+  -
     css: export
-    code: 0x2758
+    code: '0xe068'
     search: []
-  - uid: 569a1a05bc6144aabb39b34e574247f7
+    uid: ec6d3b00c6c8086680b8e5002f123d8a
+  -
+    css: eye-outline
+    code: '0xe069'
+    search: []
+    uid: 03cfd9c2a99a86b681ce67ded77d1f91
+  -
     css: eye
-    code: 0x2759
+    code: '0xe06a'
     search: []
-  - uid: 240e43d9f0784df4a6e3c2c47bfd6454
+    uid: ec1c8369643fb8eb15b5edb46d206545
+  -
     css: feather
-    code: 0x275a
+    code: '0xe06b'
     search: []
-  - uid: a4164172c4e7498b9777c8fd38891b54
+    uid: bffbd9d54df202d5d0617bf16e331671
+  -
     css: film
-    code: 0x275b
+    code: '0xe06c'
     search: []
-  - uid: 73ec99a0941c474f99905aaf1fca365d
+    uid: 55f2e635278775cf48b3ca4a9228c67f
+  -
+    css: flag-outline
+    code: '0xe06d'
+    search: []
+    uid: 5af84f5557e2778893a9f6768c0f70a4
+  -
     css: flag
-    code: 0x275c
+    code: '0xe06e'
     search: []
-  - uid: a045fa358b494f8384f211fde83042fe
+    uid: ff5b999bfe1ab32591a880c8a503db5d
+  -
+    css: flash-outline
+    code: '0xe06f'
+    search: []
+    uid: 811f4915326c1177d70692010df3c4f3
+  -
     css: flash
-    code: 0x275d
+    code: '0xe070'
     search: []
-  - uid: 804a7ee524984372b58435472f8890d5
+    uid: 84af7a8d280cf04566787ddd6d3f205e
+  -
+    css: flow-children
+    code: '0xe071'
+    search: []
+    uid: e551b592fe9a8377e5a4d821eaee1761
+  -
+    css: flow-merge
+    code: '0xe072'
+    search: []
+    uid: 3ff8c41b1d14a9c179438ebea583485f
+  -
+    css: flow-parallel
+    code: '0xe073'
+    search: []
+    uid: 24652f02c74e1a6ff2cbe0d9327970a3
+  -
+    css: flow-switch
+    code: '0xe074'
+    search: []
+    uid: dab49adb62aa739a650995ceab18a8f5
+  -
     css: folder-add
-    code: 0x275e
+    code: '0xe075'
     search: []
-  - uid: 2dff850acd6e4d6abf0740ad32acbe36
+    uid: bf90706317f0d31f735d8246788b242e
+  -
     css: folder-delete
-    code: 0x275f
+    code: '0xe076'
     search: []
-  - uid: d6a3eb0f386740d289b125b516fe00ac
+    uid: 7b868c549d5e5fed298afa597d15e48a
+  -
     css: folder
-    code: 0x2760
+    code: '0xe077'
     search: []
-  - uid: b888089a77f546bda4763722aecfdccc
+    uid: d61834fbf1fb1ef603267ca94d2bef8c
+  -
     css: gift
-    code: 0x2761
+    code: '0xe078'
     search: []
-  - uid: cf1b26bab78f4dd0b7f17c4594aa6132
+    uid: e1e4eb1d23126bde9a4c884428cb3578
+  -
+    css: globe-outline
+    code: '0xe079'
+    search: []
+    uid: 4e7643a046c164b3ee1db8170dfbed15
+  -
     css: globe
-    code: 0x2762
+    code: '0xe07a'
     search: []
-  - uid: 1b8ec770ce3f40098b6c70208dbb60e1
+    uid: 2790b2c385ca93407e1ce6e91561e7eb
+  -
+    css: group-outline
+    code: '0xe07b'
+    search: []
+    uid: e7f187899dab8935f0f9c39c32dbbb9c
+  -
     css: group
-    code: 0x2763
+    code: '0xe07c'
     search: []
-  - uid: 8ca968c0154449d78f9d48aea35ccf8e
+    uid: a0e90437e30461b2d2ff1ee10db713f9
+  -
     css: headphones
-    code: 0x2764
+    code: '0xe07d'
     search: []
-  - uid: a27c0197e1c249b9af6d132adb11c50f
+    uid: 4af5376daf99400c4224e3ac38c4d660
+  -
+    css: heart-outline
+    code: '0xe07e'
+    search: []
+    uid: 899d3be87ed463a9af4363a3c2f3c8ba
+  -
     css: heart
-    code: 0x2765
+    code: '0xe07f'
     search: []
-  - uid: 5c7627271638483bb4dab2f9d3ab063d
+    uid: 568ac0e17b29b7f08b0efe378f8d702d
+  -
+    css: home-outline
+    code: '0xe080'
+    search: []
+    uid: 437bc998725912f48f479836add171f5
+  -
     css: home
-    code: 0x2766
+    code: '0xe081'
     search: []
-  - uid: 2379acbb8eec4b45a987409b554487d0
+    uid: ff73d9d19b5912ef835cab7315225850
+  -
+    css: image-outline
+    code: '0xe082'
+    search: []
+    uid: 01241833f76ba17135f86e2ba434fb0c
+  -
     css: image
-    code: 0x2767
+    code: '0xe083'
     search: []
-  - uid: 88a1e0841f734dbda996fa401a20b20c
+    uid: 1d09b3925dfb315a348c954752a4803c
+  -
+    css: infinity-outline
+    code: '0xe084'
+    search: []
+    uid: 3130f96fe754c5f004c51a1415b1b5be
+  -
     css: infinity
-    code: 0x2768
+    code: '0xe085'
     search: []
-  - uid: a8bf621b9ca94d799fce58d528309514
+    uid: 7472c7e3dcf4e25c90f163eb983d71ae
+  -
+    css: info-large-outline
+    code: '0xe086'
+    search: []
+    uid: 1bb32601c6f494c5ad72b84b2e19c3b9
+  -
     css: info-large
-    code: 0x2769
+    code: '0xe087'
     search: []
-  - uid: 131dbf64d4a84b78acd48b1a1b7c22f1
+    uid: a143fae683d29d4f763fa3faada2c580
+  -
+    css: info-outline
+    code: '0xe088'
+    search: []
+    uid: 9063f99b468bbe8177b6f4f2e404d674
+  -
     css: info
-    code: 0x276a
+    code: '0xe089'
     search: []
-  - uid: af950a8ce9864b6d8c1134a727152656
+    uid: 8277679b0597f86c6e830a8b3f6b16e1
+  -
+    css: input-checked-outline
+    code: '0xe08a'
+    search: []
+    uid: 12193040fb766730ceb3e889ac8fa857
+  -
     css: input-checked
-    code: 0x276b
+    code: '0xe08b'
     search: []
-  - uid: a2bdd89b3d1442f78f6f13b9e56a9d1e
+    uid: 8e696a81454dda46e3176caac2fa3bcd
+  -
+    css: key-outline
+    code: '0xe08c'
+    search: []
+    uid: 72ab0fde5bdede2ce62606d0f63d9207
+  -
     css: key
-    code: 0x276c
+    code: '0xe08d'
     search: []
-  - uid: 3ca30ff0b2904f508ff79939eb30d08f
+    uid: f87723bef385d1c2732e3d3c33921f92
+  -
     css: leaf
-    code: 0x276d
+    code: '0xe08e'
     search: []
-  - uid: 88acbaf7046d4c34a53845a39ccdbf8a
+    uid: 17a1801e4044f5ce08376cd8a0c20e7c
+  -
     css: lightbulb
-    code: 0x276e
+    code: '0xe08f'
     search: []
-  - uid: 729247152802412f99ec09dff20a9080
+    uid: 4987293552bd48bbb42d900ca0f5509e
+  -
+    css: link-outline
+    code: '0xe090'
+    search: []
+    uid: dfad1207ce7ee6032e5508204e9bd58c
+  -
     css: link
-    code: 0x276f
+    code: '0xe091'
     search: []
-  - uid: 01a57d428814453f974ef85068c4fd61
-    css: location-services
-    code: 0x2770
+    uid: f04696d867c5a92e9162abed1d4722b5
+  -
+    css: location-arrow-outline
+    code: '0xe092'
     search: []
-  - uid: 27f33249ddc0416c837c7d87f78aa1de
+    uid: f6b098896c01a0ff45e75ce8f456e085
+  -
+    css: location-arrow
+    code: '0xe093'
+    search: []
+    uid: 5c03c8c1ce1addd94ca1a2325990c120
+  -
+    css: location-outline
+    code: '0xe094'
+    search: []
+    uid: 7e2082752b48ac87a9c8830e39a553fe
+  -
+    css: location
+    code: '0xe095'
+    search: []
+    uid: 15535abd15a4da4a1705178e1fafa2ba
+  -
+    css: lock-closed-outline
+    code: '0xe096'
+    search: []
+    uid: 4a66327c87e4b8b7d5787a49016e8e2c
+  -
     css: lock-closed
-    code: 0x2771
+    code: '0xe097'
     search: []
-  - uid: ca6dce45090041b9ab311ae52035376b
+    uid: 93151818f847c33e22f8566da05bbb44
+  -
+    css: lock-open-outline
+    code: '0xe098'
+    search: []
+    uid: 6ba37512973c039e2582a4ac0307eb59
+  -
     css: lock-open
-    code: 0x2772
+    code: '0xe099'
     search: []
-  - uid: 8dec08996ddf4316968d0d0425edeab7
+    uid: 9fa75b5e0e60082c68b201428bfbe014
+  -
     css: mail
-    code: 0x2773
+    code: '0xe09a'
     search: []
-  - uid: 10c3395b49ee40dca48793f0558d375d
-    css: map-location
-    code: 0x2774
-    search: []
-  - uid: 9770e3c842a74d27b13296ecbb7faed2
+    uid: 933a79c532cbc5e33e2eb27866f7d5c1
+  -
     css: map
-    code: 0x2775
+    code: '0xe09b'
     search: []
-  - uid: 02ca9d57b8694317a120a93732189304
+    uid: 64ef895702d1c36bb1f641315434f05a
+  -
+    css: media-eject-outline
+    code: '0xe09c'
+    search: []
+    uid: ad2471ad92c5c1d329566069073ee7b2
+  -
     css: media-eject
-    code: 0x2776
+    code: '0xe09d'
     search: []
-  - uid: aa35a1be32d24dd3bfcd0df2b6d56604
+    uid: 827e3c5f638ea443df6651c8d278f333
+  -
+    css: media-fast-forward-outline
+    code: '0xe09e'
+    search: []
+    uid: b42c42a7965bb6393d2735c43d8ec3cc
+  -
     css: media-fast-forward
-    code: 0x2777
+    code: '0xe09f'
     search: []
-  - uid: 0de65fd4a07140078bd547184b1b10cb
+    uid: ce17182d3cea96563de1df7e1bde894d
+  -
+    css: media-pause-outline
+    code: '0xe0a0'
+    search: []
+    uid: 485a5e6af4ac110eb48d56bc88821812
+  -
+    css: media-pause
+    code: '0xe0a1'
+    search: []
+    uid: 7e998d159208ecff3be6e81a9091acd2
+  -
+    css: media-play-outline
+    code: '0xe0a2'
+    search: []
+    uid: 680ff81efff06e831851083640ed3aca
+  -
     css: media-play
-    code: 0x2778
+    code: '0xe0a3'
     search: []
-  - uid: 2efdfe797a494c80ad825c101958ec07
+    uid: ac349b7d338a345ac8a3a1636b7bc9c8
+  -
+    css: media-record-outline
+    code: '0xe0a4'
+    search: []
+    uid: bc00e8972f42c469e9d1fa4b4e79f769
+  -
     css: media-record
-    code: 0x2779
+    code: '0xe0a5'
     search: []
-  - uid: c8afb77e538f46b7a7479cbc5e3bb158
+    uid: 0ffb4f7e6a240ffb6f79904da74520b7
+  -
+    css: media-rewind-outline
+    code: '0xe0a6'
+    search: []
+    uid: b4624bf7befba750746cdbe117bac520
+  -
     css: media-rewind
-    code: 0x277a
+    code: '0xe0a7'
     search: []
-  - uid: 9a0c29d7fb084bda8c3ff7a3f9e0ac11
+    uid: 019a40f1922c40cfc2aca58c327e4814
+  -
+    css: media-stop-outline
+    code: '0xe0a8'
+    search: []
+    uid: 62487aa2351d297d6055858e3e73ddac
+  -
     css: media-stop
-    code: 0x277b
+    code: '0xe0a9'
     search: []
-  - uid: 82d71cfa84f245ae93d284f9da1484d3
-    css: menu
-    code: 0x277c
+    uid: 27461e46292e76b8524a5f9de9fdd54c
+  -
+    css: message-typing
+    code: '0xe0aa'
     search: []
-  - uid: 0dd00befb4e84c2d81be874b35ef1b21
+    uid: 1facc04b3fced23a92da9faf6be0c8b8
+  -
     css: message
-    code: 0x277d
+    code: '0xe0ab'
     search: []
-  - uid: 6e93328ca132439f9b4ea92620753669
+    uid: 9dac1e7870ab09fa1975c1e6e8a5065d
+  -
     css: messages
-    code: 0x277e
+    code: '0xe0ac'
     search: []
-  - uid: 2d8d54ff463b432a8b3407b5a3796812
+    uid: c2a9ad469244b0b41ded6cf03436bd26
+  -
+    css: microphone-outline
+    code: '0xe0ad'
+    search: []
+    uid: 6abd30c3a0fabea26b32711983af25e0
+  -
     css: microphone
-    code: 0x277f
+    code: '0xe0ae'
     search: []
-  - uid: a778ec7a3f084bb59c5fa2f895304b5b
+    uid: 8112941351c14ce6a043fbd9c18ae04e
+  -
+    css: minus-outline
+    code: '0xe0af'
+    search: []
+    uid: dffdb247145f1f049ad428d9fe418557
+  -
     css: minus
-    code: 0x2780
+    code: '0xe0b0'
     search: []
-  - uid: 2cdd44729aad4e328140c0707e84bb06
+    uid: 2ca82beecba66e4fc5bc4b4d811674a7
+  -
     css: news
-    code: 0x2781
+    code: '0xe0b1'
     search: []
-  - uid: 346292550ccb4102ab6360e1db642847
+    uid: 804c8d09e0bc6b2ef20786a1bb0a14cc
+  -
+    css: notes-outline
+    code: '0xe0b2'
+    search: []
+    uid: 08d85980204c3439ef2ae1084c448af9
+  -
     css: notes
-    code: 0x2782
+    code: '0xe0b3'
     search: []
-  - uid: e01e2566135641758dada514633ca6f3
+    uid: 4c9e43b456b9b698019f7e1ae82b0114
+  -
     css: pen
-    code: 0x2783
+    code: '0xe0b4'
     search: []
-  - uid: 40372134a99f4905a6e1f0f5261aa330
+    uid: 7107f6313f1481b1854a8db0b9cb3ceb
+  -
     css: pencil
-    code: 0x2784
+    code: '0xe0b5'
     search: []
-  - uid: ff11d8da9b19466bbb7c2dd765f976f7
+    uid: 7c07ea7f75b509ad7f011d68ea49e1cd
+  -
+    css: phone-outline
+    code: '0xe0b6'
+    search: []
+    uid: f12fdf196bf7c7314afda46fb224d044
+  -
     css: phone
-    code: 0x2785
+    code: '0xe0b7'
     search: []
-  - uid: dc1fc720b0fd4f0294f2c76d56312969
+    uid: ba8637a1f5323f5171b0cd5ea1b931da
+  -
+    css: pi-outline
+    code: '0xe0b8'
+    search: []
+    uid: 9eb8f554302c187bbe9a7b5b3d2d8412
+  -
     css: pi
-    code: 0x2786
+    code: '0xe0b9'
     search: []
-  - uid: 23c1e62af215485295b37e3910c7d9f3
+    uid: 1cf869e03b7ef9aac89f5b7c6552d7e5
+  -
+    css: pin-outline
+    code: '0xe0ba'
+    search: []
+    uid: 0c6b565cee7a787719d65db15e486de5
+  -
     css: pin
-    code: 0x2787
+    code: '0xe0bb'
     search: []
-  - uid: 698b1512170f4b28b8e78257797e3287
+    uid: 8427889835395b6619e58445c85cd3c0
+  -
     css: pipette
-    code: 0x2788
+    code: '0xe0bc'
     search: []
-  - uid: ff750058ce3445c68a97be923b81efae
+    uid: f9cdf10ca070446fa9f87aaca1a9da41
+  -
+    css: plane-outline
+    code: '0xe0bd'
+    search: []
+    uid: 26b467fe6e8205f877567a06b5b31fdc
+  -
     css: plane
-    code: 0x2789
+    code: '0xe0be'
     search: []
-  - uid: 77d5072cb15f46e98f54d9211261e5bd
+    uid: 3d5b2c266d88643f6b71cb43ebae0dc9
+  -
     css: plug
-    code: 0x278a
+    code: '0xe0bf'
     search: []
-  - uid: cf45729fe44f40938afe41612a2a8533
+    uid: 2e36aa2caccd755d0fbcac36fa8d8c48
+  -
+    css: plus-outline
+    code: '0xe0c0'
+    search: []
+    uid: d34d673b9f2244d2f6908c0fed97e336
+  -
     css: plus
-    code: 0x278b
+    code: '0xe0c1'
     search: []
-  - uid: 16ba83d4e9b541afba0b4779bde256cb
+    uid: 763405b13c565ef41e0e0690e62f82a4
+  -
+    css: point-of-interest-outline
+    code: '0xe0c2'
+    search: []
+    uid: 2d9246246e34f5982a42ad81ecf9deab
+  -
     css: point-of-interest
-    code: 0x278c
+    code: '0xe0c3'
     search: []
-  - uid: 02a10071ae4943959009ae11feea0d0f
+    uid: 305c2cf62d013d3a31d92978e8af4c6e
+  -
+    css: power-outline
+    code: '0xe0c4'
+    search: []
+    uid: c61cf4641aae6c8ae65c54ffe22e85c0
+  -
     css: power
-    code: 0x278d
+    code: '0xe0c5'
     search: []
-  - uid: 2acac8f145e94a64a69a00461d87fe9e
+    uid: 2fea1572607d954670bdb304130cc3a5
+  -
     css: printer
-    code: 0x278e
+    code: '0xe0c6'
     search: []
-  - uid: d17e71278d3e4a78b9383dbce792c640
+    uid: 53b47c3f7c3ac33d12373a98e3c37cb3
+  -
+    css: puzzle-outline
+    code: '0xe0c7'
+    search: []
+    uid: d8a8126df5cdfb704b386dbb93614b82
+  -
     css: puzzle
-    code: 0x278f
+    code: '0xe0c8'
     search: []
-  - uid: f6eb1f9ffffa4c27b5ea37185206afc7
+    uid: 0498d6f5954414dda9ea861b6ddb8fee
+  -
+    css: radar-outline
+    code: '0xe0c9'
+    search: []
+    uid: 9b0dcd851bca028f1a2f1f6319712d6e
+  -
     css: radar
-    code: 0x2790
+    code: '0xe0ca'
     search: []
-  - uid: 4797fcad549c4d698aa353b125eb3620
+    uid: bfc7d950b568e5ee5e3a70e0c552cfb4
+  -
+    css: refresh-outline
+    code: '0xe0cb'
+    search: []
+    uid: 40150306bd7463f3270f94a435585cb9
+  -
     css: refresh
-    code: 0x2791
+    code: '0xe0cc'
     search: []
-  - uid: 1009fdc04ad441fa8961897b3d5ba980
+    uid: f89b6c127939545c9861417442d749cd
+  -
+    css: rss-outline
+    code: '0xe0cd'
+    search: []
+    uid: 809f57fe8f9abe117b7fc39577ad73f2
+  -
     css: rss
-    code: 0x2792
+    code: '0xe0ce'
     search: []
-  - uid: a5d7ce9a14cf420590c9de6f49a48261
+    uid: dc3a122dd72c2a9bcef7269fe31ff8b3
+  -
+    css: scissors-outline
+    code: '0xe0cf'
+    search: []
+    uid: 665552e2636b23fb37234a13cc5a5f89
+  -
     css: scissors
-    code: 0x2793
+    code: '0xe0d0'
     search: []
-  - uid: 77efca8845c045668f50429fcd15b5c2
-    css: shopping-cart
-    code: 0x2794
-    search: []
-  - uid: 68a40e2cf84445158d353d7be080605b
+    uid: 9c23d84e2cf385b35d74b5f108278bc2
+  -
     css: shopping-bag
-    code: 0x2795
+    code: '0xe0d1'
     search: []
-  - uid: c88eecee7b9b46f783358c4fc012daa6
+    uid: 9255887f7c69bdc72d56bf97aca3b397
+  -
+    css: shopping-cart
+    code: '0xe0d2'
+    search: []
+    uid: 91b0cdc95c7d56841a1ef644730ba8d6
+  -
+    css: social-at-circular
+    code: '0xe0d3'
+    search: []
+    uid: 99f3930610606e9dcdfc2ba49df952d4
+  -
+    css: social-dribbble-circular
+    code: '0xe0d4'
+    search: []
+    uid: af4fa5a54940ced5d7fa3a556c8642e8
+  -
     css: social-dribbble
-    code: 0x2796
+    code: '0xe0d5'
     search: []
-  - uid: 049e26dcb67746cabf81df1fffc98bf5
+    uid: 01693d869ddbfa72cb883ed9dec08d36
+  -
+    css: social-facebook-circular
+    code: '0xe0d6'
+    search: []
+    uid: 871f3d97bc4b39afd483604321ab972f
+  -
     css: social-facebook
-    code: 0x2797
+    code: '0xe0d7'
     search: []
-  - uid: 77091a8f422947e4969931f8c840107d
+    uid: c95b52090fa338a679998d7a9639af9a
+  -
+    css: social-flickr-circular
+    code: '0xe0d8'
+    search: []
+    uid: 5a7aeb82cd5cc9dc237c6daa599f81c3
+  -
     css: social-flickr
-    code: 0x2798
+    code: '0xe0d9'
     search: []
-  - uid: 57f883093cf64d38806de0450bf46ddf
+    uid: 38469954897680a451b6e8c5564c0369
+  -
+    css: social-github-circular
+    code: '0xe0da'
+    search: []
+    uid: f319882449c0d0556cb6bd14d5124690
+  -
+    css: social-github
+    code: '0xe0db'
+    search: []
+    uid: e3af933a218c6bb97e63cb7c40a0469b
+  -
+    css: social-last-fm-circular
+    code: '0xe0dc'
+    search: []
+    uid: 3687e67526637c7acaee0184a34e02fd
+  -
+    css: social-last-fm
+    code: '0xe0dd'
+    search: []
+    uid: 5ce47cc9e73b4b4d9c45dc4db0fed498
+  -
+    css: social-linkedin-circular
+    code: '0xe0de'
+    search: []
+    uid: 38cb6c97f9bc4634b21df7e1245001e5
+  -
     css: social-linkedin
-    code: 0x2799
+    code: '0xe0df'
     search: []
-  - uid: 6baa59436201467fb88d921f05373001
+    uid: fd85eb8c0bfbc82fbb1602b7f0d7829e
+  -
+    css: social-pinterest-circular
+    code: '0xe0e0'
+    search: []
+    uid: b9cd33a68856172a27dcdd70428d08cd
+  -
     css: social-pinterest
-    code: 0x279a
+    code: '0xe0e1'
     search: []
-  - uid: a3a0d5e3fb5145e8a7339d2d55ca9fd6
+    uid: 5b4215b3f747e4abd2749392112a563f
+  -
+    css: social-skype-outline
+    code: '0xe0e2'
+    search: []
+    uid: 1587db1081870cb25191776a58377d4b
+  -
     css: social-skype
-    code: 0x279b
+    code: '0xe0e3'
     search: []
-  - uid: ad74f480b3c44fdfade1d4be05999c32
+    uid: d7a4172b3df95b489b475c11d24b4654
+  -
+    css: social-tumbler-circular
+    code: '0xe0e4'
+    search: []
+    uid: b6f09e68a2431bf33b2bbf7c70a37ef0
+  -
     css: social-tumbler
-    code: 0x279c
+    code: '0xe0e5'
     search: []
-  - uid: c4d4db94a5f34e4392651a3dd87da7ff
+    uid: c41023a304713371b25d12451d326448
+  -
+    css: social-twitter-circular
+    code: '0xe0e6'
+    search: []
+    uid: bf6cd08107b9d5a1fed8cfb80e408a09
+  -
     css: social-twitter
-    code: 0x279d
+    code: '0xe0e7'
     search: []
-  - uid: f52d6a1156064ec7a000324f44a26589
+    uid: f72912cdc2ad03ceabd2c7ca88db4405
+  -
+    css: social-vimeo-circular
+    code: '0xe0e8'
+    search: []
+    uid: 804dd8b28401fc21cceec3696d67de02
+  -
     css: social-vimeo
-    code: 0x279e
+    code: '0xe0e9'
     search: []
-  - uid: 7fed96525e314587a8eb6b6d1a3a7dce
+    uid: 2348056ef9eac75646aac04f9dbaa408
+  -
+    css: sort-alphabetically-outline
+    code: '0xe0ea'
+    search: []
+    uid: 8e1b1afc0f955a01cc7ffc602aa249eb
+  -
     css: sort-alphabetically
-    code: 0x279f
+    code: '0xe0eb'
     search: []
-  - uid: 6702ac9569c64707b6ada623ba02992b
+    uid: 011ad925ffde6110d3571320603c1bc8
+  -
+    css: sort-numerically-outline
+    code: '0xe0ec'
+    search: []
+    uid: 5554b62056395b8b506ddb6003f6213e
+  -
     css: sort-numerically
-    code: 0x27a0
+    code: '0xe0ed'
     search: []
-  - uid: 934891c650e544aaa0a098309e0f7ce9
+    uid: b9c2192ddfa0e5be31af7edbfb3b987f
+  -
+    css: spanner-outline
+    code: '0xe0ee'
+    search: []
+    uid: c72ebcfbe3fa56483dc97bed5d58f673
+  -
     css: spanner
-    code: 0x27a1
+    code: '0xe0ef'
     search: []
-  - uid: 724f07b89e5a4916b3e3ea50f8553c7b
+    uid: 8ec21b787f0e510dfed2b71904aecfec
+  -
+    css: star-outline
+    code: '0xe0f0'
+    search: []
+    uid: eefa868f55f81ccc954404a6323b0d6f
+  -
     css: star
-    code: 0x27a2
+    code: '0xe0f1'
     search: []
-  - uid: b4b5977312ab48ff9a134e9f7b4b2f1e
+    uid: 4d75c59d67de55759f75a008c3352ebb
+  -
+    css: starburst-outline
+    code: '0xe0f2'
+    search: []
+    uid: bc9c4823b77a8445e27670ae99dcf5f3
+  -
+    css: starburst
+    code: '0xe0f3'
+    search: []
+    uid: ef20ca2dc297bb5e1470f705599ce3c3
+  -
     css: stopwatch
-    code: 0x27a3
+    code: '0xe0f4'
     search: []
-  - uid: 867fc20e715e4b4c992c0b38e637c0aa
+    uid: 4fcf0557d2275a0dcc8dfbb6b263af01
+  -
     css: support
-    code: 0x27a4
+    code: '0xe0f5'
     search: []
-  - uid: 30016c5419de41a99bc4cb59c51036fe
-    css: tabs
-    code: 0x27a5
+    uid: 12987c69d26eb23817747c5bc8ceb2c0
+  -
+    css: tabs-outline
+    code: '0xe0f6'
     search: []
-  - uid: 976a9aa59adf474a8a0ee833ddc433a6
+    uid: 23fb17b820999a0d94dee0cab4103333
+  -
     css: tag
-    code: 0x27a6
+    code: '0xe0f7'
     search: []
-  - uid: 8e8bccc74d114b7288438671eda98299
+    uid: bd8af31ec185ba2ff18b62e4705ee098
+  -
     css: tags
-    code: 0x27a7
+    code: '0xe0f8'
     search: []
-  - uid: ef7c3629735f4a1f85374622462f0455
+    uid: 122a91007611147eb2fc5338a8e52ad3
+  -
+    css: th-large-outline
+    code: '0xe0f9'
+    search: []
+    uid: 3b98c88b04280cf11ee27d437ac6f8bc
+  -
     css: th-large
-    code: 0x27a8
+    code: '0xe0fa'
     search: []
-  - uid: 28374dea176e42cfb0e509d0ff6350f8
+    uid: ef574aa5c6e17679942a11bae807444b
+  -
+    css: th-list-outline
+    code: '0xe0fb'
+    search: []
+    uid: b44c338c2342e23f3553e9c9bb0f9b81
+  -
     css: th-list
-    code: 0x27a9
+    code: '0xe0fc'
     search: []
-  - uid: 9430acc1667a432b80cdf1f9dfbd8e13
+    uid: 435a9055238c8c506752bf86ff5d2c80
+  -
+    css: th-menu-outline
+    code: '0xe0fd'
+    search: []
+    uid: 8002ad06d14c78d13ba4a81307eadf00
+  -
+    css: th-menu
+    code: '0xe0fe'
+    search: []
+    uid: 209d3cb06cb65833bc3324ef34a62ae5
+  -
+    css: th-small-outline
+    code: '0xe0ff'
+    search: []
+    uid: 20004fa5dd226a69867926b38c565bd6
+  -
     css: th-small
-    code: 0x27aa
+    code: '0xe100'
     search: []
-  - uid: c4ce8c82074c43d39ed56f59be14d864
+    uid: 1f11f573e6de730b03f0c2f42af68835
+  -
     css: thermometer
-    code: 0x27ab
+    code: '0xe101'
     search: []
-  - uid: dbb88a8c2f2d469fa49f2661ddf5e9a7
+    uid: b75f0ee7e9a8411f2337e6b7c3b8b73b
+  -
     css: thumbs-down
-    code: 0x27ac
+    code: '0xe102'
     search: []
-  - uid: aea6a89697b84b4abc75ee41f2c751f7
+    uid: 754220581799c8629741268781e2e09e
+  -
     css: thumbs-up
-    code: 0x27ad
+    code: '0xe103'
     search: []
-  - uid: 12938a780bd640d19f9622b390bdf8d7
+    uid: 0ab6cdc560b92a2f9105ac2043a842ac
+  -
+    css: tick-outline
+    code: '0xe104'
+    search: []
+    uid: 4d1f80a8052e94ec3f2e70e3453f955a
+  -
     css: tick
-    code: 0x27ae
+    code: '0xe105'
     search: []
-  - uid: b1641b0699464abfa10e387cfd62c186
+    uid: a382b215246bb15fd0c5e7b92b3f5831
+  -
     css: ticket
-    code: 0x27af
+    code: '0xe106'
     search: []
-  - uid: 834ee94b1a8e48e6a0aa28d5594d5be5
+    uid: 863ea818f2dad7a11a6f330e59b1cf74
+  -
     css: time
-    code: 0x27b0
+    code: '0xe107'
     search: []
-  - uid: 928298ce69d6466bbe3dafb4ac5e6af3
+    uid: 0e209dd752d0cd76b544d8fd58811d07
+  -
+    css: times-outline
+    code: '0xe108'
+    search: []
+    uid: 56e40883bee23ca24679a8b0e34455f7
+  -
     css: times
-    code: 0x27b1
+    code: '0xe109'
     search: []
-  - uid: 3a13096407064ec28f2c4ddc38781a21
+    uid: 074919a029805281c9ca0e41f374eaa4
+  -
     css: trash
-    code: 0x27b2
+    code: '0xe10a'
     search: []
-  - uid: 74215b6da5ef4c09b49d9f69837e30ae
+    uid: 23bc19848686c1ea2492127c990c8f53
+  -
     css: tree
-    code: 0x27b3
+    code: '0xe10b'
     search: []
-  - uid: b1193155fcc245d0a651195a699da5d3
+    uid: 6f5ec186bf52e65eb374f15decfb922d
+  -
+    css: upload-outline
+    code: '0xe10c'
+    search: []
+    uid: 7c73e9a9b8e47ccaa17f48a1669805b5
+  -
     css: upload
-    code: 0x27b4
+    code: '0xe10d'
     search: []
-  - uid: 7e2815c455a74c1d8e8833fdd2f4a831
+    uid: 43a9912f339b5a00dcb7cd478b60f316
+  -
+    css: user-add-outline
+    code: '0xe10e'
+    search: []
+    uid: c61194c78356ffb3f2a0ffc88d359058
+  -
     css: user-add
-    code: 0x27b5
+    code: '0xe10f'
     search: []
-  - uid: b36365a642834029a5000cd85cbbaf5e
+    uid: b50f3c9126e5b011104ea76fb2f08eb6
+  -
+    css: user-delete-outline
+    code: '0xe110'
+    search: []
+    uid: 9e4028823a293e4e897c9072829f9eee
+  -
     css: user-delete
-    code: 0x27b6
+    code: '0xe111'
     search: []
-  - uid: a8b77009a1644849a6096d0ca5418cd1
+    uid: d2ee01475c0dad883c0ee588ef6fa8d8
+  -
+    css: user-outline
+    code: '0xe112'
+    search: []
+    uid: aac75ff40f18fdefa115f05075b158db
+  -
     css: user
-    code: 0x27b7
+    code: '0xe113'
     search: []
-  - uid: fa2e45679ed447448c91798d37d47009
+    uid: 965c2daa7fd4559c7412e8b6bff41cad
+  -
+    css: video-outline
+    code: '0xe114'
+    search: []
+    uid: 37f05ee0e8a520481aeed41d8dd17484
+  -
     css: video
-    code: 0x27b8
+    code: '0xe115'
     search: []
-  - uid: 7301d2d3051849959eb4f50a7e535dcd
+    uid: e545c208ae3583356836cc4be009f365
+  -
+    css: volume-down
+    code: '0xe116'
+    search: []
+    uid: 084b70febd2d812fec456c929787320d
+  -
     css: volume-mute
-    code: 0x27b9
+    code: '0xe117'
     search: []
-  - uid: e6f0280045fb4f43aa951a9eb51e55b4
+    uid: f7e1d6be3be576d2debeb4d7eac0e0e0
+  -
     css: volume-up
-    code: 0x27ba
+    code: '0xe118'
     search: []
-  - uid: 3ef9f75f5e094d23b8b56a14d110cafb
+    uid: c47ceaa0f921f06b1ba6147df92bd7b7
+  -
     css: volume
-    code: 0x27bb
+    code: '0xe119'
     search: []
-  - uid: de723df923894cd69a9b12ced0502d41
-    css: voume-down
-    code: 0x27bc
+    uid: 85e9faec4c2a7c3550f2e80a9d498685
+  -
+    css: warning-outline
+    code: '0xe11a'
     search: []
-  - uid: fb461b00f893458a8dd3be478821556a
+    uid: d4cde232cd1442bbd7aa8f6b794c9891
+  -
     css: warning
-    code: 0x27bd
+    code: '0xe11b'
     search: []
-  - uid: 85fa298639504ff9887c56fca42e0963
+    uid: 2ad9721202c788141f73e9d9b9c72740
+  -
     css: watch
-    code: 0x27be
+    code: '0xe11c'
     search: []
-  - uid: 10246edc330d4f108376713f1ad0828b
+    uid: 209ad3ea7ac1bdd6d8797b05d8922b58
+  -
+    css: waves-outline
+    code: '0xe11d'
+    search: []
+    uid: cf89e254c3678b62cca4ba91837d90c7
+  -
     css: waves
-    code: 0x27bf
+    code: '0xe11e'
     search: []
-  - uid: bd61193a86884a0e905fa0d7df039d56
+    uid: 7b8a15ac1e78271169400115a6dc6470
+  -
     css: weather-cloudy
-    code: 0x27c0
+    code: '0xe11f'
     search: []
-  - uid: 16b3dc50cd2c4d49b8c524da98b50b8a
+    uid: b3beec17956242941de2250cfad2df73
+  -
     css: weather-downpour
-    code: 0x27c1
+    code: '0xe120'
     search: []
-  - uid: bbe83d3cc12f4e4f91564d8a2499bc82
+    uid: f1d4dff852421e3dc49d6af0b287d7a9
+  -
     css: weather-night
-    code: 0x27c2
+    code: '0xe121'
     search: []
-  - uid: 27f0771e0281493e80f89952aa2a8d0e
+    uid: ae9a8ed0361e90207c763c247d48a075
+  -
     css: weather-partly-sunny
-    code: 0x27c3
+    code: '0xe122'
     search: []
-  - uid: 95ad03132f37436c8ca0be52b446c0fc
+    uid: fa49f2a686de641bc214066e3fd0bbeb
+  -
     css: weather-shower
-    code: 0x27c4
+    code: '0xe123'
     search: []
-  - uid: cf80cdab4fc34d7bbe8435829bd0b94c
+    uid: 87c55df848d4d3761c2ed442a9a7251c
+  -
     css: weather-snow
-    code: 0x27c5
+    code: '0xe124'
     search: []
-  - uid: b538d0367f8a4ef9b8c63cac43850747
+    uid: 09174e4ec8b6956c859828e39e705c76
+  -
     css: weather-stormy
-    code: 0x27c6
+    code: '0xe125'
     search: []
-  - uid: a822f3640b2c4698b19396d1351e431c
+    uid: 20214999c1b8db4290a5ae0f12922919
+  -
     css: weather-sunny
-    code: 0x27c7
+    code: '0xe126'
     search: []
-  - uid: 8e1d069001f8449fac30a82c253d713a
+    uid: 1b95ae3b7dfade9e47a07606363faade
+  -
     css: weather-windy-cloudy
-    code: 0x27c8
+    code: '0xe127'
     search: []
-  - uid: 1e76357df0404c089372c40660e26ba8
+    uid: bb8fb761cfae6c3e5945ec5906da1af8
+  -
     css: weather-windy
-    code: 0x27c9
+    code: '0xe128'
     search: []
-  - uid: 44d49c0b7e524336b303595547e0270e
+    uid: ba83b2054387fef6280bbbf844c34129
+  -
+    css: wi-fi-outline
+    code: '0xe129'
+    search: []
+    uid: bf06fcd79c594829ddd7aa5b875777de
+  -
     css: wi-fi
-    code: 0x27ca
+    code: '0xe12a'
     search: []
-  - uid: fe3d0a9a6a0946eba681cf4de4c4da11
+    uid: 65f1ff8582110266c8270c221b03503c
+  -
     css: wine
-    code: 0x27cb
+    code: '0xe12b'
     search: []
-  - uid: 132c45f8efdd4369b62cf68a24bc35c4
+    uid: 555dedf1ec0fedab918cf805c57bc350
+  -
+    css: world-outline
+    code: '0xe12c'
+    search: []
+    uid: 72d6d38e02daef74ce869452f837f2e9
+  -
     css: world
-    code: 0x27cc
+    code: '0xe12d'
     search: []
-  - uid: 2888ecb993e14a91a845c41847ae3056
+    uid: 4683a54f13ee0ad45d20ec25cf9cf30c
+  -
+    css: zoom-in-outline
+    code: '0xe12e'
+    search: []
+    uid: 0f4cca57ec8e3b0684f238073333bea5
+  -
     css: zoom-in
-    code: 0x27cd
+    code: '0xe12f'
     search: []
-  - uid: 50d22d95a8eb4e969545e8ba76c84928
+    uid: 93f86a71bef262ecd2d4fe3e97344810
+  -
+    css: zoom-out-outline
+    code: '0xe130'
+    search: []
+    uid: 1976977fce011f05e06efe331ec4aa8d
+  -
     css: zoom-out
-    code: 0x27ce
+    code: '0xe131'
     search: []
-  - uid: 277bae765c2247d885b4566b3e46e0dc
+    uid: 492f00eb0bb24fcacf44857dff573a85
+  -
+    css: zoom-outline
+    code: '0xe132'
+    search: []
+    uid: 6e9a925a2ca3a6fa62e497474542a00d
+  -
     css: zoom
-    code: 0x27cf
+    code: '0xe133'
     search: []
+    uid: af8cab7256feb77482eb1023d941320f

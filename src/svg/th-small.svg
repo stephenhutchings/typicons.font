@@ -1,60 +1,14 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 16.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="24px" height="24px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
-<g>
-	<g>
-		<path d="M6,22H4c-1.103,0-2-0.897-2-2v-2c0-1.103,0.897-2,2-2h2c1.103,0,2,0.897,2,2v2C8,21.103,7.103,22,6,22z M6,20v1V20L6,20
-			L6,20z M4,18v2h1.997L6,18H4z"/>
-	</g>
-</g>
-<g>
-	<g>
-		<path d="M6,15H4c-1.103,0-2-0.897-2-2v-2c0-1.103,0.897-2,2-2h2c1.103,0,2,0.897,2,2v2C8,14.103,7.103,15,6,15z M6,13v1V13L6,13
-			L6,13z M4,11v2h1.997L6,11H4z"/>
-	</g>
-</g>
-<g>
-	<g>
-		<path d="M6,8H4C2.897,8,2,7.103,2,6V4c0-1.103,0.897-2,2-2h2c1.103,0,2,0.897,2,2v2C8,7.103,7.103,8,6,8z M6,6v1V6L6,6L6,6z M4,4
-			v2h1.997L6,4H4z"/>
-	</g>
-</g>
-<g>
-	<g>
-		<path d="M13,22h-2c-1.103,0-2-0.897-2-2v-2c0-1.103,0.897-2,2-2h2c1.103,0,2,0.897,2,2v2C15,21.103,14.103,22,13,22z M13,20v1V20
-			L13,20L13,20z M11,18v2h1.997L13,18H11z"/>
-	</g>
-</g>
-<g>
-	<g>
-		<path d="M13,15h-2c-1.103,0-2-0.897-2-2v-2c0-1.103,0.897-2,2-2h2c1.103,0,2,0.897,2,2v2C15,14.103,14.103,15,13,15z M13,13v1V13
-			L13,13L13,13z M11,11v2h1.997L13,11H11z"/>
-	</g>
-</g>
-<g>
-	<g>
-		<path d="M13,8h-2C9.897,8,9,7.103,9,6V4c0-1.103,0.897-2,2-2h2c1.103,0,2,0.897,2,2v2C15,7.103,14.103,8,13,8z M13,6v1V6L13,6
-			L13,6z M11,4v2h1.997L13,4H11z"/>
-	</g>
-</g>
-<g>
-	<g>
-		<path d="M20,22h-2c-1.103,0-2-0.897-2-2v-2c0-1.103,0.897-2,2-2h2c1.103,0,2,0.897,2,2v2C22,21.103,21.103,22,20,22z M20,20v1V20
-			L20,20L20,20z M18,18v2h1.997L20,18H18z"/>
-	</g>
-</g>
-<g>
-	<g>
-		<path d="M20,15h-2c-1.103,0-2-0.897-2-2v-2c0-1.103,0.897-2,2-2h2c1.103,0,2,0.897,2,2v2C22,14.103,21.103,15,20,15z M20,13v1V13
-			L20,13L20,13z M18,11v2h1.997L20,11H18z"/>
-	</g>
-</g>
-<g>
-	<g>
-		<path d="M20,8h-2c-1.103,0-2-0.897-2-2V4c0-1.103,0.897-2,2-2h2c1.103,0,2,0.897,2,2v2C22,7.103,21.103,8,20,8z M20,6v1V6L20,6
-			L20,6z M18,4v2h1.997L20,4H18z"/>
-	</g>
-</g>
+<svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" xml:space="preserve">
+<circle cx="5" cy="19" r="2.5"/>
+<circle cx="5" cy="12" r="2.5"/>
+<circle cx="5" cy="5" r="2.5"/>
+<circle cx="12" cy="19" r="2.5"/>
+<circle cx="12" cy="12" r="2.5"/>
+<circle cx="12" cy="5" r="2.5"/>
+<circle cx="19" cy="19" r="2.5"/>
+<circle cx="19" cy="12" r="2.5"/>
+<circle cx="19" cy="5" r="2.5"/>
 </svg>

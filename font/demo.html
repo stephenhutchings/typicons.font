@@ -1,759 +1,79 @@
-<!DOCTYPE html><html><head><!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]--><meta charset="UTF-8"><style type="text/css">/*
- * Bootstrap v2.2.1
- *
- * Copyright 2012 Twitter, Inc
- * Licensed under the Apache License v2.0
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Designed and built with all the love in the world @twitter by @mdo and @fat.
- */
-.clearfix {
-  *zoom: 1;
-}
-.clearfix:before,
-.clearfix:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.clearfix:after {
-  clear: both;
-}
-.hide-text {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
-}
-.input-block-level {
-  display: block;
-  width: 100%;
-  min-height: 30px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section {
-  display: block;
-}
-audio,
-canvas,
-video {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-}
-audio:not([controls]) {
-  display: none;
-}
-html {
-  font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-a:focus {
-  outline: thin dotted #333;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-a:hover,
-a:active {
-  outline: 0;
-}
-sub,
-sup {
-  position: relative;
-  font-size: 75%;
-  line-height: 0;
-  vertical-align: baseline;
-}
-sup {
-  top: -0.5em;
-}
-sub {
-  bottom: -0.25em;
-}
-img {
-/* Responsive images (ensure images don't scale beyond their parents) */
-  max-width: 100%;
-/* Part 1: Set a maxium relative to the parent */
-  width: auto 9;
-/* IE7-8 need help adjusting responsive images */
-  height: auto;
-/* Part 2: Scale the height according to the width, otherwise you get stretching */
-  vertical-align: middle;
-  border: 0;
-  -ms-interpolation-mode: bicubic;
-}
-#map_canvas img,
-.google-maps img {
-  max-width: none;
-}
-button,
-input,
-select,
-textarea {
-  margin: 0;
-  font-size: 100%;
-  vertical-align: middle;
-}
-button,
-input {
-  *overflow: visible;
-  line-height: normal;
-}
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer;
-}
-input[type="search"] {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  -webkit-appearance: textfield;
-}
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button {
-  -webkit-appearance: none;
-}
-textarea {
-  overflow: auto;
-  vertical-align: top;
-}
-body {
+<!DOCTYPE html><html><head><!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]--><meta charset="UTF-8"><style type="text/css">body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 13px;
+  line-height: 18px;
   color: #333;
   background-color: #fff;
 }
-a {
-  color: #08c;
-  text-decoration: none;
+.page-header {
+  width: 100%;
+  position: fixed;
+  background: #fff;
+  z-index: 10;
+  top: 0;
 }
-a:hover {
-  color: #005580;
-  text-decoration: underline;
+.page-header small {
+  font-size: 0.6em;
+  color: #666;
+  font-weight: normal;
 }
-.img-rounded {
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-}
-.img-polaroid {
-  padding: 4px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border: 1px solid rgba(0,0,0,0.2);
-  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-}
-.img-circle {
-  -webkit-border-radius: 500px;
-  -moz-border-radius: 500px;
-  border-radius: 500px;
-}
-.row {
-  margin-left: -20px;
-  *zoom: 1;
-}
-.row:before,
-.row:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.row:after {
-  clear: both;
-}
-[class*="span"] {
-  float: left;
-  min-height: 1px;
-  margin-left: 20px;
+.page-header .container {
+  border-bottom: 1px solid #ddd;
+  padding: 12px 0;
 }
 .container,
-.navbar-static-top .container,
-.navbar-fixed-top .container,
-.navbar-fixed-bottom .container {
+#preview {
   width: 940px;
-}
-.span12 {
-  width: 940px;
-}
-.span11 {
-  width: 860px;
-}
-.span10 {
-  width: 780px;
-}
-.span9 {
-  width: 700px;
-}
-.span8 {
-  width: 620px;
-}
-.span7 {
-  width: 540px;
-}
-.span6 {
-  width: 460px;
-}
-.span5 {
-  width: 380px;
-}
-.span4 {
-  width: 300px;
-}
-.span3 {
-  width: 220px;
-}
-.span2 {
-  width: 140px;
-}
-.span1 {
-  width: 60px;
-}
-.offset12 {
-  margin-left: 980px;
-}
-.offset11 {
-  margin-left: 900px;
-}
-.offset10 {
-  margin-left: 820px;
-}
-.offset9 {
-  margin-left: 740px;
-}
-.offset8 {
-  margin-left: 660px;
-}
-.offset7 {
-  margin-left: 580px;
-}
-.offset6 {
-  margin-left: 500px;
-}
-.offset5 {
-  margin-left: 420px;
-}
-.offset4 {
-  margin-left: 340px;
-}
-.offset3 {
-  margin-left: 260px;
-}
-.offset2 {
-  margin-left: 180px;
-}
-.offset1 {
-  margin-left: 100px;
-}
-.row-fluid {
-  width: 100%;
-  *zoom: 1;
-}
-.row-fluid:before,
-.row-fluid:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.row-fluid:after {
-  clear: both;
-}
-.row-fluid [class*="span"] {
-  display: block;
-  width: 100%;
-  min-height: 30px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  float: left;
-  margin-left: 2.127659574468085%;
-  *margin-left: 2.074468085106383%;
-}
-.row-fluid [class*="span"]:first-child {
-  margin-left: 0;
-}
-.row-fluid .controls-row [class*="span"] + [class*="span"] {
-  margin-left: 2.127659574468085%;
-}
-.row-fluid .span12 {
-  width: 100%;
-  *width: 99.94680851063829%;
-}
-.row-fluid .span11 {
-  width: 91.48936170212765%;
-  *width: 91.43617021276594%;
-}
-.row-fluid .span10 {
-  width: 82.97872340425532%;
-  *width: 82.92553191489361%;
-}
-.row-fluid .span9 {
-  width: 74.46808510638297%;
-  *width: 74.41489361702126%;
-}
-.row-fluid .span8 {
-  width: 65.95744680851064%;
-  *width: 65.90425531914893%;
-}
-.row-fluid .span7 {
-  width: 57.44680851063829%;
-  *width: 57.39361702127659%;
-}
-.row-fluid .span6 {
-  width: 48.93617021276595%;
-  *width: 48.88297872340425%;
-}
-.row-fluid .span5 {
-  width: 40.42553191489362%;
-  *width: 40.37234042553192%;
-}
-.row-fluid .span4 {
-  width: 31.914893617021278%;
-  *width: 31.861702127659576%;
-}
-.row-fluid .span3 {
-  width: 23.404255319148934%;
-  *width: 23.351063829787233%;
-}
-.row-fluid .span2 {
-  width: 14.893617021276595%;
-  *width: 14.840425531914894%;
-}
-.row-fluid .span1 {
-  width: 6.382978723404255%;
-  *width: 6.329787234042553%;
-}
-.row-fluid .offset12 {
-  margin-left: 104.25531914893617%;
-  *margin-left: 104.14893617021275%;
-}
-.row-fluid .offset12:first-child {
-  margin-left: 102.12765957446808%;
-  *margin-left: 102.02127659574467%;
-}
-.row-fluid .offset11 {
-  margin-left: 95.74468085106382%;
-  *margin-left: 95.6382978723404%;
-}
-.row-fluid .offset11:first-child {
-  margin-left: 93.61702127659574%;
-  *margin-left: 93.51063829787232%;
-}
-.row-fluid .offset10 {
-  margin-left: 87.23404255319149%;
-  *margin-left: 87.12765957446807%;
-}
-.row-fluid .offset10:first-child {
-  margin-left: 85.1063829787234%;
-  *margin-left: 84.99999999999999%;
-}
-.row-fluid .offset9 {
-  margin-left: 78.72340425531914%;
-  *margin-left: 78.61702127659572%;
-}
-.row-fluid .offset9:first-child {
-  margin-left: 76.59574468085106%;
-  *margin-left: 76.48936170212764%;
-}
-.row-fluid .offset8 {
-  margin-left: 70.2127659574468%;
-  *margin-left: 70.10638297872339%;
-}
-.row-fluid .offset8:first-child {
-  margin-left: 68.08510638297872%;
-  *margin-left: 67.9787234042553%;
-}
-.row-fluid .offset7 {
-  margin-left: 61.70212765957446%;
-  *margin-left: 61.59574468085106%;
-}
-.row-fluid .offset7:first-child {
-  margin-left: 59.574468085106375%;
-  *margin-left: 59.46808510638297%;
-}
-.row-fluid .offset6 {
-  margin-left: 53.191489361702125%;
-  *margin-left: 53.085106382978715%;
-}
-.row-fluid .offset6:first-child {
-  margin-left: 51.063829787234035%;
-  *margin-left: 50.95744680851063%;
-}
-.row-fluid .offset5 {
-  margin-left: 44.68085106382979%;
-  *margin-left: 44.57446808510638%;
-}
-.row-fluid .offset5:first-child {
-  margin-left: 42.5531914893617%;
-  *margin-left: 42.4468085106383%;
-}
-.row-fluid .offset4 {
-  margin-left: 36.170212765957444%;
-  *margin-left: 36.06382978723405%;
-}
-.row-fluid .offset4:first-child {
-  margin-left: 34.04255319148936%;
-  *margin-left: 33.93617021276596%;
-}
-.row-fluid .offset3 {
-  margin-left: 27.659574468085104%;
-  *margin-left: 27.5531914893617%;
-}
-.row-fluid .offset3:first-child {
-  margin-left: 25.53191489361702%;
-  *margin-left: 25.425531914893618%;
-}
-.row-fluid .offset2 {
-  margin-left: 19.148936170212764%;
-  *margin-left: 19.04255319148936%;
-}
-.row-fluid .offset2:first-child {
-  margin-left: 17.02127659574468%;
-  *margin-left: 16.914893617021278%;
-}
-.row-fluid .offset1 {
-  margin-left: 10.638297872340425%;
-  *margin-left: 10.53191489361702%;
-}
-.row-fluid .offset1:first-child {
-  margin-left: 8.51063829787234%;
-  *margin-left: 8.404255319148938%;
-}
-[class*="span"].hide,
-.row-fluid [class*="span"].hide {
-  display: none;
-}
-[class*="span"].pull-right,
-.row-fluid [class*="span"].pull-right {
-  float: right;
-}
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  *zoom: 1;
-}
-.container:before,
-.container:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.container:after {
-  clear: both;
-}
-.container-fluid {
-  padding-right: 20px;
-  padding-left: 20px;
-  *zoom: 1;
-}
-.container-fluid:before,
-.container-fluid:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.container-fluid:after {
-  clear: both;
-}
-p {
-  margin: 0 0 10px;
-}
-.lead {
-  margin-bottom: 20px;
-  font-size: 21px;
-  font-weight: 200;
-  line-height: 30px;
-}
-small {
-  font-size: 85%;
-}
-strong {
-  font-weight: bold;
-}
-em {
-  font-style: italic;
-}
-cite {
-  font-style: normal;
-}
-.muted {
-  color: #999;
-}
-.text-warning {
-  color: #c09853;
-}
-a.text-warning:hover {
-  color: #a47e3c;
-}
-.text-error {
-  color: #b94a48;
-}
-a.text-error:hover {
-  color: #953b39;
-}
-.text-info {
-  color: #3a87ad;
-}
-a.text-info:hover {
-  color: #2d6987;
-}
-.text-success {
-  color: #468847;
-}
-a.text-success:hover {
-  color: #356635;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 10px 0;
-  font-family: inherit;
-  font-weight: bold;
-  line-height: 20px;
-  color: inherit;
-  text-rendering: optimizelegibility;
-}
-h1 small,
-h2 small,
-h3 small,
-h4 small,
-h5 small,
-h6 small {
-  font-weight: normal;
-  line-height: 1;
-  color: #999;
-}
-h1,
-h2,
-h3 {
-  line-height: 40px;
-}
-h1 {
-  font-size: 38.5px;
-}
-h2 {
-  font-size: 31.5px;
-}
-h3 {
-  font-size: 24.5px;
-}
-h4 {
-  font-size: 17.5px;
-}
-h5 {
-  font-size: 14px;
-}
-h6 {
-  font-size: 11.9px;
-}
-h1 small {
-  font-size: 24.5px;
-}
-h2 small {
-  font-size: 17.5px;
-}
-h3 small {
-  font-size: 14px;
-}
-h4 small {
-  font-size: 14px;
-}
-.page-header {
-  padding-bottom: 9px;
-  margin: 20px 0 30px;
-  border-bottom: 1px solid #eee;
-}
-ul,
-ol {
-  padding: 0;
-  margin: 0 0 10px 25px;
-}
-ul ul,
-ul ol,
-ol ol,
-ol ul {
-  margin-bottom: 0;
-}
-li {
-  line-height: 20px;
-}
-ul.unstyled,
-ol.unstyled {
-  margin-left: 0;
-  list-style: none;
-}
-dl {
-  margin-bottom: 20px;
-}
-dt,
-dd {
-  line-height: 20px;
-}
-dt {
-  font-weight: bold;
-}
-dd {
-  margin-left: 10px;
-}
-.dl-horizontal {
-  *zoom: 1;
-}
-.dl-horizontal:before,
-.dl-horizontal:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.dl-horizontal:after {
-  clear: both;
-}
-.dl-horizontal dt {
-  float: left;
-  width: 160px;
-  clear: left;
-  text-align: right;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.dl-horizontal dd {
-  margin-left: 180px;
-}
-hr {
-  margin: 20px 0;
-  border: 0;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #fff;
-}
-abbr[title],
-abbr[data-original-title] {
-  cursor: help;
-  border-bottom: 1px dotted #999;
-}
-abbr.initialism {
-  font-size: 90%;
-  text-transform: uppercase;
-}
-blockquote {
-  padding: 0 0 0 15px;
-  margin: 0 0 20px;
-  border-left: 5px solid #eee;
-}
-blockquote p {
-  margin-bottom: 0;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 25px;
-}
-blockquote small {
-  display: block;
-  line-height: 20px;
-  color: #999;
-}
-blockquote small:before {
-  content: '4  A0';
-}
-blockquote.pull-right {
-  float: right;
-  padding-right: 15px;
-  padding-left: 0;
-  border-right: 5px solid #eee;
-  border-left: 0;
-}
-blockquote.pull-right p,
-blockquote.pull-right small {
-  text-align: right;
-}
-blockquote.pull-right small:before {
-  content: '';
-}
-blockquote.pull-right small:after {
-  content: ' A0 4';
-}
-q:before,
-q:after,
-blockquote:before,
-blockquote:after {
-  content: "";
-}
-address {
-  display: block;
-  margin-bottom: 20px;
-  font-style: normal;
-  line-height: 20px;
-}
-body {
-  margin-top: 90px;
-}
-.header {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  margin-left: -480px;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
-  padding-top: 10px;
-  z-index: 10;
-}
-.the-icons li {
-  font-size: 12px;
-  line-height: 24px;
-  height: 24px;
+  margin: auto;
+  position: relative;
+}
+#icons {
+  margin-top: 112px;
 }
 .switch {
   position: absolute;
   right: 0;
-  bottom: 10px;
+  bottom: 24px;
   color: #888;
 }
 .switch input {
   margin-right: 0.3em;
 }
+.icon {
+  padding: 12px;
+  float: left;
+}
 .codesOn .i-name {
   display: none;
 }
 .codesOn .i-code {
-  display: inline;
+  display: block;
 }
-.i-code,
-.i-name {
+.i-name,
+.i-code {
+  color: #666;
+  font-size: 11px;
+  display: block;
+  line-height: 1.2em;
+}
+.i-code {
   display: none;
 }
-</style><style type="text/css">@font-face {
+</style><style type="text/css">
+/* @FONT-FACE loads font into browser */
+@font-face {
   font-family: 'typicons';
-  src: url("typicons.eot");
-  src: url("typicons.eot?#iefix") format('embedded-opentype'), url("typicons.woff") format('woff'), url("typicons.ttf") format('truetype'), url("typicons.svg#typicons") format('svg');
+  src: url('typicons.eot');
+  src: url('typicons.eot?#iefix') format('embedded-opentype'),
+       url('typicons.woff') format('woff'),
+       url('typicons.ttf') format('truetype'),
+       url('typicons.svg#typicons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
-[class*="typcn-"]:before {
+/* ::before psuedo-selector inserts and styles icon */
+.typcn::before {
   font-family: 'typicons';
   font-style: normal;
   font-weight: normal;
@@ -761,207 +81,324 @@ body {
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: 0.2em;
+  height: 1em;
   font-size: 24px;
   text-align: center;
-  opacity: 0.8;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-</style><style type="text/css">
-.typcn-adjust-contrast:before { content: '\2710'; } /* '✐' */
-.typcn-anchor:before { content: '\2711'; } /* '✑' */
-.typcn-archive:before { content: '\2712'; } /* '✒' */
-.typcn-arrow-back:before { content: '\2713'; } /* '✓' */
-.typcn-arrow-down:before { content: '\2714'; } /* '✔' */
-.typcn-arrow-forward:before { content: '\2715'; } /* '✕' */
-.typcn-arrow-left:before { content: '\2716'; } /* '✖' */
-.typcn-arrow-line-down:before { content: '\2717'; } /* '✗' */
-.typcn-arrow-line-left:before { content: '\2718'; } /* '✘' */
-.typcn-arrow-line-right:before { content: '\2719'; } /* '✙' */
-.typcn-arrow-line-up:before { content: '\271a'; } /* '✚' */
-.typcn-arrow-loop:before { content: '\271b'; } /* '✛' */
-.typcn-arrow-maximise:before { content: '\271c'; } /* '✜' */
-.typcn-arrow-merge:before { content: '\271d'; } /* '✝' */
-.typcn-arrow-minimise:before { content: '\271e'; } /* '✞' */
-.typcn-arrow-move:before { content: '\271f'; } /* '✟' */
-.typcn-arrow-repeat:before { content: '\2720'; } /* '✠' */
-.typcn-arrow-right:before { content: '\2721'; } /* '✡' */
-.typcn-arrow-shuffle:before { content: '\2722'; } /* '✢' */
-.typcn-arrow-split:before { content: '\2723'; } /* '✣' */
-.typcn-arrow-sync:before { content: '\2724'; } /* '✤' */
-.typcn-arrow-up:before { content: '\2725'; } /* '✥' */
-.typcn-at:before { content: '\2726'; } /* '✦' */
-.typcn-attachment:before { content: '\2727'; } /* '✧' */
-.typcn-backspace:before { content: '\2728'; } /* '✨' */
-.typcn-battery-charge:before { content: '\2729'; } /* '✩' */
-.typcn-battery-full:before { content: '\272a'; } /* '✪' */
-.typcn-battery-high:before { content: '\272b'; } /* '✫' */
-.typcn-battery-low:before { content: '\272c'; } /* '✬' */
-.typcn-battery-mid:before { content: '\272d'; } /* '✭' */
-.typcn-beaker:before { content: '\272e'; } /* '✮' */
-.typcn-beer:before { content: '\272f'; } /* '✯' */
-.typcn-bell:before { content: '\2730'; } /* '✰' */
-.typcn-book:before { content: '\2731'; } /* '✱' */
-.typcn-bookmark:before { content: '\2732'; } /* '✲' */
-.typcn-briefcase:before { content: '\2733'; } /* '✳' */
-.typcn-brush:before { content: '\2734'; } /* '✴' */
-.typcn-business-card:before { content: '\2735'; } /* '✵' */
-.typcn-calculator:before { content: '\2736'; } /* '✶' */
-.typcn-calender:before { content: '\2737'; } /* '✷' */
-.typcn-camera:before { content: '\2738'; } /* '✸' */
-.typcn-chart-area:before { content: '\2739'; } /* '✹' */
-.typcn-chart-bar:before { content: '\273a'; } /* '✺' */
-.typcn-chart-line:before { content: '\273b'; } /* '✻' */
-.typcn-chart-pie:before { content: '\273c'; } /* '✼' */
-.typcn-chat-typing:before { content: '\273d'; } /* '✽' */
-.typcn-chevron-left:before { content: '\273e'; } /* '✾' */
-.typcn-chevron-right:before { content: '\273f'; } /* '✿' */
-.typcn-clipboard:before { content: '\2740'; } /* '❀' */
-.typcn-cloud-storage:before { content: '\2741'; } /* '❁' */
-.typcn-code:before { content: '\2742'; } /* '❂' */
-.typcn-coffee:before { content: '\2743'; } /* '❃' */
-.typcn-cog:before { content: '\2744'; } /* '❄' */
-.typcn-compass:before { content: '\2745'; } /* '❅' */
-.typcn-contacts:before { content: '\2746'; } /* '❆' */
-.typcn-credit-card:before { content: '\2747'; } /* '❇' */
-.typcn-database:before { content: '\2748'; } /* '❈' */
-.typcn-delete:before { content: '\2749'; } /* '❉' */
-.typcn-device-desktop:before { content: '\274a'; } /* '❊' */
-.typcn-device-laptop:before { content: '\274b'; } /* '❋' */
-.typcn-device-phone:before { content: '\274c'; } /* '❌' */
-.typcn-device-tablet:before { content: '\274d'; } /* '❍' */
-.typcn-directions:before { content: '\274e'; } /* '❎' */
-.typcn-divide:before { content: '\274f'; } /* '❏' */
-.typcn-document-add:before { content: '\2750'; } /* '❐' */
-.typcn-document-delete:before { content: '\2751'; } /* '❑' */
-.typcn-document-text:before { content: '\2752'; } /* '❒' */
-.typcn-document:before { content: '\2753'; } /* '❓' */
-.typcn-download:before { content: '\2754'; } /* '❔' */
-.typcn-edit:before { content: '\2755'; } /* '❕' */
-.typcn-eject:before { content: '\2756'; } /* '❖' */
-.typcn-equals:before { content: '\2757'; } /* '❗' */
-.typcn-export:before { content: '\2758'; } /* '❘' */
-.typcn-eye:before { content: '\2759'; } /* '❙' */
-.typcn-feather:before { content: '\275a'; } /* '❚' */
-.typcn-film:before { content: '\275b'; } /* '❛' */
-.typcn-flag:before { content: '\275c'; } /* '❜' */
-.typcn-flash:before { content: '\275d'; } /* '❝' */
-.typcn-folder-add:before { content: '\275e'; } /* '❞' */
-.typcn-folder-delete:before { content: '\275f'; } /* '❟' */
-.typcn-folder:before { content: '\2760'; } /* '❠' */
-.typcn-gift:before { content: '\2761'; } /* '❡' */
-.typcn-globe:before { content: '\2762'; } /* '❢' */
-.typcn-group:before { content: '\2763'; } /* '❣' */
-.typcn-headphones:before { content: '\2764'; } /* '❤' */
-.typcn-heart:before { content: '\2765'; } /* '❥' */
-.typcn-home:before { content: '\2766'; } /* '❦' */
-.typcn-image:before { content: '\2767'; } /* '❧' */
-.typcn-infinity:before { content: '\2768'; } /* '❨' */
-.typcn-info-large:before { content: '\2769'; } /* '❩' */
-.typcn-info:before { content: '\276a'; } /* '❪' */
-.typcn-input-checked:before { content: '\276b'; } /* '❫' */
-.typcn-key:before { content: '\276c'; } /* '❬' */
-.typcn-leaf:before { content: '\276d'; } /* '❭' */
-.typcn-lightbulb:before { content: '\276e'; } /* '❮' */
-.typcn-link:before { content: '\276f'; } /* '❯' */
-.typcn-location-services:before { content: '\2770'; } /* '❰' */
-.typcn-lock-closed:before { content: '\2771'; } /* '❱' */
-.typcn-lock-open:before { content: '\2772'; } /* '❲' */
-.typcn-mail:before { content: '\2773'; } /* '❳' */
-.typcn-map-location:before { content: '\2774'; } /* '❴' */
-.typcn-map:before { content: '\2775'; } /* '❵' */
-.typcn-media-eject:before { content: '\2776'; } /* '❶' */
-.typcn-media-fast-forward:before { content: '\2777'; } /* '❷' */
-.typcn-media-play:before { content: '\2778'; } /* '❸' */
-.typcn-media-record:before { content: '\2779'; } /* '❹' */
-.typcn-media-rewind:before { content: '\277a'; } /* '❺' */
-.typcn-media-stop:before { content: '\277b'; } /* '❻' */
-.typcn-menu:before { content: '\277c'; } /* '❼' */
-.typcn-message:before { content: '\277d'; } /* '❽' */
-.typcn-messages:before { content: '\277e'; } /* '❾' */
-.typcn-microphone:before { content: '\277f'; } /* '❿' */
-.typcn-minus:before { content: '\2780'; } /* '➀' */
-.typcn-news:before { content: '\2781'; } /* '➁' */
-.typcn-notes:before { content: '\2782'; } /* '➂' */
-.typcn-pen:before { content: '\2783'; } /* '➃' */
-.typcn-pencil:before { content: '\2784'; } /* '➄' */
-.typcn-phone:before { content: '\2785'; } /* '➅' */
-.typcn-pi:before { content: '\2786'; } /* '➆' */
-.typcn-pin:before { content: '\2787'; } /* '➇' */
-.typcn-pipette:before { content: '\2788'; } /* '➈' */
-.typcn-plane:before { content: '\2789'; } /* '➉' */
-.typcn-plug:before { content: '\278a'; } /* '➊' */
-.typcn-plus:before { content: '\278b'; } /* '➋' */
-.typcn-point-of-interest:before { content: '\278c'; } /* '➌' */
-.typcn-power:before { content: '\278d'; } /* '➍' */
-.typcn-printer:before { content: '\278e'; } /* '➎' */
-.typcn-puzzle:before { content: '\278f'; } /* '➏' */
-.typcn-radar:before { content: '\2790'; } /* '➐' */
-.typcn-refresh:before { content: '\2791'; } /* '➑' */
-.typcn-rss:before { content: '\2792'; } /* '➒' */
-.typcn-scissors:before { content: '\2793'; } /* '➓' */
-.typcn-shopping-cart:before { content: '\2794'; } /* '➔' */
-.typcn-shopping-bag:before { content: '\2795'; } /* '➕' */
-.typcn-social-dribbble:before { content: '\2796'; } /* '➖' */
-.typcn-social-facebook:before { content: '\2797'; } /* '➗' */
-.typcn-social-flickr:before { content: '\2798'; } /* '➘' */
-.typcn-social-linkedin:before { content: '\2799'; } /* '➙' */
-.typcn-social-pinterest:before { content: '\279a'; } /* '➚' */
-.typcn-social-skype:before { content: '\279b'; } /* '➛' */
-.typcn-social-tumbler:before { content: '\279c'; } /* '➜' */
-.typcn-social-twitter:before { content: '\279d'; } /* '➝' */
-.typcn-social-vimeo:before { content: '\279e'; } /* '➞' */
-.typcn-sort-alphabetically:before { content: '\279f'; } /* '➟' */
-.typcn-sort-numerically:before { content: '\27a0'; } /* '➠' */
-.typcn-spanner:before { content: '\27a1'; } /* '➡' */
-.typcn-star:before { content: '\27a2'; } /* '➢' */
-.typcn-stopwatch:before { content: '\27a3'; } /* '➣' */
-.typcn-support:before { content: '\27a4'; } /* '➤' */
-.typcn-tabs:before { content: '\27a5'; } /* '➥' */
-.typcn-tag:before { content: '\27a6'; } /* '➦' */
-.typcn-tags:before { content: '\27a7'; } /* '➧' */
-.typcn-th-large:before { content: '\27a8'; } /* '➨' */
-.typcn-th-list:before { content: '\27a9'; } /* '➩' */
-.typcn-th-small:before { content: '\27aa'; } /* '➪' */
-.typcn-thermometer:before { content: '\27ab'; } /* '➫' */
-.typcn-thumbs-down:before { content: '\27ac'; } /* '➬' */
-.typcn-thumbs-up:before { content: '\27ad'; } /* '➭' */
-.typcn-tick:before { content: '\27ae'; } /* '➮' */
-.typcn-ticket:before { content: '\27af'; } /* '➯' */
-.typcn-time:before { content: '\27b0'; } /* '➰' */
-.typcn-times:before { content: '\27b1'; } /* '➱' */
-.typcn-trash:before { content: '\27b2'; } /* '➲' */
-.typcn-tree:before { content: '\27b3'; } /* '➳' */
-.typcn-upload:before { content: '\27b4'; } /* '➴' */
-.typcn-user-add:before { content: '\27b5'; } /* '➵' */
-.typcn-user-delete:before { content: '\27b6'; } /* '➶' */
-.typcn-user:before { content: '\27b7'; } /* '➷' */
-.typcn-video:before { content: '\27b8'; } /* '➸' */
-.typcn-volume-mute:before { content: '\27b9'; } /* '➹' */
-.typcn-volume-up:before { content: '\27ba'; } /* '➺' */
-.typcn-volume:before { content: '\27bb'; } /* '➻' */
-.typcn-voume-down:before { content: '\27bc'; } /* '➼' */
-.typcn-warning:before { content: '\27bd'; } /* '➽' */
-.typcn-watch:before { content: '\27be'; } /* '➾' */
-.typcn-waves:before { content: '\27bf'; } /* '➿' */
-.typcn-weather-cloudy:before { content: '\27c0'; } /* '⟀' */
-.typcn-weather-downpour:before { content: '\27c1'; } /* '⟁' */
-.typcn-weather-night:before { content: '\27c2'; } /* '⟂' */
-.typcn-weather-partly-sunny:before { content: '\27c3'; } /* '⟃' */
-.typcn-weather-shower:before { content: '\27c4'; } /* '⟄' */
-.typcn-weather-snow:before { content: '\27c5'; } /* '⟅' */
-.typcn-weather-stormy:before { content: '\27c6'; } /* '⟆' */
-.typcn-weather-sunny:before { content: '\27c7'; } /* '⟇' */
-.typcn-weather-windy-cloudy:before { content: '\27c8'; } /* '⟈' */
-.typcn-weather-windy:before { content: '\27c9'; } /* '⟉' */
-.typcn-wi-fi:before { content: '\27ca'; } /* '⟊' */
-.typcn-wine:before { content: '\27cb'; } /* '⟋' */
-.typcn-world:before { content: '\27cc'; } /* '⟌' */
-.typcn-zoom-in:before { content: '\27cd'; } /* '⟍' */
-.typcn-zoom-out:before { content: '\27ce'; } /* '⟎' */
-.typcn-zoom:before { content: '\27cf'; } /* '⟏' */</style><script>function toggleCodes(on) {
+</style>
+<style type="text/css">
+/* Code for individual icons */
+.typcn-adjust-brightness::before { content: '\e000'; } /* '' */
+.typcn-adjust-contrast::before { content: '\e001'; } /* '' */
+.typcn-anchor-outline::before { content: '\e002'; } /* '' */
+.typcn-anchor::before { content: '\e003'; } /* '' */
+.typcn-archive::before { content: '\e004'; } /* '' */
+.typcn-arrow-back-outline::before { content: '\e005'; } /* '' */
+.typcn-arrow-back::before { content: '\e006'; } /* '' */
+.typcn-arrow-down-outline::before { content: '\e007'; } /* '' */
+.typcn-arrow-down-thick::before { content: '\e008'; } /* '' */
+.typcn-arrow-down::before { content: '\e009'; } /* '' */
+.typcn-arrow-forward-outline::before { content: '\e00a'; } /* '' */
+.typcn-arrow-forward::before { content: '\e00b'; } /* '' */
+.typcn-arrow-left-outline::before { content: '\e00c'; } /* '' */
+.typcn-arrow-left-thick::before { content: '\e00d'; } /* '' */
+.typcn-arrow-left::before { content: '\e00e'; } /* '' */
+.typcn-arrow-loop-outline::before { content: '\e00f'; } /* '' */
+.typcn-arrow-loop::before { content: '\e010'; } /* '' */
+.typcn-arrow-maximise-outline::before { content: '\e011'; } /* '' */
+.typcn-arrow-maximise::before { content: '\e012'; } /* '' */
+.typcn-arrow-minimise-outline::before { content: '\e013'; } /* '' */
+.typcn-arrow-minimise::before { content: '\e014'; } /* '' */
+.typcn-arrow-move-outline::before { content: '\e015'; } /* '' */
+.typcn-arrow-move::before { content: '\e016'; } /* '' */
+.typcn-arrow-repeat-outline::before { content: '\e017'; } /* '' */
+.typcn-arrow-repeat::before { content: '\e018'; } /* '' */
+.typcn-arrow-right-outline::before { content: '\e019'; } /* '' */
+.typcn-arrow-right-thick::before { content: '\e01a'; } /* '' */
+.typcn-arrow-right::before { content: '\e01b'; } /* '' */
+.typcn-arrow-shuffle::before { content: '\e01c'; } /* '' */
+.typcn-arrow-sync-outline::before { content: '\e01d'; } /* '' */
+.typcn-arrow-sync::before { content: '\e01e'; } /* '' */
+.typcn-arrow-up-outline::before { content: '\e01f'; } /* '' */
+.typcn-arrow-up-thick::before { content: '\e020'; } /* '' */
+.typcn-arrow-up::before { content: '\e021'; } /* '' */
+.typcn-at::before { content: '\e022'; } /* '' */
+.typcn-attachment-outline::before { content: '\e023'; } /* '' */
+.typcn-attachment::before { content: '\e024'; } /* '' */
+.typcn-backspace-outline::before { content: '\e025'; } /* '' */
+.typcn-backspace::before { content: '\e026'; } /* '' */
+.typcn-battery-charge::before { content: '\e027'; } /* '' */
+.typcn-battery-full::before { content: '\e028'; } /* '' */
+.typcn-battery-high::before { content: '\e029'; } /* '' */
+.typcn-battery-low::before { content: '\e02a'; } /* '' */
+.typcn-battery-mid::before { content: '\e02b'; } /* '' */
+.typcn-beaker::before { content: '\e02c'; } /* '' */
+.typcn-beer::before { content: '\e02d'; } /* '' */
+.typcn-bell::before { content: '\e02e'; } /* '' */
+.typcn-book::before { content: '\e02f'; } /* '' */
+.typcn-bookmark::before { content: '\e030'; } /* '' */
+.typcn-briefcase::before { content: '\e031'; } /* '' */
+.typcn-brush::before { content: '\e032'; } /* '' */
+.typcn-business-card::before { content: '\e033'; } /* '' */
+.typcn-calculator::before { content: '\e034'; } /* '' */
+.typcn-calender-outline::before { content: '\e035'; } /* '' */
+.typcn-calender::before { content: '\e036'; } /* '' */
+.typcn-camera-outline::before { content: '\e037'; } /* '' */
+.typcn-camera::before { content: '\e038'; } /* '' */
+.typcn-cancel-outline::before { content: '\e039'; } /* '' */
+.typcn-cancel::before { content: '\e03a'; } /* '' */
+.typcn-chart-area-outline::before { content: '\e03b'; } /* '' */
+.typcn-chart-area::before { content: '\e03c'; } /* '' */
+.typcn-chart-bar-outline::before { content: '\e03d'; } /* '' */
+.typcn-chart-bar::before { content: '\e03e'; } /* '' */
+.typcn-chart-line-outline::before { content: '\e03f'; } /* '' */
+.typcn-chart-line::before { content: '\e040'; } /* '' */
+.typcn-chart-pie-outline::before { content: '\e041'; } /* '' */
+.typcn-chart-pie::before { content: '\e042'; } /* '' */
+.typcn-chevron-left-outline::before { content: '\e043'; } /* '' */
+.typcn-chevron-left::before { content: '\e044'; } /* '' */
+.typcn-chevron-right-outline::before { content: '\e045'; } /* '' */
+.typcn-chevron-right::before { content: '\e046'; } /* '' */
+.typcn-clipboard::before { content: '\e047'; } /* '' */
+.typcn-cloud-storage::before { content: '\e048'; } /* '' */
+.typcn-code-outline::before { content: '\e049'; } /* '' */
+.typcn-code::before { content: '\e04a'; } /* '' */
+.typcn-coffee::before { content: '\e04b'; } /* '' */
+.typcn-cog-outline::before { content: '\e04c'; } /* '' */
+.typcn-cog::before { content: '\e04d'; } /* '' */
+.typcn-compass::before { content: '\e04e'; } /* '' */
+.typcn-contacts::before { content: '\e04f'; } /* '' */
+.typcn-credit-card::before { content: '\e050'; } /* '' */
+.typcn-cross::before { content: '\e051'; } /* '' */
+.typcn-database::before { content: '\e052'; } /* '' */
+.typcn-delete-outline::before { content: '\e053'; } /* '' */
+.typcn-delete::before { content: '\e054'; } /* '' */
+.typcn-device-desktop::before { content: '\e055'; } /* '' */
+.typcn-device-laptop::before { content: '\e056'; } /* '' */
+.typcn-device-phone::before { content: '\e057'; } /* '' */
+.typcn-device-tablet::before { content: '\e058'; } /* '' */
+.typcn-directions::before { content: '\e059'; } /* '' */
+.typcn-divide-outline::before { content: '\e05a'; } /* '' */
+.typcn-divide::before { content: '\e05b'; } /* '' */
+.typcn-document-add::before { content: '\e05c'; } /* '' */
+.typcn-document-delete::before { content: '\e05d'; } /* '' */
+.typcn-document-text::before { content: '\e05e'; } /* '' */
+.typcn-document::before { content: '\e05f'; } /* '' */
+.typcn-download-outline::before { content: '\e060'; } /* '' */
+.typcn-download::before { content: '\e061'; } /* '' */
+.typcn-edit::before { content: '\e062'; } /* '' */
+.typcn-eject-outline::before { content: '\e063'; } /* '' */
+.typcn-eject::before { content: '\e064'; } /* '' */
+.typcn-equals-outline::before { content: '\e065'; } /* '' */
+.typcn-equals::before { content: '\e066'; } /* '' */
+.typcn-export-outline::before { content: '\e067'; } /* '' */
+.typcn-export::before { content: '\e068'; } /* '' */
+.typcn-eye-outline::before { content: '\e069'; } /* '' */
+.typcn-eye::before { content: '\e06a'; } /* '' */
+.typcn-feather::before { content: '\e06b'; } /* '' */
+.typcn-film::before { content: '\e06c'; } /* '' */
+.typcn-flag-outline::before { content: '\e06d'; } /* '' */
+.typcn-flag::before { content: '\e06e'; } /* '' */
+.typcn-flash-outline::before { content: '\e06f'; } /* '' */
+.typcn-flash::before { content: '\e070'; } /* '' */
+.typcn-flow-children::before { content: '\e071'; } /* '' */
+.typcn-flow-merge::before { content: '\e072'; } /* '' */
+.typcn-flow-parallel::before { content: '\e073'; } /* '' */
+.typcn-flow-switch::before { content: '\e074'; } /* '' */
+.typcn-folder-add::before { content: '\e075'; } /* '' */
+.typcn-folder-delete::before { content: '\e076'; } /* '' */
+.typcn-folder::before { content: '\e077'; } /* '' */
+.typcn-gift::before { content: '\e078'; } /* '' */
+.typcn-globe-outline::before { content: '\e079'; } /* '' */
+.typcn-globe::before { content: '\e07a'; } /* '' */
+.typcn-group-outline::before { content: '\e07b'; } /* '' */
+.typcn-group::before { content: '\e07c'; } /* '' */
+.typcn-headphones::before { content: '\e07d'; } /* '' */
+.typcn-heart-outline::before { content: '\e07e'; } /* '' */
+.typcn-heart::before { content: '\e07f'; } /* '' */
+.typcn-home-outline::before { content: '\e080'; } /* '' */
+.typcn-home::before { content: '\e081'; } /* '' */
+.typcn-image-outline::before { content: '\e082'; } /* '' */
+.typcn-image::before { content: '\e083'; } /* '' */
+.typcn-infinity-outline::before { content: '\e084'; } /* '' */
+.typcn-infinity::before { content: '\e085'; } /* '' */
+.typcn-info-large-outline::before { content: '\e086'; } /* '' */
+.typcn-info-large::before { content: '\e087'; } /* '' */
+.typcn-info-outline::before { content: '\e088'; } /* '' */
+.typcn-info::before { content: '\e089'; } /* '' */
+.typcn-input-checked-outline::before { content: '\e08a'; } /* '' */
+.typcn-input-checked::before { content: '\e08b'; } /* '' */
+.typcn-key-outline::before { content: '\e08c'; } /* '' */
+.typcn-key::before { content: '\e08d'; } /* '' */
+.typcn-leaf::before { content: '\e08e'; } /* '' */
+.typcn-lightbulb::before { content: '\e08f'; } /* '' */
+.typcn-link-outline::before { content: '\e090'; } /* '' */
+.typcn-link::before { content: '\e091'; } /* '' */
+.typcn-location-arrow-outline::before { content: '\e092'; } /* '' */
+.typcn-location-arrow::before { content: '\e093'; } /* '' */
+.typcn-location-outline::before { content: '\e094'; } /* '' */
+.typcn-location::before { content: '\e095'; } /* '' */
+.typcn-lock-closed-outline::before { content: '\e096'; } /* '' */
+.typcn-lock-closed::before { content: '\e097'; } /* '' */
+.typcn-lock-open-outline::before { content: '\e098'; } /* '' */
+.typcn-lock-open::before { content: '\e099'; } /* '' */
+.typcn-mail::before { content: '\e09a'; } /* '' */
+.typcn-map::before { content: '\e09b'; } /* '' */
+.typcn-media-eject-outline::before { content: '\e09c'; } /* '' */
+.typcn-media-eject::before { content: '\e09d'; } /* '' */
+.typcn-media-fast-forward-outline::before { content: '\e09e'; } /* '' */
+.typcn-media-fast-forward::before { content: '\e09f'; } /* '' */
+.typcn-media-pause-outline::before { content: '\e0a0'; } /* '' */
+.typcn-media-pause::before { content: '\e0a1'; } /* '' */
+.typcn-media-play-outline::before { content: '\e0a2'; } /* '' */
+.typcn-media-play::before { content: '\e0a3'; } /* '' */
+.typcn-media-record-outline::before { content: '\e0a4'; } /* '' */
+.typcn-media-record::before { content: '\e0a5'; } /* '' */
+.typcn-media-rewind-outline::before { content: '\e0a6'; } /* '' */
+.typcn-media-rewind::before { content: '\e0a7'; } /* '' */
+.typcn-media-stop-outline::before { content: '\e0a8'; } /* '' */
+.typcn-media-stop::before { content: '\e0a9'; } /* '' */
+.typcn-message-typing::before { content: '\e0aa'; } /* '' */
+.typcn-message::before { content: '\e0ab'; } /* '' */
+.typcn-messages::before { content: '\e0ac'; } /* '' */
+.typcn-microphone-outline::before { content: '\e0ad'; } /* '' */
+.typcn-microphone::before { content: '\e0ae'; } /* '' */
+.typcn-minus-outline::before { content: '\e0af'; } /* '' */
+.typcn-minus::before { content: '\e0b0'; } /* '' */
+.typcn-news::before { content: '\e0b1'; } /* '' */
+.typcn-notes-outline::before { content: '\e0b2'; } /* '' */
+.typcn-notes::before { content: '\e0b3'; } /* '' */
+.typcn-pen::before { content: '\e0b4'; } /* '' */
+.typcn-pencil::before { content: '\e0b5'; } /* '' */
+.typcn-phone-outline::before { content: '\e0b6'; } /* '' */
+.typcn-phone::before { content: '\e0b7'; } /* '' */
+.typcn-pi-outline::before { content: '\e0b8'; } /* '' */
+.typcn-pi::before { content: '\e0b9'; } /* '' */
+.typcn-pin-outline::before { content: '\e0ba'; } /* '' */
+.typcn-pin::before { content: '\e0bb'; } /* '' */
+.typcn-pipette::before { content: '\e0bc'; } /* '' */
+.typcn-plane-outline::before { content: '\e0bd'; } /* '' */
+.typcn-plane::before { content: '\e0be'; } /* '' */
+.typcn-plug::before { content: '\e0bf'; } /* '' */
+.typcn-plus-outline::before { content: '\e0c0'; } /* '' */
+.typcn-plus::before { content: '\e0c1'; } /* '' */
+.typcn-point-of-interest-outline::before { content: '\e0c2'; } /* '' */
+.typcn-point-of-interest::before { content: '\e0c3'; } /* '' */
+.typcn-power-outline::before { content: '\e0c4'; } /* '' */
+.typcn-power::before { content: '\e0c5'; } /* '' */
+.typcn-printer::before { content: '\e0c6'; } /* '' */
+.typcn-puzzle-outline::before { content: '\e0c7'; } /* '' */
+.typcn-puzzle::before { content: '\e0c8'; } /* '' */
+.typcn-radar-outline::before { content: '\e0c9'; } /* '' */
+.typcn-radar::before { content: '\e0ca'; } /* '' */
+.typcn-refresh-outline::before { content: '\e0cb'; } /* '' */
+.typcn-refresh::before { content: '\e0cc'; } /* '' */
+.typcn-rss-outline::before { content: '\e0cd'; } /* '' */
+.typcn-rss::before { content: '\e0ce'; } /* '' */
+.typcn-scissors-outline::before { content: '\e0cf'; } /* '' */
+.typcn-scissors::before { content: '\e0d0'; } /* '' */
+.typcn-shopping-bag::before { content: '\e0d1'; } /* '' */
+.typcn-shopping-cart::before { content: '\e0d2'; } /* '' */
+.typcn-social-at-circular::before { content: '\e0d3'; } /* '' */
+.typcn-social-dribbble-circular::before { content: '\e0d4'; } /* '' */
+.typcn-social-dribbble::before { content: '\e0d5'; } /* '' */
+.typcn-social-facebook-circular::before { content: '\e0d6'; } /* '' */
+.typcn-social-facebook::before { content: '\e0d7'; } /* '' */
+.typcn-social-flickr-circular::before { content: '\e0d8'; } /* '' */
+.typcn-social-flickr::before { content: '\e0d9'; } /* '' */
+.typcn-social-github-circular::before { content: '\e0da'; } /* '' */
+.typcn-social-github::before { content: '\e0db'; } /* '' */
+.typcn-social-last-fm-circular::before { content: '\e0dc'; } /* '' */
+.typcn-social-last-fm::before { content: '\e0dd'; } /* '' */
+.typcn-social-linkedin-circular::before { content: '\e0de'; } /* '' */
+.typcn-social-linkedin::before { content: '\e0df'; } /* '' */
+.typcn-social-pinterest-circular::before { content: '\e0e0'; } /* '' */
+.typcn-social-pinterest::before { content: '\e0e1'; } /* '' */
+.typcn-social-skype-outline::before { content: '\e0e2'; } /* '' */
+.typcn-social-skype::before { content: '\e0e3'; } /* '' */
+.typcn-social-tumbler-circular::before { content: '\e0e4'; } /* '' */
+.typcn-social-tumbler::before { content: '\e0e5'; } /* '' */
+.typcn-social-twitter-circular::before { content: '\e0e6'; } /* '' */
+.typcn-social-twitter::before { content: '\e0e7'; } /* '' */
+.typcn-social-vimeo-circular::before { content: '\e0e8'; } /* '' */
+.typcn-social-vimeo::before { content: '\e0e9'; } /* '' */
+.typcn-sort-alphabetically-outline::before { content: '\e0ea'; } /* '' */
+.typcn-sort-alphabetically::before { content: '\e0eb'; } /* '' */
+.typcn-sort-numerically-outline::before { content: '\e0ec'; } /* '' */
+.typcn-sort-numerically::before { content: '\e0ed'; } /* '' */
+.typcn-spanner-outline::before { content: '\e0ee'; } /* '' */
+.typcn-spanner::before { content: '\e0ef'; } /* '' */
+.typcn-star-outline::before { content: '\e0f0'; } /* '' */
+.typcn-star::before { content: '\e0f1'; } /* '' */
+.typcn-starburst-outline::before { content: '\e0f2'; } /* '' */
+.typcn-starburst::before { content: '\e0f3'; } /* '' */
+.typcn-stopwatch::before { content: '\e0f4'; } /* '' */
+.typcn-support::before { content: '\e0f5'; } /* '' */
+.typcn-tabs-outline::before { content: '\e0f6'; } /* '' */
+.typcn-tag::before { content: '\e0f7'; } /* '' */
+.typcn-tags::before { content: '\e0f8'; } /* '' */
+.typcn-th-large-outline::before { content: '\e0f9'; } /* '' */
+.typcn-th-large::before { content: '\e0fa'; } /* '' */
+.typcn-th-list-outline::before { content: '\e0fb'; } /* '' */
+.typcn-th-list::before { content: '\e0fc'; } /* '' */
+.typcn-th-menu-outline::before { content: '\e0fd'; } /* '' */
+.typcn-th-menu::before { content: '\e0fe'; } /* '' */
+.typcn-th-small-outline::before { content: '\e0ff'; } /* '' */
+.typcn-th-small::before { content: '\e100'; } /* '' */
+.typcn-thermometer::before { content: '\e101'; } /* '' */
+.typcn-thumbs-down::before { content: '\e102'; } /* '' */
+.typcn-thumbs-up::before { content: '\e103'; } /* '' */
+.typcn-tick-outline::before { content: '\e104'; } /* '' */
+.typcn-tick::before { content: '\e105'; } /* '' */
+.typcn-ticket::before { content: '\e106'; } /* '' */
+.typcn-time::before { content: '\e107'; } /* '' */
+.typcn-times-outline::before { content: '\e108'; } /* '' */
+.typcn-times::before { content: '\e109'; } /* '' */
+.typcn-trash::before { content: '\e10a'; } /* '' */
+.typcn-tree::before { content: '\e10b'; } /* '' */
+.typcn-upload-outline::before { content: '\e10c'; } /* '' */
+.typcn-upload::before { content: '\e10d'; } /* '' */
+.typcn-user-add-outline::before { content: '\e10e'; } /* '' */
+.typcn-user-add::before { content: '\e10f'; } /* '' */
+.typcn-user-delete-outline::before { content: '\e110'; } /* '' */
+.typcn-user-delete::before { content: '\e111'; } /* '' */
+.typcn-user-outline::before { content: '\e112'; } /* '' */
+.typcn-user::before { content: '\e113'; } /* '' */
+.typcn-video-outline::before { content: '\e114'; } /* '' */
+.typcn-video::before { content: '\e115'; } /* '' */
+.typcn-volume-down::before { content: '\e116'; } /* '' */
+.typcn-volume-mute::before { content: '\e117'; } /* '' */
+.typcn-volume-up::before { content: '\e118'; } /* '' */
+.typcn-volume::before { content: '\e119'; } /* '' */
+.typcn-warning-outline::before { content: '\e11a'; } /* '' */
+.typcn-warning::before { content: '\e11b'; } /* '' */
+.typcn-watch::before { content: '\e11c'; } /* '' */
+.typcn-waves-outline::before { content: '\e11d'; } /* '' */
+.typcn-waves::before { content: '\e11e'; } /* '' */
+.typcn-weather-cloudy::before { content: '\e11f'; } /* '' */
+.typcn-weather-downpour::before { content: '\e120'; } /* '' */
+.typcn-weather-night::before { content: '\e121'; } /* '' */
+.typcn-weather-partly-sunny::before { content: '\e122'; } /* '' */
+.typcn-weather-shower::before { content: '\e123'; } /* '' */
+.typcn-weather-snow::before { content: '\e124'; } /* '' */
+.typcn-weather-stormy::before { content: '\e125'; } /* '' */
+.typcn-weather-sunny::before { content: '\e126'; } /* '' */
+.typcn-weather-windy-cloudy::before { content: '\e127'; } /* '' */
+.typcn-weather-windy::before { content: '\e128'; } /* '' */
+.typcn-wi-fi-outline::before { content: '\e129'; } /* '' */
+.typcn-wi-fi::before { content: '\e12a'; } /* '' */
+.typcn-wine::before { content: '\e12b'; } /* '' */
+.typcn-world-outline::before { content: '\e12c'; } /* '' */
+.typcn-world::before { content: '\e12d'; } /* '' */
+.typcn-zoom-in-outline::before { content: '\e12e'; } /* '' */
+.typcn-zoom-in::before { content: '\e12f'; } /* '' */
+.typcn-zoom-out-outline::before { content: '\e130'; } /* '' */
+.typcn-zoom-out::before { content: '\e131'; } /* '' */
+.typcn-zoom-outline::before { content: '\e132'; } /* '' */
+.typcn-zoom::before { content: '\e133'; } /* '' */</style><script>function toggleCodes(on) {
   var obj = document.getElementById('icons');
   
   if (on) {
@@ -970,5 +407,5 @@ body {
     obj.className = obj.className.replace(' codesOn', '');
   }
 }
-</script></head><body><div class="container header"><h1>Typicons
- <small>font demo</small></h1><label class="switch"><input type="checkbox" onclick="toggleCodes(this.checked)">show codes</label></div><div id="icons" class="container"><div class="row"><div class="icon"><i class="typcn-adjust-contrast"></i> <span class="i-name">adjust-contrast</span><span class="i-code">0x2710</span></div><div class="icon"><i class="typcn-anchor"></i> <span class="i-name">anchor</span><span class="i-code">0x2711</span></div><div class="icon"><i class="typcn-archive"></i> <span class="i-name">archive</span><span class="i-code">0x2712</span></div><div class="icon"><i class="typcn-arrow-back"></i> <span class="i-name">arrow-back</span><span class="i-code">0x2713</span></div><div class="icon"><i class="typcn-arrow-down"></i> <span class="i-name">arrow-down</span><span class="i-code">0x2714</span></div><div class="icon"><i class="typcn-arrow-forward"></i> <span class="i-name">arrow-forward</span><span class="i-code">0x2715</span></div><div class="icon"><i class="typcn-arrow-left"></i> <span class="i-name">arrow-left</span><span class="i-code">0x2716</span></div><div class="icon"><i class="typcn-arrow-line-down"></i> <span class="i-name">arrow-line-down</span><span class="i-code">0x2717</span></div><div class="icon"><i class="typcn-arrow-line-left"></i> <span class="i-name">arrow-line-left</span><span class="i-code">0x2718</span></div><div class="icon"><i class="typcn-arrow-line-right"></i> <span class="i-name">arrow-line-right</span><span class="i-code">0x2719</span></div><div class="icon"><i class="typcn-arrow-line-up"></i> <span class="i-name">arrow-line-up</span><span class="i-code">0x271a</span></div><div class="icon"><i class="typcn-arrow-loop"></i> <span class="i-name">arrow-loop</span><span class="i-code">0x271b</span></div><div class="icon"><i class="typcn-arrow-maximise"></i> <span class="i-name">arrow-maximise</span><span class="i-code">0x271c</span></div><div class="icon"><i class="typcn-arrow-merge"></i> <span class="i-name">arrow-merge</span><span class="i-code">0x271d</span></div><div class="icon"><i class="typcn-arrow-minimise"></i> <span class="i-name">arrow-minimise</span><span class="i-code">0x271e</span></div><div class="icon"><i class="typcn-arrow-move"></i> <span class="i-name">arrow-move</span><span class="i-code">0x271f</span></div><div class="icon"><i class="typcn-arrow-repeat"></i> <span class="i-name">arrow-repeat</span><span class="i-code">0x2720</span></div><div class="icon"><i class="typcn-arrow-right"></i> <span class="i-name">arrow-right</span><span class="i-code">0x2721</span></div><div class="icon"><i class="typcn-arrow-shuffle"></i> <span class="i-name">arrow-shuffle</span><span class="i-code">0x2722</span></div><div class="icon"><i class="typcn-arrow-split"></i> <span class="i-name">arrow-split</span><span class="i-code">0x2723</span></div><div class="icon"><i class="typcn-arrow-sync"></i> <span class="i-name">arrow-sync</span><span class="i-code">0x2724</span></div><div class="icon"><i class="typcn-arrow-up"></i> <span class="i-name">arrow-up</span><span class="i-code">0x2725</span></div><div class="icon"><i class="typcn-at"></i> <span class="i-name">at</span><span class="i-code">0x2726</span></div><div class="icon"><i class="typcn-attachment"></i> <span class="i-name">attachment</span><span class="i-code">0x2727</span></div><div class="icon"><i class="typcn-backspace"></i> <span class="i-name">backspace</span><span class="i-code">0x2728</span></div><div class="icon"><i class="typcn-battery-charge"></i> <span class="i-name">battery-charge</span><span class="i-code">0x2729</span></div><div class="icon"><i class="typcn-battery-full"></i> <span class="i-name">battery-full</span><span class="i-code">0x272a</span></div><div class="icon"><i class="typcn-battery-high"></i> <span class="i-name">battery-high</span><span class="i-code">0x272b</span></div><div class="icon"><i class="typcn-battery-low"></i> <span class="i-name">battery-low</span><span class="i-code">0x272c</span></div><div class="icon"><i class="typcn-battery-mid"></i> <span class="i-name">battery-mid</span><span class="i-code">0x272d</span></div><div class="icon"><i class="typcn-beaker"></i> <span class="i-name">beaker</span><span class="i-code">0x272e</span></div><div class="icon"><i class="typcn-beer"></i> <span class="i-name">beer</span><span class="i-code">0x272f</span></div><div class="icon"><i class="typcn-bell"></i> <span class="i-name">bell</span><span class="i-code">0x2730</span></div><div class="icon"><i class="typcn-book"></i> <span class="i-name">book</span><span class="i-code">0x2731</span></div><div class="icon"><i class="typcn-bookmark"></i> <span class="i-name">bookmark</span><span class="i-code">0x2732</span></div><div class="icon"><i class="typcn-briefcase"></i> <span class="i-name">briefcase</span><span class="i-code">0x2733</span></div><div class="icon"><i class="typcn-brush"></i> <span class="i-name">brush</span><span class="i-code">0x2734</span></div><div class="icon"><i class="typcn-business-card"></i> <span class="i-name">business-card</span><span class="i-code">0x2735</span></div><div class="icon"><i class="typcn-calculator"></i> <span class="i-name">calculator</span><span class="i-code">0x2736</span></div><div class="icon"><i class="typcn-calender"></i> <span class="i-name">calender</span><span class="i-code">0x2737</span></div><div class="icon"><i class="typcn-camera"></i> <span class="i-name">camera</span><span class="i-code">0x2738</span></div><div class="icon"><i class="typcn-chart-area"></i> <span class="i-name">chart-area</span><span class="i-code">0x2739</span></div><div class="icon"><i class="typcn-chart-bar"></i> <span class="i-name">chart-bar</span><span class="i-code">0x273a</span></div><div class="icon"><i class="typcn-chart-line"></i> <span class="i-name">chart-line</span><span class="i-code">0x273b</span></div><div class="icon"><i class="typcn-chart-pie"></i> <span class="i-name">chart-pie</span><span class="i-code">0x273c</span></div><div class="icon"><i class="typcn-chat-typing"></i> <span class="i-name">chat-typing</span><span class="i-code">0x273d</span></div><div class="icon"><i class="typcn-chevron-left"></i> <span class="i-name">chevron-left</span><span class="i-code">0x273e</span></div><div class="icon"><i class="typcn-chevron-right"></i> <span class="i-name">chevron-right</span><span class="i-code">0x273f</span></div><div class="icon"><i class="typcn-clipboard"></i> <span class="i-name">clipboard</span><span class="i-code">0x2740</span></div><div class="icon"><i class="typcn-cloud-storage"></i> <span class="i-name">cloud-storage</span><span class="i-code">0x2741</span></div><div class="icon"><i class="typcn-code"></i> <span class="i-name">code</span><span class="i-code">0x2742</span></div><div class="icon"><i class="typcn-coffee"></i> <span class="i-name">coffee</span><span class="i-code">0x2743</span></div><div class="icon"><i class="typcn-cog"></i> <span class="i-name">cog</span><span class="i-code">0x2744</span></div><div class="icon"><i class="typcn-compass"></i> <span class="i-name">compass</span><span class="i-code">0x2745</span></div><div class="icon"><i class="typcn-contacts"></i> <span class="i-name">contacts</span><span class="i-code">0x2746</span></div><div class="icon"><i class="typcn-credit-card"></i> <span class="i-name">credit-card</span><span class="i-code">0x2747</span></div><div class="icon"><i class="typcn-database"></i> <span class="i-name">database</span><span class="i-code">0x2748</span></div><div class="icon"><i class="typcn-delete"></i> <span class="i-name">delete</span><span class="i-code">0x2749</span></div><div class="icon"><i class="typcn-device-desktop"></i> <span class="i-name">device-desktop</span><span class="i-code">0x274a</span></div><div class="icon"><i class="typcn-device-laptop"></i> <span class="i-name">device-laptop</span><span class="i-code">0x274b</span></div><div class="icon"><i class="typcn-device-phone"></i> <span class="i-name">device-phone</span><span class="i-code">0x274c</span></div><div class="icon"><i class="typcn-device-tablet"></i> <span class="i-name">device-tablet</span><span class="i-code">0x274d</span></div><div class="icon"><i class="typcn-directions"></i> <span class="i-name">directions</span><span class="i-code">0x274e</span></div><div class="icon"><i class="typcn-divide"></i> <span class="i-name">divide</span><span class="i-code">0x274f</span></div><div class="icon"><i class="typcn-document-add"></i> <span class="i-name">document-add</span><span class="i-code">0x2750</span></div><div class="icon"><i class="typcn-document-delete"></i> <span class="i-name">document-delete</span><span class="i-code">0x2751</span></div><div class="icon"><i class="typcn-document-text"></i> <span class="i-name">document-text</span><span class="i-code">0x2752</span></div><div class="icon"><i class="typcn-document"></i> <span class="i-name">document</span><span class="i-code">0x2753</span></div><div class="icon"><i class="typcn-download"></i> <span class="i-name">download</span><span class="i-code">0x2754</span></div><div class="icon"><i class="typcn-edit"></i> <span class="i-name">edit</span><span class="i-code">0x2755</span></div><div class="icon"><i class="typcn-eject"></i> <span class="i-name">eject</span><span class="i-code">0x2756</span></div><div class="icon"><i class="typcn-equals"></i> <span class="i-name">equals</span><span class="i-code">0x2757</span></div><div class="icon"><i class="typcn-export"></i> <span class="i-name">export</span><span class="i-code">0x2758</span></div><div class="icon"><i class="typcn-eye"></i> <span class="i-name">eye</span><span class="i-code">0x2759</span></div><div class="icon"><i class="typcn-feather"></i> <span class="i-name">feather</span><span class="i-code">0x275a</span></div><div class="icon"><i class="typcn-film"></i> <span class="i-name">film</span><span class="i-code">0x275b</span></div><div class="icon"><i class="typcn-flag"></i> <span class="i-name">flag</span><span class="i-code">0x275c</span></div><div class="icon"><i class="typcn-flash"></i> <span class="i-name">flash</span><span class="i-code">0x275d</span></div><div class="icon"><i class="typcn-folder-add"></i> <span class="i-name">folder-add</span><span class="i-code">0x275e</span></div><div class="icon"><i class="typcn-folder-delete"></i> <span class="i-name">folder-delete</span><span class="i-code">0x275f</span></div><div class="icon"><i class="typcn-folder"></i> <span class="i-name">folder</span><span class="i-code">0x2760</span></div><div class="icon"><i class="typcn-gift"></i> <span class="i-name">gift</span><span class="i-code">0x2761</span></div><div class="icon"><i class="typcn-globe"></i> <span class="i-name">globe</span><span class="i-code">0x2762</span></div><div class="icon"><i class="typcn-group"></i> <span class="i-name">group</span><span class="i-code">0x2763</span></div><div class="icon"><i class="typcn-headphones"></i> <span class="i-name">headphones</span><span class="i-code">0x2764</span></div><div class="icon"><i class="typcn-heart"></i> <span class="i-name">heart</span><span class="i-code">0x2765</span></div><div class="icon"><i class="typcn-home"></i> <span class="i-name">home</span><span class="i-code">0x2766</span></div><div class="icon"><i class="typcn-image"></i> <span class="i-name">image</span><span class="i-code">0x2767</span></div><div class="icon"><i class="typcn-infinity"></i> <span class="i-name">infinity</span><span class="i-code">0x2768</span></div><div class="icon"><i class="typcn-info-large"></i> <span class="i-name">info-large</span><span class="i-code">0x2769</span></div><div class="icon"><i class="typcn-info"></i> <span class="i-name">info</span><span class="i-code">0x276a</span></div><div class="icon"><i class="typcn-input-checked"></i> <span class="i-name">input-checked</span><span class="i-code">0x276b</span></div><div class="icon"><i class="typcn-key"></i> <span class="i-name">key</span><span class="i-code">0x276c</span></div><div class="icon"><i class="typcn-leaf"></i> <span class="i-name">leaf</span><span class="i-code">0x276d</span></div><div class="icon"><i class="typcn-lightbulb"></i> <span class="i-name">lightbulb</span><span class="i-code">0x276e</span></div><div class="icon"><i class="typcn-link"></i> <span class="i-name">link</span><span class="i-code">0x276f</span></div><div class="icon"><i class="typcn-location-services"></i> <span class="i-name">location-services</span><span class="i-code">0x2770</span></div><div class="icon"><i class="typcn-lock-closed"></i> <span class="i-name">lock-closed</span><span class="i-code">0x2771</span></div><div class="icon"><i class="typcn-lock-open"></i> <span class="i-name">lock-open</span><span class="i-code">0x2772</span></div><div class="icon"><i class="typcn-mail"></i> <span class="i-name">mail</span><span class="i-code">0x2773</span></div><div class="icon"><i class="typcn-map-location"></i> <span class="i-name">map-location</span><span class="i-code">0x2774</span></div><div class="icon"><i class="typcn-map"></i> <span class="i-name">map</span><span class="i-code">0x2775</span></div><div class="icon"><i class="typcn-media-eject"></i> <span class="i-name">media-eject</span><span class="i-code">0x2776</span></div><div class="icon"><i class="typcn-media-fast-forward"></i> <span class="i-name">media-fast-forward</span><span class="i-code">0x2777</span></div><div class="icon"><i class="typcn-media-play"></i> <span class="i-name">media-play</span><span class="i-code">0x2778</span></div><div class="icon"><i class="typcn-media-record"></i> <span class="i-name">media-record</span><span class="i-code">0x2779</span></div><div class="icon"><i class="typcn-media-rewind"></i> <span class="i-name">media-rewind</span><span class="i-code">0x277a</span></div><div class="icon"><i class="typcn-media-stop"></i> <span class="i-name">media-stop</span><span class="i-code">0x277b</span></div><div class="icon"><i class="typcn-menu"></i> <span class="i-name">menu</span><span class="i-code">0x277c</span></div><div class="icon"><i class="typcn-message"></i> <span class="i-name">message</span><span class="i-code">0x277d</span></div><div class="icon"><i class="typcn-messages"></i> <span class="i-name">messages</span><span class="i-code">0x277e</span></div><div class="icon"><i class="typcn-microphone"></i> <span class="i-name">microphone</span><span class="i-code">0x277f</span></div><div class="icon"><i class="typcn-minus"></i> <span class="i-name">minus</span><span class="i-code">0x2780</span></div><div class="icon"><i class="typcn-news"></i> <span class="i-name">news</span><span class="i-code">0x2781</span></div><div class="icon"><i class="typcn-notes"></i> <span class="i-name">notes</span><span class="i-code">0x2782</span></div><div class="icon"><i class="typcn-pen"></i> <span class="i-name">pen</span><span class="i-code">0x2783</span></div><div class="icon"><i class="typcn-pencil"></i> <span class="i-name">pencil</span><span class="i-code">0x2784</span></div><div class="icon"><i class="typcn-phone"></i> <span class="i-name">phone</span><span class="i-code">0x2785</span></div><div class="icon"><i class="typcn-pi"></i> <span class="i-name">pi</span><span class="i-code">0x2786</span></div><div class="icon"><i class="typcn-pin"></i> <span class="i-name">pin</span><span class="i-code">0x2787</span></div><div class="icon"><i class="typcn-pipette"></i> <span class="i-name">pipette</span><span class="i-code">0x2788</span></div><div class="icon"><i class="typcn-plane"></i> <span class="i-name">plane</span><span class="i-code">0x2789</span></div><div class="icon"><i class="typcn-plug"></i> <span class="i-name">plug</span><span class="i-code">0x278a</span></div><div class="icon"><i class="typcn-plus"></i> <span class="i-name">plus</span><span class="i-code">0x278b</span></div><div class="icon"><i class="typcn-point-of-interest"></i> <span class="i-name">point-of-interest</span><span class="i-code">0x278c</span></div><div class="icon"><i class="typcn-power"></i> <span class="i-name">power</span><span class="i-code">0x278d</span></div><div class="icon"><i class="typcn-printer"></i> <span class="i-name">printer</span><span class="i-code">0x278e</span></div><div class="icon"><i class="typcn-puzzle"></i> <span class="i-name">puzzle</span><span class="i-code">0x278f</span></div><div class="icon"><i class="typcn-radar"></i> <span class="i-name">radar</span><span class="i-code">0x2790</span></div><div class="icon"><i class="typcn-refresh"></i> <span class="i-name">refresh</span><span class="i-code">0x2791</span></div><div class="icon"><i class="typcn-rss"></i> <span class="i-name">rss</span><span class="i-code">0x2792</span></div><div class="icon"><i class="typcn-scissors"></i> <span class="i-name">scissors</span><span class="i-code">0x2793</span></div><div class="icon"><i class="typcn-shopping-cart"></i> <span class="i-name">shopping-cart</span><span class="i-code">0x2794</span></div><div class="icon"><i class="typcn-shopping-bag"></i> <span class="i-name">shopping-bag</span><span class="i-code">0x2795</span></div><div class="icon"><i class="typcn-social-dribbble"></i> <span class="i-name">social-dribbble</span><span class="i-code">0x2796</span></div><div class="icon"><i class="typcn-social-facebook"></i> <span class="i-name">social-facebook</span><span class="i-code">0x2797</span></div><div class="icon"><i class="typcn-social-flickr"></i> <span class="i-name">social-flickr</span><span class="i-code">0x2798</span></div><div class="icon"><i class="typcn-social-linkedin"></i> <span class="i-name">social-linkedin</span><span class="i-code">0x2799</span></div><div class="icon"><i class="typcn-social-pinterest"></i> <span class="i-name">social-pinterest</span><span class="i-code">0x279a</span></div><div class="icon"><i class="typcn-social-skype"></i> <span class="i-name">social-skype</span><span class="i-code">0x279b</span></div><div class="icon"><i class="typcn-social-tumbler"></i> <span class="i-name">social-tumbler</span><span class="i-code">0x279c</span></div><div class="icon"><i class="typcn-social-twitter"></i> <span class="i-name">social-twitter</span><span class="i-code">0x279d</span></div><div class="icon"><i class="typcn-social-vimeo"></i> <span class="i-name">social-vimeo</span><span class="i-code">0x279e</span></div><div class="icon"><i class="typcn-sort-alphabetically"></i> <span class="i-name">sort-alphabetically</span><span class="i-code">0x279f</span></div><div class="icon"><i class="typcn-sort-numerically"></i> <span class="i-name">sort-numerically</span><span class="i-code">0x27a0</span></div><div class="icon"><i class="typcn-spanner"></i> <span class="i-name">spanner</span><span class="i-code">0x27a1</span></div><div class="icon"><i class="typcn-star"></i> <span class="i-name">star</span><span class="i-code">0x27a2</span></div><div class="icon"><i class="typcn-stopwatch"></i> <span class="i-name">stopwatch</span><span class="i-code">0x27a3</span></div><div class="icon"><i class="typcn-support"></i> <span class="i-name">support</span><span class="i-code">0x27a4</span></div><div class="icon"><i class="typcn-tabs"></i> <span class="i-name">tabs</span><span class="i-code">0x27a5</span></div><div class="icon"><i class="typcn-tag"></i> <span class="i-name">tag</span><span class="i-code">0x27a6</span></div><div class="icon"><i class="typcn-tags"></i> <span class="i-name">tags</span><span class="i-code">0x27a7</span></div><div class="icon"><i class="typcn-th-large"></i> <span class="i-name">th-large</span><span class="i-code">0x27a8</span></div><div class="icon"><i class="typcn-th-list"></i> <span class="i-name">th-list</span><span class="i-code">0x27a9</span></div><div class="icon"><i class="typcn-th-small"></i> <span class="i-name">th-small</span><span class="i-code">0x27aa</span></div><div class="icon"><i class="typcn-thermometer"></i> <span class="i-name">thermometer</span><span class="i-code">0x27ab</span></div><div class="icon"><i class="typcn-thumbs-down"></i> <span class="i-name">thumbs-down</span><span class="i-code">0x27ac</span></div><div class="icon"><i class="typcn-thumbs-up"></i> <span class="i-name">thumbs-up</span><span class="i-code">0x27ad</span></div><div class="icon"><i class="typcn-tick"></i> <span class="i-name">tick</span><span class="i-code">0x27ae</span></div><div class="icon"><i class="typcn-ticket"></i> <span class="i-name">ticket</span><span class="i-code">0x27af</span></div><div class="icon"><i class="typcn-time"></i> <span class="i-name">time</span><span class="i-code">0x27b0</span></div><div class="icon"><i class="typcn-times"></i> <span class="i-name">times</span><span class="i-code">0x27b1</span></div><div class="icon"><i class="typcn-trash"></i> <span class="i-name">trash</span><span class="i-code">0x27b2</span></div><div class="icon"><i class="typcn-tree"></i> <span class="i-name">tree</span><span class="i-code">0x27b3</span></div><div class="icon"><i class="typcn-upload"></i> <span class="i-name">upload</span><span class="i-code">0x27b4</span></div><div class="icon"><i class="typcn-user-add"></i> <span class="i-name">user-add</span><span class="i-code">0x27b5</span></div><div class="icon"><i class="typcn-user-delete"></i> <span class="i-name">user-delete</span><span class="i-code">0x27b6</span></div><div class="icon"><i class="typcn-user"></i> <span class="i-name">user</span><span class="i-code">0x27b7</span></div><div class="icon"><i class="typcn-video"></i> <span class="i-name">video</span><span class="i-code">0x27b8</span></div><div class="icon"><i class="typcn-volume-mute"></i> <span class="i-name">volume-mute</span><span class="i-code">0x27b9</span></div><div class="icon"><i class="typcn-volume-up"></i> <span class="i-name">volume-up</span><span class="i-code">0x27ba</span></div><div class="icon"><i class="typcn-volume"></i> <span class="i-name">volume</span><span class="i-code">0x27bb</span></div><div class="icon"><i class="typcn-voume-down"></i> <span class="i-name">voume-down</span><span class="i-code">0x27bc</span></div><div class="icon"><i class="typcn-warning"></i> <span class="i-name">warning</span><span class="i-code">0x27bd</span></div><div class="icon"><i class="typcn-watch"></i> <span class="i-name">watch</span><span class="i-code">0x27be</span></div><div class="icon"><i class="typcn-waves"></i> <span class="i-name">waves</span><span class="i-code">0x27bf</span></div><div class="icon"><i class="typcn-weather-cloudy"></i> <span class="i-name">weather-cloudy</span><span class="i-code">0x27c0</span></div><div class="icon"><i class="typcn-weather-downpour"></i> <span class="i-name">weather-downpour</span><span class="i-code">0x27c1</span></div><div class="icon"><i class="typcn-weather-night"></i> <span class="i-name">weather-night</span><span class="i-code">0x27c2</span></div><div class="icon"><i class="typcn-weather-partly-sunny"></i> <span class="i-name">weather-partly-sunny</span><span class="i-code">0x27c3</span></div><div class="icon"><i class="typcn-weather-shower"></i> <span class="i-name">weather-shower</span><span class="i-code">0x27c4</span></div><div class="icon"><i class="typcn-weather-snow"></i> <span class="i-name">weather-snow</span><span class="i-code">0x27c5</span></div><div class="icon"><i class="typcn-weather-stormy"></i> <span class="i-name">weather-stormy</span><span class="i-code">0x27c6</span></div><div class="icon"><i class="typcn-weather-sunny"></i> <span class="i-name">weather-sunny</span><span class="i-code">0x27c7</span></div><div class="icon"><i class="typcn-weather-windy-cloudy"></i> <span class="i-name">weather-windy-cloudy</span><span class="i-code">0x27c8</span></div><div class="icon"><i class="typcn-weather-windy"></i> <span class="i-name">weather-windy</span><span class="i-code">0x27c9</span></div><div class="icon"><i class="typcn-wi-fi"></i> <span class="i-name">wi-fi</span><span class="i-code">0x27ca</span></div><div class="icon"><i class="typcn-wine"></i> <span class="i-name">wine</span><span class="i-code">0x27cb</span></div><div class="icon"><i class="typcn-world"></i> <span class="i-name">world</span><span class="i-code">0x27cc</span></div><div class="icon"><i class="typcn-zoom-in"></i> <span class="i-name">zoom-in</span><span class="i-code">0x27cd</span></div><div class="icon"><i class="typcn-zoom-out"></i> <span class="i-name">zoom-out</span><span class="i-code">0x27ce</span></div><div class="icon"><i class="typcn-zoom"></i> <span class="i-name">zoom</span><span class="i-code">0x27cf</span></div></div></div></body></html>
+</script></head><body><div class="page-header"><div class="container"><h1>Typicons
+ <small>font demo</small></h1><label class="switch"><input type="checkbox" onclick="toggleCodes(this.checked)">show codes</label></div></div><div id="icons"><div id="preview" class="clearfix"><div data-name="adjust-brightness" data-code="0xe000" data-match=" adjust brightness " class="icon"><span class="typcn typcn-adjust-brightness"></span></div><div data-name="adjust-contrast" data-code="0xe001" data-match=" adjust contrast " class="icon"><span class="typcn typcn-adjust-contrast"></span></div><div data-name="anchor-outline" data-code="0xe002" data-match=" anchor outline " class="icon"><span class="typcn typcn-anchor-outline"></span></div><div data-name="anchor" data-code="0xe003" data-match=" anchor " class="icon"><span class="typcn typcn-anchor"></span></div><div data-name="archive" data-code="0xe004" data-match=" archive " class="icon"><span class="typcn typcn-archive"></span></div><div data-name="arrow-back-outline" data-code="0xe005" data-match=" arrow back outline " class="icon"><span class="typcn typcn-arrow-back-outline"></span></div><div data-name="arrow-back" data-code="0xe006" data-match=" arrow back " class="icon"><span class="typcn typcn-arrow-back"></span></div><div data-name="arrow-down-outline" data-code="0xe007" data-match=" arrow down outline " class="icon"><span class="typcn typcn-arrow-down-outline"></span></div><div data-name="arrow-down-thick" data-code="0xe008" data-match=" arrow down thick " class="icon"><span class="typcn typcn-arrow-down-thick"></span></div><div data-name="arrow-down" data-code="0xe009" data-match=" arrow down " class="icon"><span class="typcn typcn-arrow-down"></span></div><div data-name="arrow-forward-outline" data-code="0xe00a" data-match=" arrow forward outline " class="icon"><span class="typcn typcn-arrow-forward-outline"></span></div><div data-name="arrow-forward" data-code="0xe00b" data-match=" arrow forward " class="icon"><span class="typcn typcn-arrow-forward"></span></div><div data-name="arrow-left-outline" data-code="0xe00c" data-match=" arrow left outline " class="icon"><span class="typcn typcn-arrow-left-outline"></span></div><div data-name="arrow-left-thick" data-code="0xe00d" data-match=" arrow left thick " class="icon"><span class="typcn typcn-arrow-left-thick"></span></div><div data-name="arrow-left" data-code="0xe00e" data-match=" arrow left " class="icon"><span class="typcn typcn-arrow-left"></span></div><div data-name="arrow-loop-outline" data-code="0xe00f" data-match=" arrow loop outline " class="icon"><span class="typcn typcn-arrow-loop-outline"></span></div><div data-name="arrow-loop" data-code="0xe010" data-match=" arrow loop " class="icon"><span class="typcn typcn-arrow-loop"></span></div><div data-name="arrow-maximise-outline" data-code="0xe011" data-match=" arrow maximise outline " class="icon"><span class="typcn typcn-arrow-maximise-outline"></span></div><div data-name="arrow-maximise" data-code="0xe012" data-match=" arrow maximise " class="icon"><span class="typcn typcn-arrow-maximise"></span></div><div data-name="arrow-minimise-outline" data-code="0xe013" data-match=" arrow minimise outline " class="icon"><span class="typcn typcn-arrow-minimise-outline"></span></div><div data-name="arrow-minimise" data-code="0xe014" data-match=" arrow minimise " class="icon"><span class="typcn typcn-arrow-minimise"></span></div><div data-name="arrow-move-outline" data-code="0xe015" data-match=" arrow move outline " class="icon"><span class="typcn typcn-arrow-move-outline"></span></div><div data-name="arrow-move" data-code="0xe016" data-match=" arrow move " class="icon"><span class="typcn typcn-arrow-move"></span></div><div data-name="arrow-repeat-outline" data-code="0xe017" data-match=" arrow repeat outline " class="icon"><span class="typcn typcn-arrow-repeat-outline"></span></div><div data-name="arrow-repeat" data-code="0xe018" data-match=" arrow repeat " class="icon"><span class="typcn typcn-arrow-repeat"></span></div><div data-name="arrow-right-outline" data-code="0xe019" data-match=" arrow right outline " class="icon"><span class="typcn typcn-arrow-right-outline"></span></div><div data-name="arrow-right-thick" data-code="0xe01a" data-match=" arrow right thick " class="icon"><span class="typcn typcn-arrow-right-thick"></span></div><div data-name="arrow-right" data-code="0xe01b" data-match=" arrow right " class="icon"><span class="typcn typcn-arrow-right"></span></div><div data-name="arrow-shuffle" data-code="0xe01c" data-match=" arrow shuffle " class="icon"><span class="typcn typcn-arrow-shuffle"></span></div><div data-name="arrow-sync-outline" data-code="0xe01d" data-match=" arrow sync outline " class="icon"><span class="typcn typcn-arrow-sync-outline"></span></div><div data-name="arrow-sync" data-code="0xe01e" data-match=" arrow sync " class="icon"><span class="typcn typcn-arrow-sync"></span></div><div data-name="arrow-up-outline" data-code="0xe01f" data-match=" arrow up outline " class="icon"><span class="typcn typcn-arrow-up-outline"></span></div><div data-name="arrow-up-thick" data-code="0xe020" data-match=" arrow up thick " class="icon"><span class="typcn typcn-arrow-up-thick"></span></div><div data-name="arrow-up" data-code="0xe021" data-match=" arrow up " class="icon"><span class="typcn typcn-arrow-up"></span></div><div data-name="at" data-code="0xe022" data-match=" at " class="icon"><span class="typcn typcn-at"></span></div><div data-name="attachment-outline" data-code="0xe023" data-match=" attachment outline " class="icon"><span class="typcn typcn-attachment-outline"></span></div><div data-name="attachment" data-code="0xe024" data-match=" attachment " class="icon"><span class="typcn typcn-attachment"></span></div><div data-name="backspace-outline" data-code="0xe025" data-match=" backspace outline " class="icon"><span class="typcn typcn-backspace-outline"></span></div><div data-name="backspace" data-code="0xe026" data-match=" backspace " class="icon"><span class="typcn typcn-backspace"></span></div><div data-name="battery-charge" data-code="0xe027" data-match=" battery charge " class="icon"><span class="typcn typcn-battery-charge"></span></div><div data-name="battery-full" data-code="0xe028" data-match=" battery full " class="icon"><span class="typcn typcn-battery-full"></span></div><div data-name="battery-high" data-code="0xe029" data-match=" battery high " class="icon"><span class="typcn typcn-battery-high"></span></div><div data-name="battery-low" data-code="0xe02a" data-match=" battery low " class="icon"><span class="typcn typcn-battery-low"></span></div><div data-name="battery-mid" data-code="0xe02b" data-match=" battery mid " class="icon"><span class="typcn typcn-battery-mid"></span></div><div data-name="beaker" data-code="0xe02c" data-match=" beaker " class="icon"><span class="typcn typcn-beaker"></span></div><div data-name="beer" data-code="0xe02d" data-match=" beer " class="icon"><span class="typcn typcn-beer"></span></div><div data-name="bell" data-code="0xe02e" data-match=" bell " class="icon"><span class="typcn typcn-bell"></span></div><div data-name="book" data-code="0xe02f" data-match=" book " class="icon"><span class="typcn typcn-book"></span></div><div data-name="bookmark" data-code="0xe030" data-match=" bookmark " class="icon"><span class="typcn typcn-bookmark"></span></div><div data-name="briefcase" data-code="0xe031" data-match=" briefcase " class="icon"><span class="typcn typcn-briefcase"></span></div><div data-name="brush" data-code="0xe032" data-match=" brush " class="icon"><span class="typcn typcn-brush"></span></div><div data-name="business-card" data-code="0xe033" data-match=" business card " class="icon"><span class="typcn typcn-business-card"></span></div><div data-name="calculator" data-code="0xe034" data-match=" calculator " class="icon"><span class="typcn typcn-calculator"></span></div><div data-name="calender-outline" data-code="0xe035" data-match=" calender outline " class="icon"><span class="typcn typcn-calender-outline"></span></div><div data-name="calender" data-code="0xe036" data-match=" calender " class="icon"><span class="typcn typcn-calender"></span></div><div data-name="camera-outline" data-code="0xe037" data-match=" camera outline " class="icon"><span class="typcn typcn-camera-outline"></span></div><div data-name="camera" data-code="0xe038" data-match=" camera " class="icon"><span class="typcn typcn-camera"></span></div><div data-name="cancel-outline" data-code="0xe039" data-match=" cancel outline " class="icon"><span class="typcn typcn-cancel-outline"></span></div><div data-name="cancel" data-code="0xe03a" data-match=" cancel " class="icon"><span class="typcn typcn-cancel"></span></div><div data-name="chart-area-outline" data-code="0xe03b" data-match=" chart area outline " class="icon"><span class="typcn typcn-chart-area-outline"></span></div><div data-name="chart-area" data-code="0xe03c" data-match=" chart area " class="icon"><span class="typcn typcn-chart-area"></span></div><div data-name="chart-bar-outline" data-code="0xe03d" data-match=" chart bar outline " class="icon"><span class="typcn typcn-chart-bar-outline"></span></div><div data-name="chart-bar" data-code="0xe03e" data-match=" chart bar " class="icon"><span class="typcn typcn-chart-bar"></span></div><div data-name="chart-line-outline" data-code="0xe03f" data-match=" chart line outline " class="icon"><span class="typcn typcn-chart-line-outline"></span></div><div data-name="chart-line" data-code="0xe040" data-match=" chart line " class="icon"><span class="typcn typcn-chart-line"></span></div><div data-name="chart-pie-outline" data-code="0xe041" data-match=" chart pie outline " class="icon"><span class="typcn typcn-chart-pie-outline"></span></div><div data-name="chart-pie" data-code="0xe042" data-match=" chart pie " class="icon"><span class="typcn typcn-chart-pie"></span></div><div data-name="chevron-left-outline" data-code="0xe043" data-match=" chevron left outline " class="icon"><span class="typcn typcn-chevron-left-outline"></span></div><div data-name="chevron-left" data-code="0xe044" data-match=" chevron left " class="icon"><span class="typcn typcn-chevron-left"></span></div><div data-name="chevron-right-outline" data-code="0xe045" data-match=" chevron right outline " class="icon"><span class="typcn typcn-chevron-right-outline"></span></div><div data-name="chevron-right" data-code="0xe046" data-match=" chevron right " class="icon"><span class="typcn typcn-chevron-right"></span></div><div data-name="clipboard" data-code="0xe047" data-match=" clipboard " class="icon"><span class="typcn typcn-clipboard"></span></div><div data-name="cloud-storage" data-code="0xe048" data-match=" cloud storage " class="icon"><span class="typcn typcn-cloud-storage"></span></div><div data-name="code-outline" data-code="0xe049" data-match=" code outline " class="icon"><span class="typcn typcn-code-outline"></span></div><div data-name="code" data-code="0xe04a" data-match=" code " class="icon"><span class="typcn typcn-code"></span></div><div data-name="coffee" data-code="0xe04b" data-match=" coffee " class="icon"><span class="typcn typcn-coffee"></span></div><div data-name="cog-outline" data-code="0xe04c" data-match=" cog outline " class="icon"><span class="typcn typcn-cog-outline"></span></div><div data-name="cog" data-code="0xe04d" data-match=" cog " class="icon"><span class="typcn typcn-cog"></span></div><div data-name="compass" data-code="0xe04e" data-match=" compass " class="icon"><span class="typcn typcn-compass"></span></div><div data-name="contacts" data-code="0xe04f" data-match=" contacts " class="icon"><span class="typcn typcn-contacts"></span></div><div data-name="credit-card" data-code="0xe050" data-match=" credit card " class="icon"><span class="typcn typcn-credit-card"></span></div><div data-name="cross" data-code="0xe051" data-match=" cross " class="icon"><span class="typcn typcn-cross"></span></div><div data-name="database" data-code="0xe052" data-match=" database " class="icon"><span class="typcn typcn-database"></span></div><div data-name="delete-outline" data-code="0xe053" data-match=" delete outline " class="icon"><span class="typcn typcn-delete-outline"></span></div><div data-name="delete" data-code="0xe054" data-match=" delete " class="icon"><span class="typcn typcn-delete"></span></div><div data-name="device-desktop" data-code="0xe055" data-match=" device desktop " class="icon"><span class="typcn typcn-device-desktop"></span></div><div data-name="device-laptop" data-code="0xe056" data-match=" device laptop " class="icon"><span class="typcn typcn-device-laptop"></span></div><div data-name="device-phone" data-code="0xe057" data-match=" device phone " class="icon"><span class="typcn typcn-device-phone"></span></div><div data-name="device-tablet" data-code="0xe058" data-match=" device tablet " class="icon"><span class="typcn typcn-device-tablet"></span></div><div data-name="directions" data-code="0xe059" data-match=" directions " class="icon"><span class="typcn typcn-directions"></span></div><div data-name="divide-outline" data-code="0xe05a" data-match=" divide outline " class="icon"><span class="typcn typcn-divide-outline"></span></div><div data-name="divide" data-code="0xe05b" data-match=" divide " class="icon"><span class="typcn typcn-divide"></span></div><div data-name="document-add" data-code="0xe05c" data-match=" document add " class="icon"><span class="typcn typcn-document-add"></span></div><div data-name="document-delete" data-code="0xe05d" data-match=" document delete " class="icon"><span class="typcn typcn-document-delete"></span></div><div data-name="document-text" data-code="0xe05e" data-match=" document text " class="icon"><span class="typcn typcn-document-text"></span></div><div data-name="document" data-code="0xe05f" data-match=" document " class="icon"><span class="typcn typcn-document"></span></div><div data-name="download-outline" data-code="0xe060" data-match=" download outline " class="icon"><span class="typcn typcn-download-outline"></span></div><div data-name="download" data-code="0xe061" data-match=" download " class="icon"><span class="typcn typcn-download"></span></div><div data-name="edit" data-code="0xe062" data-match=" edit " class="icon"><span class="typcn typcn-edit"></span></div><div data-name="eject-outline" data-code="0xe063" data-match=" eject outline " class="icon"><span class="typcn typcn-eject-outline"></span></div><div data-name="eject" data-code="0xe064" data-match=" eject " class="icon"><span class="typcn typcn-eject"></span></div><div data-name="equals-outline" data-code="0xe065" data-match=" equals outline " class="icon"><span class="typcn typcn-equals-outline"></span></div><div data-name="equals" data-code="0xe066" data-match=" equals " class="icon"><span class="typcn typcn-equals"></span></div><div data-name="export-outline" data-code="0xe067" data-match=" export outline " class="icon"><span class="typcn typcn-export-outline"></span></div><div data-name="export" data-code="0xe068" data-match=" export " class="icon"><span class="typcn typcn-export"></span></div><div data-name="eye-outline" data-code="0xe069" data-match=" eye outline " class="icon"><span class="typcn typcn-eye-outline"></span></div><div data-name="eye" data-code="0xe06a" data-match=" eye " class="icon"><span class="typcn typcn-eye"></span></div><div data-name="feather" data-code="0xe06b" data-match=" feather " class="icon"><span class="typcn typcn-feather"></span></div><div data-name="film" data-code="0xe06c" data-match=" film " class="icon"><span class="typcn typcn-film"></span></div><div data-name="flag-outline" data-code="0xe06d" data-match=" flag outline " class="icon"><span class="typcn typcn-flag-outline"></span></div><div data-name="flag" data-code="0xe06e" data-match=" flag " class="icon"><span class="typcn typcn-flag"></span></div><div data-name="flash-outline" data-code="0xe06f" data-match=" flash outline " class="icon"><span class="typcn typcn-flash-outline"></span></div><div data-name="flash" data-code="0xe070" data-match=" flash " class="icon"><span class="typcn typcn-flash"></span></div><div data-name="flow-children" data-code="0xe071" data-match=" flow children " class="icon"><span class="typcn typcn-flow-children"></span></div><div data-name="flow-merge" data-code="0xe072" data-match=" flow merge " class="icon"><span class="typcn typcn-flow-merge"></span></div><div data-name="flow-parallel" data-code="0xe073" data-match=" flow parallel " class="icon"><span class="typcn typcn-flow-parallel"></span></div><div data-name="flow-switch" data-code="0xe074" data-match=" flow switch " class="icon"><span class="typcn typcn-flow-switch"></span></div><div data-name="folder-add" data-code="0xe075" data-match=" folder add " class="icon"><span class="typcn typcn-folder-add"></span></div><div data-name="folder-delete" data-code="0xe076" data-match=" folder delete " class="icon"><span class="typcn typcn-folder-delete"></span></div><div data-name="folder" data-code="0xe077" data-match=" folder " class="icon"><span class="typcn typcn-folder"></span></div><div data-name="gift" data-code="0xe078" data-match=" gift " class="icon"><span class="typcn typcn-gift"></span></div><div data-name="globe-outline" data-code="0xe079" data-match=" globe outline " class="icon"><span class="typcn typcn-globe-outline"></span></div><div data-name="globe" data-code="0xe07a" data-match=" globe " class="icon"><span class="typcn typcn-globe"></span></div><div data-name="group-outline" data-code="0xe07b" data-match=" group outline " class="icon"><span class="typcn typcn-group-outline"></span></div><div data-name="group" data-code="0xe07c" data-match=" group " class="icon"><span class="typcn typcn-group"></span></div><div data-name="headphones" data-code="0xe07d" data-match=" headphones " class="icon"><span class="typcn typcn-headphones"></span></div><div data-name="heart-outline" data-code="0xe07e" data-match=" heart outline " class="icon"><span class="typcn typcn-heart-outline"></span></div><div data-name="heart" data-code="0xe07f" data-match=" heart " class="icon"><span class="typcn typcn-heart"></span></div><div data-name="home-outline" data-code="0xe080" data-match=" home outline " class="icon"><span class="typcn typcn-home-outline"></span></div><div data-name="home" data-code="0xe081" data-match=" home " class="icon"><span class="typcn typcn-home"></span></div><div data-name="image-outline" data-code="0xe082" data-match=" image outline " class="icon"><span class="typcn typcn-image-outline"></span></div><div data-name="image" data-code="0xe083" data-match=" image " class="icon"><span class="typcn typcn-image"></span></div><div data-name="infinity-outline" data-code="0xe084" data-match=" infinity outline " class="icon"><span class="typcn typcn-infinity-outline"></span></div><div data-name="infinity" data-code="0xe085" data-match=" infinity " class="icon"><span class="typcn typcn-infinity"></span></div><div data-name="info-large-outline" data-code="0xe086" data-match=" info large outline " class="icon"><span class="typcn typcn-info-large-outline"></span></div><div data-name="info-large" data-code="0xe087" data-match=" info large " class="icon"><span class="typcn typcn-info-large"></span></div><div data-name="info-outline" data-code="0xe088" data-match=" info outline " class="icon"><span class="typcn typcn-info-outline"></span></div><div data-name="info" data-code="0xe089" data-match=" info " class="icon"><span class="typcn typcn-info"></span></div><div data-name="input-checked-outline" data-code="0xe08a" data-match=" input checked outline " class="icon"><span class="typcn typcn-input-checked-outline"></span></div><div data-name="input-checked" data-code="0xe08b" data-match=" input checked " class="icon"><span class="typcn typcn-input-checked"></span></div><div data-name="key-outline" data-code="0xe08c" data-match=" key outline " class="icon"><span class="typcn typcn-key-outline"></span></div><div data-name="key" data-code="0xe08d" data-match=" key " class="icon"><span class="typcn typcn-key"></span></div><div data-name="leaf" data-code="0xe08e" data-match=" leaf " class="icon"><span class="typcn typcn-leaf"></span></div><div data-name="lightbulb" data-code="0xe08f" data-match=" lightbulb " class="icon"><span class="typcn typcn-lightbulb"></span></div><div data-name="link-outline" data-code="0xe090" data-match=" link outline " class="icon"><span class="typcn typcn-link-outline"></span></div><div data-name="link" data-code="0xe091" data-match=" link " class="icon"><span class="typcn typcn-link"></span></div><div data-name="location-arrow-outline" data-code="0xe092" data-match=" location arrow outline " class="icon"><span class="typcn typcn-location-arrow-outline"></span></div><div data-name="location-arrow" data-code="0xe093" data-match=" location arrow " class="icon"><span class="typcn typcn-location-arrow"></span></div><div data-name="location-outline" data-code="0xe094" data-match=" location outline " class="icon"><span class="typcn typcn-location-outline"></span></div><div data-name="location" data-code="0xe095" data-match=" location " class="icon"><span class="typcn typcn-location"></span></div><div data-name="lock-closed-outline" data-code="0xe096" data-match=" lock closed outline " class="icon"><span class="typcn typcn-lock-closed-outline"></span></div><div data-name="lock-closed" data-code="0xe097" data-match=" lock closed " class="icon"><span class="typcn typcn-lock-closed"></span></div><div data-name="lock-open-outline" data-code="0xe098" data-match=" lock open outline " class="icon"><span class="typcn typcn-lock-open-outline"></span></div><div data-name="lock-open" data-code="0xe099" data-match=" lock open " class="icon"><span class="typcn typcn-lock-open"></span></div><div data-name="mail" data-code="0xe09a" data-match=" mail " class="icon"><span class="typcn typcn-mail"></span></div><div data-name="map" data-code="0xe09b" data-match=" map " class="icon"><span class="typcn typcn-map"></span></div><div data-name="media-eject-outline" data-code="0xe09c" data-match=" media eject outline " class="icon"><span class="typcn typcn-media-eject-outline"></span></div><div data-name="media-eject" data-code="0xe09d" data-match=" media eject " class="icon"><span class="typcn typcn-media-eject"></span></div><div data-name="media-fast-forward-outline" data-code="0xe09e" data-match=" media fast forward outline " class="icon"><span class="typcn typcn-media-fast-forward-outline"></span></div><div data-name="media-fast-forward" data-code="0xe09f" data-match=" media fast forward " class="icon"><span class="typcn typcn-media-fast-forward"></span></div><div data-name="media-pause-outline" data-code="0xe0a0" data-match=" media pause outline " class="icon"><span class="typcn typcn-media-pause-outline"></span></div><div data-name="media-pause" data-code="0xe0a1" data-match=" media pause " class="icon"><span class="typcn typcn-media-pause"></span></div><div data-name="media-play-outline" data-code="0xe0a2" data-match=" media play outline " class="icon"><span class="typcn typcn-media-play-outline"></span></div><div data-name="media-play" data-code="0xe0a3" data-match=" media play " class="icon"><span class="typcn typcn-media-play"></span></div><div data-name="media-record-outline" data-code="0xe0a4" data-match=" media record outline " class="icon"><span class="typcn typcn-media-record-outline"></span></div><div data-name="media-record" data-code="0xe0a5" data-match=" media record " class="icon"><span class="typcn typcn-media-record"></span></div><div data-name="media-rewind-outline" data-code="0xe0a6" data-match=" media rewind outline " class="icon"><span class="typcn typcn-media-rewind-outline"></span></div><div data-name="media-rewind" data-code="0xe0a7" data-match=" media rewind " class="icon"><span class="typcn typcn-media-rewind"></span></div><div data-name="media-stop-outline" data-code="0xe0a8" data-match=" media stop outline " class="icon"><span class="typcn typcn-media-stop-outline"></span></div><div data-name="media-stop" data-code="0xe0a9" data-match=" media stop " class="icon"><span class="typcn typcn-media-stop"></span></div><div data-name="message-typing" data-code="0xe0aa" data-match=" message typing " class="icon"><span class="typcn typcn-message-typing"></span></div><div data-name="message" data-code="0xe0ab" data-match=" message " class="icon"><span class="typcn typcn-message"></span></div><div data-name="messages" data-code="0xe0ac" data-match=" messages " class="icon"><span class="typcn typcn-messages"></span></div><div data-name="microphone-outline" data-code="0xe0ad" data-match=" microphone outline " class="icon"><span class="typcn typcn-microphone-outline"></span></div><div data-name="microphone" data-code="0xe0ae" data-match=" microphone " class="icon"><span class="typcn typcn-microphone"></span></div><div data-name="minus-outline" data-code="0xe0af" data-match=" minus outline " class="icon"><span class="typcn typcn-minus-outline"></span></div><div data-name="minus" data-code="0xe0b0" data-match=" minus " class="icon"><span class="typcn typcn-minus"></span></div><div data-name="news" data-code="0xe0b1" data-match=" news " class="icon"><span class="typcn typcn-news"></span></div><div data-name="notes-outline" data-code="0xe0b2" data-match=" notes outline " class="icon"><span class="typcn typcn-notes-outline"></span></div><div data-name="notes" data-code="0xe0b3" data-match=" notes " class="icon"><span class="typcn typcn-notes"></span></div><div data-name="pen" data-code="0xe0b4" data-match=" pen " class="icon"><span class="typcn typcn-pen"></span></div><div data-name="pencil" data-code="0xe0b5" data-match=" pencil " class="icon"><span class="typcn typcn-pencil"></span></div><div data-name="phone-outline" data-code="0xe0b6" data-match=" phone outline " class="icon"><span class="typcn typcn-phone-outline"></span></div><div data-name="phone" data-code="0xe0b7" data-match=" phone " class="icon"><span class="typcn typcn-phone"></span></div><div data-name="pi-outline" data-code="0xe0b8" data-match=" pi outline " class="icon"><span class="typcn typcn-pi-outline"></span></div><div data-name="pi" data-code="0xe0b9" data-match=" pi " class="icon"><span class="typcn typcn-pi"></span></div><div data-name="pin-outline" data-code="0xe0ba" data-match=" pin outline " class="icon"><span class="typcn typcn-pin-outline"></span></div><div data-name="pin" data-code="0xe0bb" data-match=" pin " class="icon"><span class="typcn typcn-pin"></span></div><div data-name="pipette" data-code="0xe0bc" data-match=" pipette " class="icon"><span class="typcn typcn-pipette"></span></div><div data-name="plane-outline" data-code="0xe0bd" data-match=" plane outline " class="icon"><span class="typcn typcn-plane-outline"></span></div><div data-name="plane" data-code="0xe0be" data-match=" plane " class="icon"><span class="typcn typcn-plane"></span></div><div data-name="plug" data-code="0xe0bf" data-match=" plug " class="icon"><span class="typcn typcn-plug"></span></div><div data-name="plus-outline" data-code="0xe0c0" data-match=" plus outline " class="icon"><span class="typcn typcn-plus-outline"></span></div><div data-name="plus" data-code="0xe0c1" data-match=" plus " class="icon"><span class="typcn typcn-plus"></span></div><div data-name="point-of-interest-outline" data-code="0xe0c2" data-match=" point of interest outline " class="icon"><span class="typcn typcn-point-of-interest-outline"></span></div><div data-name="point-of-interest" data-code="0xe0c3" data-match=" point of interest " class="icon"><span class="typcn typcn-point-of-interest"></span></div><div data-name="power-outline" data-code="0xe0c4" data-match=" power outline " class="icon"><span class="typcn typcn-power-outline"></span></div><div data-name="power" data-code="0xe0c5" data-match=" power " class="icon"><span class="typcn typcn-power"></span></div><div data-name="printer" data-code="0xe0c6" data-match=" printer " class="icon"><span class="typcn typcn-printer"></span></div><div data-name="puzzle-outline" data-code="0xe0c7" data-match=" puzzle outline " class="icon"><span class="typcn typcn-puzzle-outline"></span></div><div data-name="puzzle" data-code="0xe0c8" data-match=" puzzle " class="icon"><span class="typcn typcn-puzzle"></span></div><div data-name="radar-outline" data-code="0xe0c9" data-match=" radar outline " class="icon"><span class="typcn typcn-radar-outline"></span></div><div data-name="radar" data-code="0xe0ca" data-match=" radar " class="icon"><span class="typcn typcn-radar"></span></div><div data-name="refresh-outline" data-code="0xe0cb" data-match=" refresh outline " class="icon"><span class="typcn typcn-refresh-outline"></span></div><div data-name="refresh" data-code="0xe0cc" data-match=" refresh " class="icon"><span class="typcn typcn-refresh"></span></div><div data-name="rss-outline" data-code="0xe0cd" data-match=" rss outline " class="icon"><span class="typcn typcn-rss-outline"></span></div><div data-name="rss" data-code="0xe0ce" data-match=" rss " class="icon"><span class="typcn typcn-rss"></span></div><div data-name="scissors-outline" data-code="0xe0cf" data-match=" scissors outline " class="icon"><span class="typcn typcn-scissors-outline"></span></div><div data-name="scissors" data-code="0xe0d0" data-match=" scissors " class="icon"><span class="typcn typcn-scissors"></span></div><div data-name="shopping-bag" data-code="0xe0d1" data-match=" shopping bag " class="icon"><span class="typcn typcn-shopping-bag"></span></div><div data-name="shopping-cart" data-code="0xe0d2" data-match=" shopping cart " class="icon"><span class="typcn typcn-shopping-cart"></span></div><div data-name="social-at-circular" data-code="0xe0d3" data-match=" social at circular " class="icon"><span class="typcn typcn-social-at-circular"></span></div><div data-name="social-dribbble-circular" data-code="0xe0d4" data-match=" social dribbble circular " class="icon"><span class="typcn typcn-social-dribbble-circular"></span></div><div data-name="social-dribbble" data-code="0xe0d5" data-match=" social dribbble " class="icon"><span class="typcn typcn-social-dribbble"></span></div><div data-name="social-facebook-circular" data-code="0xe0d6" data-match=" social facebook circular " class="icon"><span class="typcn typcn-social-facebook-circular"></span></div><div data-name="social-facebook" data-code="0xe0d7" data-match=" social facebook " class="icon"><span class="typcn typcn-social-facebook"></span></div><div data-name="social-flickr-circular" data-code="0xe0d8" data-match=" social flickr circular " class="icon"><span class="typcn typcn-social-flickr-circular"></span></div><div data-name="social-flickr" data-code="0xe0d9" data-match=" social flickr " class="icon"><span class="typcn typcn-social-flickr"></span></div><div data-name="social-github-circular" data-code="0xe0da" data-match=" social github circular " class="icon"><span class="typcn typcn-social-github-circular"></span></div><div data-name="social-github" data-code="0xe0db" data-match=" social github " class="icon"><span class="typcn typcn-social-github"></span></div><div data-name="social-last-fm-circular" data-code="0xe0dc" data-match=" social last fm circular " class="icon"><span class="typcn typcn-social-last-fm-circular"></span></div><div data-name="social-last-fm" data-code="0xe0dd" data-match=" social last fm " class="icon"><span class="typcn typcn-social-last-fm"></span></div><div data-name="social-linkedin-circular" data-code="0xe0de" data-match=" social linkedin circular " class="icon"><span class="typcn typcn-social-linkedin-circular"></span></div><div data-name="social-linkedin" data-code="0xe0df" data-match=" social linkedin " class="icon"><span class="typcn typcn-social-linkedin"></span></div><div data-name="social-pinterest-circular" data-code="0xe0e0" data-match=" social pinterest circular " class="icon"><span class="typcn typcn-social-pinterest-circular"></span></div><div data-name="social-pinterest" data-code="0xe0e1" data-match=" social pinterest " class="icon"><span class="typcn typcn-social-pinterest"></span></div><div data-name="social-skype-outline" data-code="0xe0e2" data-match=" social skype outline " class="icon"><span class="typcn typcn-social-skype-outline"></span></div><div data-name="social-skype" data-code="0xe0e3" data-match=" social skype " class="icon"><span class="typcn typcn-social-skype"></span></div><div data-name="social-tumbler-circular" data-code="0xe0e4" data-match=" social tumbler circular " class="icon"><span class="typcn typcn-social-tumbler-circular"></span></div><div data-name="social-tumbler" data-code="0xe0e5" data-match=" social tumbler " class="icon"><span class="typcn typcn-social-tumbler"></span></div><div data-name="social-twitter-circular" data-code="0xe0e6" data-match=" social twitter circular " class="icon"><span class="typcn typcn-social-twitter-circular"></span></div><div data-name="social-twitter" data-code="0xe0e7" data-match=" social twitter " class="icon"><span class="typcn typcn-social-twitter"></span></div><div data-name="social-vimeo-circular" data-code="0xe0e8" data-match=" social vimeo circular " class="icon"><span class="typcn typcn-social-vimeo-circular"></span></div><div data-name="social-vimeo" data-code="0xe0e9" data-match=" social vimeo " class="icon"><span class="typcn typcn-social-vimeo"></span></div><div data-name="sort-alphabetically-outline" data-code="0xe0ea" data-match=" sort alphabetically outline " class="icon"><span class="typcn typcn-sort-alphabetically-outline"></span></div><div data-name="sort-alphabetically" data-code="0xe0eb" data-match=" sort alphabetically " class="icon"><span class="typcn typcn-sort-alphabetically"></span></div><div data-name="sort-numerically-outline" data-code="0xe0ec" data-match=" sort numerically outline " class="icon"><span class="typcn typcn-sort-numerically-outline"></span></div><div data-name="sort-numerically" data-code="0xe0ed" data-match=" sort numerically " class="icon"><span class="typcn typcn-sort-numerically"></span></div><div data-name="spanner-outline" data-code="0xe0ee" data-match=" spanner outline " class="icon"><span class="typcn typcn-spanner-outline"></span></div><div data-name="spanner" data-code="0xe0ef" data-match=" spanner " class="icon"><span class="typcn typcn-spanner"></span></div><div data-name="star-outline" data-code="0xe0f0" data-match=" star outline " class="icon"><span class="typcn typcn-star-outline"></span></div><div data-name="star" data-code="0xe0f1" data-match=" star " class="icon"><span class="typcn typcn-star"></span></div><div data-name="starburst-outline" data-code="0xe0f2" data-match=" starburst outline " class="icon"><span class="typcn typcn-starburst-outline"></span></div><div data-name="starburst" data-code="0xe0f3" data-match=" starburst " class="icon"><span class="typcn typcn-starburst"></span></div><div data-name="stopwatch" data-code="0xe0f4" data-match=" stopwatch " class="icon"><span class="typcn typcn-stopwatch"></span></div><div data-name="support" data-code="0xe0f5" data-match=" support " class="icon"><span class="typcn typcn-support"></span></div><div data-name="tabs-outline" data-code="0xe0f6" data-match=" tabs outline " class="icon"><span class="typcn typcn-tabs-outline"></span></div><div data-name="tag" data-code="0xe0f7" data-match=" tag " class="icon"><span class="typcn typcn-tag"></span></div><div data-name="tags" data-code="0xe0f8" data-match=" tags " class="icon"><span class="typcn typcn-tags"></span></div><div data-name="th-large-outline" data-code="0xe0f9" data-match=" th large outline " class="icon"><span class="typcn typcn-th-large-outline"></span></div><div data-name="th-large" data-code="0xe0fa" data-match=" th large " class="icon"><span class="typcn typcn-th-large"></span></div><div data-name="th-list-outline" data-code="0xe0fb" data-match=" th list outline " class="icon"><span class="typcn typcn-th-list-outline"></span></div><div data-name="th-list" data-code="0xe0fc" data-match=" th list " class="icon"><span class="typcn typcn-th-list"></span></div><div data-name="th-menu-outline" data-code="0xe0fd" data-match=" th menu outline " class="icon"><span class="typcn typcn-th-menu-outline"></span></div><div data-name="th-menu" data-code="0xe0fe" data-match=" th menu " class="icon"><span class="typcn typcn-th-menu"></span></div><div data-name="th-small-outline" data-code="0xe0ff" data-match=" th small outline " class="icon"><span class="typcn typcn-th-small-outline"></span></div><div data-name="th-small" data-code="0xe100" data-match=" th small " class="icon"><span class="typcn typcn-th-small"></span></div><div data-name="thermometer" data-code="0xe101" data-match=" thermometer " class="icon"><span class="typcn typcn-thermometer"></span></div><div data-name="thumbs-down" data-code="0xe102" data-match=" thumbs down " class="icon"><span class="typcn typcn-thumbs-down"></span></div><div data-name="thumbs-up" data-code="0xe103" data-match=" thumbs up " class="icon"><span class="typcn typcn-thumbs-up"></span></div><div data-name="tick-outline" data-code="0xe104" data-match=" tick outline " class="icon"><span class="typcn typcn-tick-outline"></span></div><div data-name="tick" data-code="0xe105" data-match=" tick " class="icon"><span class="typcn typcn-tick"></span></div><div data-name="ticket" data-code="0xe106" data-match=" ticket " class="icon"><span class="typcn typcn-ticket"></span></div><div data-name="time" data-code="0xe107" data-match=" time " class="icon"><span class="typcn typcn-time"></span></div><div data-name="times-outline" data-code="0xe108" data-match=" times outline " class="icon"><span class="typcn typcn-times-outline"></span></div><div data-name="times" data-code="0xe109" data-match=" times " class="icon"><span class="typcn typcn-times"></span></div><div data-name="trash" data-code="0xe10a" data-match=" trash " class="icon"><span class="typcn typcn-trash"></span></div><div data-name="tree" data-code="0xe10b" data-match=" tree " class="icon"><span class="typcn typcn-tree"></span></div><div data-name="upload-outline" data-code="0xe10c" data-match=" upload outline " class="icon"><span class="typcn typcn-upload-outline"></span></div><div data-name="upload" data-code="0xe10d" data-match=" upload " class="icon"><span class="typcn typcn-upload"></span></div><div data-name="user-add-outline" data-code="0xe10e" data-match=" user add outline " class="icon"><span class="typcn typcn-user-add-outline"></span></div><div data-name="user-add" data-code="0xe10f" data-match=" user add " class="icon"><span class="typcn typcn-user-add"></span></div><div data-name="user-delete-outline" data-code="0xe110" data-match=" user delete outline " class="icon"><span class="typcn typcn-user-delete-outline"></span></div><div data-name="user-delete" data-code="0xe111" data-match=" user delete " class="icon"><span class="typcn typcn-user-delete"></span></div><div data-name="user-outline" data-code="0xe112" data-match=" user outline " class="icon"><span class="typcn typcn-user-outline"></span></div><div data-name="user" data-code="0xe113" data-match=" user " class="icon"><span class="typcn typcn-user"></span></div><div data-name="video-outline" data-code="0xe114" data-match=" video outline " class="icon"><span class="typcn typcn-video-outline"></span></div><div data-name="video" data-code="0xe115" data-match=" video " class="icon"><span class="typcn typcn-video"></span></div><div data-name="volume-down" data-code="0xe116" data-match=" volume down " class="icon"><span class="typcn typcn-volume-down"></span></div><div data-name="volume-mute" data-code="0xe117" data-match=" volume mute " class="icon"><span class="typcn typcn-volume-mute"></span></div><div data-name="volume-up" data-code="0xe118" data-match=" volume up " class="icon"><span class="typcn typcn-volume-up"></span></div><div data-name="volume" data-code="0xe119" data-match=" volume " class="icon"><span class="typcn typcn-volume"></span></div><div data-name="warning-outline" data-code="0xe11a" data-match=" warning outline " class="icon"><span class="typcn typcn-warning-outline"></span></div><div data-name="warning" data-code="0xe11b" data-match=" warning " class="icon"><span class="typcn typcn-warning"></span></div><div data-name="watch" data-code="0xe11c" data-match=" watch " class="icon"><span class="typcn typcn-watch"></span></div><div data-name="waves-outline" data-code="0xe11d" data-match=" waves outline " class="icon"><span class="typcn typcn-waves-outline"></span></div><div data-name="waves" data-code="0xe11e" data-match=" waves " class="icon"><span class="typcn typcn-waves"></span></div><div data-name="weather-cloudy" data-code="0xe11f" data-match=" weather cloudy " class="icon"><span class="typcn typcn-weather-cloudy"></span></div><div data-name="weather-downpour" data-code="0xe120" data-match=" weather downpour " class="icon"><span class="typcn typcn-weather-downpour"></span></div><div data-name="weather-night" data-code="0xe121" data-match=" weather night " class="icon"><span class="typcn typcn-weather-night"></span></div><div data-name="weather-partly-sunny" data-code="0xe122" data-match=" weather partly sunny " class="icon"><span class="typcn typcn-weather-partly-sunny"></span></div><div data-name="weather-shower" data-code="0xe123" data-match=" weather shower " class="icon"><span class="typcn typcn-weather-shower"></span></div><div data-name="weather-snow" data-code="0xe124" data-match=" weather snow " class="icon"><span class="typcn typcn-weather-snow"></span></div><div data-name="weather-stormy" data-code="0xe125" data-match=" weather stormy " class="icon"><span class="typcn typcn-weather-stormy"></span></div><div data-name="weather-sunny" data-code="0xe126" data-match=" weather sunny " class="icon"><span class="typcn typcn-weather-sunny"></span></div><div data-name="weather-windy-cloudy" data-code="0xe127" data-match=" weather windy cloudy " class="icon"><span class="typcn typcn-weather-windy-cloudy"></span></div><div data-name="weather-windy" data-code="0xe128" data-match=" weather windy " class="icon"><span class="typcn typcn-weather-windy"></span></div><div data-name="wi-fi-outline" data-code="0xe129" data-match=" wi fi outline " class="icon"><span class="typcn typcn-wi-fi-outline"></span></div><div data-name="wi-fi" data-code="0xe12a" data-match=" wi fi " class="icon"><span class="typcn typcn-wi-fi"></span></div><div data-name="wine" data-code="0xe12b" data-match=" wine " class="icon"><span class="typcn typcn-wine"></span></div><div data-name="world-outline" data-code="0xe12c" data-match=" world outline " class="icon"><span class="typcn typcn-world-outline"></span></div><div data-name="world" data-code="0xe12d" data-match=" world " class="icon"><span class="typcn typcn-world"></span></div><div data-name="zoom-in-outline" data-code="0xe12e" data-match=" zoom in outline " class="icon"><span class="typcn typcn-zoom-in-outline"></span></div><div data-name="zoom-in" data-code="0xe12f" data-match=" zoom in " class="icon"><span class="typcn typcn-zoom-in"></span></div><div data-name="zoom-out-outline" data-code="0xe130" data-match=" zoom out outline " class="icon"><span class="typcn typcn-zoom-out-outline"></span></div><div data-name="zoom-out" data-code="0xe131" data-match=" zoom out " class="icon"><span class="typcn typcn-zoom-out"></span></div><div data-name="zoom-outline" data-code="0xe132" data-match=" zoom outline " class="icon"><span class="typcn typcn-zoom-outline"></span></div><div data-name="zoom" data-code="0xe133" data-match=" zoom " class="icon"><span class="typcn typcn-zoom"></span></div></div></div></body></html>
