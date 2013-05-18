@@ -40,58 +40,19 @@ html
 
       #icons 
         margin-top 112px
+        font-size 24px
 
-      .switch
-        position absolute
-        right 0
-        bottom 24px
-        color #888
+        .icon
+          float left
+          padding 6px
 
-        input
-          margin-right .3em
-
-      .icon
-        padding 12px
-        float left
-
-      .codesOn
-        .i-name
-          display none
-        .i-code
-          display block
-
-      .i-name
-      .i-code
-        color #666
-        font-size 11px
-        display block
-        line-height 1.2em
-
-      .i-code
-        display none
-
-    include demo.codes.jade
-
-    script
-      function toggleCodes(on) {
-        var obj = document.getElementById('icons');
-
-        if (on) {
-          obj.className += ' ' + 'codesOn';
-        } else {
-          obj.className = obj.className.replace(' codesOn', '');
-        }
-      }
+    include font.jade
 
   body
     .page-header
       .container
         h1 #{font.fullname}
-          |  
-          small font demo
-        label.switch
-          input(type='checkbox', onclick='toggleCodes(this.checked)')
-          | show codes
+          small  font demo
 
     #icons
       #preview.clearfix

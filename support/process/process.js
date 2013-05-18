@@ -3,7 +3,7 @@ var YAML = require('yamljs');
 
 // RENAME FILES TO REMOVE ILLUSTRATOR NAME PREFIX
 var renameSVGFiles = function(callback) {
-  var svgPath = '../svg';
+  var svgPath = '../../src/svg';
   var textToRemove = 'typicons_';
   var SVGFiles = [];
 
@@ -22,9 +22,6 @@ var renameSVGFiles = function(callback) {
         if (err) throw err;
       });
     })
-
-    // Log output
-    console.log('Found ' + SVGFiles.length + ' glyphs');
 
     // Return callback with files
     callback(SVGFiles);
@@ -47,7 +44,6 @@ var generateYAML = function() {
   }
 
   renameSVGFiles(function(names){
-
     var glyphs = names.map(function(name, i){
       return {
         css: name.replace('.svg', ''),
@@ -62,14 +58,10 @@ var generateYAML = function() {
 
     var yaml = YAML.stringify(config, 10);
 
-    console.log(yaml.replace(/'(0x\w+)'/gi, '$1'))
-
     fs.writeFile('../../config.yml', yaml, function(e){
       console.log('Processed ' + config.glyphs.length + ' glyphs');
       console.log('Saved ../../config.yml');
     });
-
-    
   });
 }
 

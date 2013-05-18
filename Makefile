@@ -23,12 +23,6 @@ dump:
 	mkdir ./src/svg/
 	font-dump.js --hcrop -c config.yml -f -i ./src/original/Typicons.svg -o ./src/svg/ -d diff.yml
 
-solid:
-	STYLE = solid
-
-line:
-	STYLE = line
-
 font:
 	@if test ! -d support/font-builder/bin ; then \
 		echo "font-builder binaries not found. run:" >&2 ; \
@@ -73,6 +67,7 @@ support:
 
 html:
 	$(FONTBUILDER)tpl-render.js --locals config.yml --input ./src/demo/demo.jade --output ./font/demo.html
+	# $(FONTBUILDER)tpl-minify.js --locals config.yml --input ./src/demo/font.jade --output ./font/typicons.min.css
 
 
 gh-pages:
