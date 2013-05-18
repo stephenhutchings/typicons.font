@@ -9,8 +9,7 @@ Info
 
 What's new in Typicons
 
-- added 104 new icons
-- added a second style
+- added 220 new icons, including outline variants
 - improved quality of vector artwork
 - mapped in the Private Use Area of Unicode to avoid being read by screen readers
 - rehinted with `ttfautohint`
@@ -34,3 +33,7 @@ Distributed under
 
 This project uses [font-builder](https://github.com/fontello/font-builder) scripts to generate data. See DEVELOPMENT.MD for more information on how to build the font.
 
+
+### To Do
+- Batch creation of EPS, PNG and CSS files, as well as archive ZIP
+- Add search queries to the CONFIG
