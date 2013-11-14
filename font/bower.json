@@ -1,0 +1,24 @@
+{
+  "name": "typicons.font",
+  "version": "2.0.0",
+  "main": "demo.html",
+  "authors": [
+    "Stephen Hutchings <http://typicons.com/>"
+  ],
+  "description": "Typicons are free-to-use vector icons embedded in a webfont for easy use in your user interfaces, whether it be on the web or in a native application.",
+  "keywords": [
+    "icon",
+    "fonts",
+    "icons",
+    "font-face"
+  ],
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "test",
+    "tests",
+    "node_modules"
+  ],
+  "homepage": "http://typicons.com/",
+  "license": "CC BY-SA"
+}
