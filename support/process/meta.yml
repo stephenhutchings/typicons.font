@@ -14,7 +14,7 @@ transform:
   offset: 0
 
 font:
-  version: "2.0"
+  version: "2.0.1"
 
   # lowercase only
   fontname: typicons

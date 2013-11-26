@@ -1,7 +1,14 @@
 {
   "name": "typicons.font",
-  "version": "2.0.0",
-  "main": "demo.html",
+  "version": "2.0.1",
+  "main": [
+    "font/demo.html",
+    "font/typicons.eot",
+    "font/typicons.ttf",
+    "font/typicons.woff",
+    "font/typicons.svg",
+    "font/typicons.min.css"
+  ],
   "authors": [
     "Stephen Hutchings <http://typicons.com/>"
   ],
@@ -10,14 +17,15 @@
     "icon",
     "fonts",
     "icons",
-    "font-face"
+    "font-face",
+    "webfont"
   ],
   "ignore": [
     "**/.*",
-    "bower_components",
-    "test",
-    "tests",
-    "node_modules"
+    "src",
+    "support",
+    "Makefile",
+    "*.md"
   ],
   "homepage": "http://typicons.com/",
   "license": "CC BY-SA"

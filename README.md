@@ -1,6 +1,6 @@
 ### Typicons
 
-Version 2.0 of Typicons, including source SVG files and the Fontello script used to generate the font files. Visit the [website](http://typicons.com/) for information on how to use Typicons on your website, a decription of how the font was made and more resources.
+Version 2.0.1 of Typicons, including source SVG files and the Fontello script used to generate the font files. Visit the [website](http://typicons.com/) for information on how to use Typicons on your website, a decription of how the font was made and more resources.
 
 If you wish to contact me regarding Typicons you can hit me up on [Twitter](http://twitter.com/typicons/).
 
