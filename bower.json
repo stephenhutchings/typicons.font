@@ -25,6 +25,7 @@
     "src",
     "support",
     "Makefile",
+    "config.yml",
     "*.md"
   ],
   "homepage": "http://typicons.com/",
