@@ -4,17 +4,30 @@ Version 2.0.1 of Typicons, including source SVG files and the Fontello script us
 
 If you wish to contact me regarding Typicons you can hit me up on [Twitter](http://twitter.com/typicons/).
 
+Typicons can now be easily install with [bower](http://www.bower.io/).
+
+```
+bower install typicons
+```
+
 Info
 ----
 
 What's new in Typicons
 
-- added 220 new icons, including outline variants
-- improved quality of vector artwork
-- mapped in the Private Use Area of Unicode to avoid being read by screen readers
-- rehinted with `ttfautohint`
-- grouped glyphs on demo page, for convenience
-- changed css glyphs names, to be more semantic
+#### Version 2.0.1
+
+- Added bower support
+- Removed EPS for smaller repo size (contact me if you want to get them)
+
+#### Version 2.0.0
+
+- Added 220 new icons, including outline variants
+- Improved quality of vector artwork
+- Mapped in the Private Use Area of Unicode to avoid being read by screen readers
+- Rehinted with `ttfautohint`
+- Grouped glyphs on demo page, for convenience
+- Changed css glyphs names, to be more semantic
 
 License
 -------
