@@ -67,7 +67,7 @@ support:
 
 html:
 	$(FONTBUILDER)tpl-render.js --locals config.yml --input ./src/demo/demo.jade --output ./font/demo.html
-	# $(FONTBUILDER)tpl-minify.js --locals config.yml --input ./src/demo/font.jade --output ./font/typicons.min.css
+	$(FONTBUILDER)tpl-minify.js --locals config.yml --input ./src/demo/font.css.jade --output ./font/typicons.min.css
 
 
 gh-pages:
@@ -83,7 +83,7 @@ gh-pages:
 		git commit -q -m 'refreshed gh-pages'
 	cd ${TMP_PATH} && \
 		git remote add remote ${REMOTE_REPO} && \
-		git push --force remote +master:gh-pages 
+		git push --force remote +master:gh-pages
 	rm -rf ${TMP_PATH}
 
 

@@ -15,6 +15,9 @@ Info
 
 What's new in Typicons
 
+#### Version 2.0.2
+- Fixed support for IE 8 by replacing double colon with single in `::before`
+
 #### Version 2.0.1
 
 - Added bower support
