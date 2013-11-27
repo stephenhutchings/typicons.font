@@ -4,7 +4,7 @@ Version 2.0.1 of Typicons, including source SVG files and the Fontello script us
 
 If you wish to contact me regarding Typicons you can hit me up on [Twitter](http://twitter.com/typicons/).
 
-Typicons can now be easily install with [bower](http://www.bower.io/).
+Typicons can now be easily installed with [bower](http://www.bower.io/).
 
 ```
 bower install typicons
