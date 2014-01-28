@@ -22,7 +22,10 @@
   ],
   "ignore": [
     "**/.*",
-    "src",
+    "src/svg",
+    "src/demo",
+    "src/png-24px",
+    "src/png-48px",
     "support",
     "Makefile",
     "config.yml",
