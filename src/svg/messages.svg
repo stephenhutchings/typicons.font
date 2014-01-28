@@ -1,13 +1,1 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 16.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" width="24px" height="24px" viewBox="0 0 24 24" xml:space="preserve">
-<g id="Layer_1">
-	<path d="M21,7h-3c0-1.65-1.35-3-3-3H3C1.35,4,0,5.35,0,7v7c0,1.65,1.35,3,3,3v3l3-3c0,1.65,1.35,3,3,3h8l3,3v-3h1
-		c1.65,0,3-1.35,3-3v-7C24,8.35,22.65,7,21,7z M3,15c-0.542,0-1-0.458-1-1V7c0-0.542,0.458-1,1-1h12c0.542,0,1,0.458,1,1v1H9.5
-		C8.121,8,7,9.121,7,10.5V15H3z M22,17c0,0.542-0.458,1-1,1H9c-0.542,0-1-0.458-1-1v-6.5C8,9.673,8.673,9,9.5,9H21
-		c0.542,0,1,0.458,1,1V17z"/>
-</g>
-<g id="nyt_x5F_exporter_x5F_info" display="none">
-</g>
-</svg>
+<svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 7h-3c0-1.65-1.35-3-3-3h-12c-1.65 0-3 1.35-3 3v7c0 1.65 1.35 3 3 3v3l3-3c0 1.65 1.35 3 3 3h8l3 3v-3h1c1.65 0 3-1.35 3-3v-7c0-1.65-1.35-3-3-3zm-18 8c-.542 0-1-.458-1-1v-7c0-.542.458-1 1-1h12c.542 0 1 .458 1 1v1h-6.5c-1.379 0-2.5 1.121-2.5 2.5v4.5h-4zm19 2c0 .542-.458 1-1 1h-12c-.542 0-1-.458-1-1v-6.5c0-.827.673-1.5 1.5-1.5h11.5c.542 0 1 .458 1 1v7z"/></svg>

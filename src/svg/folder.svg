@@ -1,8 +1,1 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 16.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-	 x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" xml:space="preserve">
-<path d="M18,6h-6c0-1.104-0.896-2-2-2H6C4.346,4,3,5.346,3,7v10c0,1.654,1.346,3,3,3h12c1.654,0,3-1.346,3-3V9
-	C21,7.346,19.654,6,18,6z M6,6h4c0,1.104,0.896,2,2,2h6c0.552,0,1,0.448,1,1H5V7C5,6.448,5.448,6,6,6z M18,18H6
-	c-0.552,0-1-0.448-1-1v-7h14v7C19,17.552,18.552,18,18,18z"/>
-</svg>
+<svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M18 6h-6c0-1.104-.896-2-2-2h-4c-1.654 0-3 1.346-3 3v10c0 1.654 1.346 3 3 3h12c1.654 0 3-1.346 3-3v-8c0-1.654-1.346-3-3-3zm-12 0h4c0 1.104.896 2 2 2h6c.552 0 1 .448 1 1h-14v-2c0-.552.448-1 1-1zm12 12h-12c-.552 0-1-.448-1-1v-7h14v7c0 .552-.448 1-1 1z"/></svg>

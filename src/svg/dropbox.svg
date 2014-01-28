@@ -1,13 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-<g>
-	<polygon points="3,12.9 8.3,16.4 12,13.3 6.7,10 	"/>
-	<polygon points="8.3,3.6 3,7.1 6.7,10 12,6.7 	"/>
-	<polygon points="21,7.1 15.7,3.6 12,6.7 17.3,10 	"/>
-	<polygon points="12,13.3 15.7,16.4 21,12.9 17.3,10 	"/>
-	<polygon points="12,14.5 8.3,17.6 6.7,16.5 6.7,17.7 12,20.9 17.3,17.7 17.3,16.5 15.7,17.6 	"/>
-</g>
-</svg>
+<svg version="1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 12.9l5.3 3.5 3.7-3.1-5.3-3.3zM8.3 3.6l-5.3 3.5 3.7 2.9 5.3-3.3zM21 7.1l-5.3-3.5-3.7 3.1 5.3 3.3zM12 13.3l3.7 3.1 5.3-3.5-3.7-2.9zM12 14.5l-3.7 3.1-1.6-1.1v1.2l5.3 3.2 5.3-3.2v-1.2l-1.6 1.1z"/></svg>
