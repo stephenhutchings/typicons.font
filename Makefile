@@ -39,11 +39,11 @@ font:
 		echo "  make support" >&2 ; \
 		exit 128 ; \
 		fi
-	$(FONTBUILDER)fontbuild.py -c ./config.yml -t ./src/font_template.sfd -i ./src/svg -o ./font/$(FONT_NAME).ttf
-	ttfautohint --latin-fallback --hinting-limit=200 --hinting-range-max=50 --symbol ./font/$(FONT_NAME).ttf ./font/$(FONT_NAME)-hinted.ttf
-	mv ./font/$(FONT_NAME)-hinted.ttf ./font/$(FONT_NAME).ttf
-	$(FONTBUILDER)fontconvert.py -i ./font/$(FONT_NAME).ttf -o ./font
-	ttf2eot < ./font/$(FONT_NAME).ttf >./font/$(FONT_NAME).eot
+	$(FONTBUILDER)fontbuild.py -c ./config.yml -t ./src/font_template.sfd -i ./src/svg -o ./src/font/$(FONT_NAME).ttf
+	ttfautohint --latin-fallback --hinting-limit=200 --hinting-range-max=50 --symbol ./src/font/$(FONT_NAME).ttf ./src/font/$(FONT_NAME)-hinted.ttf
+	mv ./src/font/$(FONT_NAME)-hinted.ttf ./src/font/$(FONT_NAME).ttf
+	$(FONTBUILDER)fontconvert.py -i ./src/font/$(FONT_NAME).ttf -o ./src/font
+	ttf2eot < ./src/font/$(FONT_NAME).ttf >./src/font/$(FONT_NAME).eot
 
 
 npm-deps:
@@ -66,8 +66,8 @@ support:
 
 
 html:
-	$(FONTBUILDER)tpl-render.js --locals config.yml --input ./src/demo/demo.jade --output ./font/demo.html
-	$(FONTBUILDER)tpl-minify.js --locals config.yml --input ./src/demo/font.css.jade --output ./font/typicons.min.css
+	$(FONTBUILDER)tpl-render.js --locals config.yml --input ./src/demo/demo.jade --output ./src/font/demo.html
+	$(FONTBUILDER)tpl-minify.js --locals config.yml --input ./src/demo/font.css.jade --output ./src/font/typicons.min.css
 
 
 gh-pages:
@@ -75,7 +75,7 @@ gh-pages:
 		echo 'Remote repo URL not found' >&2 ; \
 		exit 128 ; \
 		fi
-	cp -r ./font ${TMP_PATH} && \
+	cp -r ./src/font ${TMP_PATH} && \
 		touch ${TMP_PATH}/.nojekyll
 	cd ${TMP_PATH} && \
 		git init && \
