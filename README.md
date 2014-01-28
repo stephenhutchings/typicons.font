@@ -15,6 +15,22 @@ Info
 
 What's new in Typicons
 
+#### Version 2.0.3
+- Added new icons including:
+  - Sort down, sort up and unsorted
+  - Filter
+  - Social: Instagram, YouTube and Google Plus
+  - Vendors: Apple, Microsoft and Google
+  - Dropbox
+  - Half and full hearts
+  - Half and full stars
+  - Reverse play
+  - Thumbs OK
+  - CSS3 and HTML5
+  - Folder open
+  - Mortar board
+  - Spiral
+
 #### Version 2.0.2
 - Fixed support for IE 8 by replacing double colon with single in `::before`
 
