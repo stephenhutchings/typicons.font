@@ -21,6 +21,10 @@ Info
 
 What's new in Typicons
 
+#### Version 2.0.4
+- Font files are now licenced using the [SIL Open Font Licence](http://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web). This means that the font can be used, studied, modified and
+redistributed freely as long as they are not sold by themselves.
+
 #### Version 2.0.3
 - Added new icons including:
   - Sort down, sort up and unsorted
