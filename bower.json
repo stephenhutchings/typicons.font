@@ -1,6 +1,6 @@
 {
   "name": "typicons.font",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "main": [
     "src/font/demo.html",
     "src/font/typicons.eot",
@@ -8,9 +8,10 @@
     "src/font/typicons.woff",
     "src/font/typicons.svg",
     "src/font/typicons.min.css"
+    "src/font/LICENCE.md"
   ],
   "authors": [
-    "Stephen Hutchings <http://typicons.com/>"
+    "Stephen Hutchings <http://www.s-ings.com/>"
   ],
   "description": "Typicons are free-to-use vector icons embedded in a webfont for easy use in your user interfaces, whether it be on the web or in a native application.",
   "keywords": [
@@ -32,5 +33,5 @@
     "*.md"
   ],
   "homepage": "http://typicons.com/",
-  "license": "CC BY-SA"
+  "license": "CC BY-SA / SIL"
 }
