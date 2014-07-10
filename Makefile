@@ -67,6 +67,7 @@ support:
 
 html:
 	$(FONTBUILDER)tpl-render.js --locals config.yml --input ./src/demo/demo.jade --output ./src/font/demo.html
+	$(FONTBUILDER)tpl-render.js --locals config.yml --input ./src/demo/font.css.jade --output ./src/font/typicons.css
 	$(FONTBUILDER)tpl-minify.js --locals config.yml --input ./src/demo/font.css.jade --output ./src/font/typicons.min.css
 
 

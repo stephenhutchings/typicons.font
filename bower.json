@@ -1,12 +1,13 @@
 {
   "name": "typicons.font",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "main": [
     "src/font/demo.html",
     "src/font/typicons.eot",
     "src/font/typicons.ttf",
     "src/font/typicons.woff",
     "src/font/typicons.svg",
+    "src/font/typicons.css",
     "src/font/typicons.min.css",
     "src/font/LICENCE.md"
   ],

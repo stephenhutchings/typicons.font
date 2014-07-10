@@ -1,5 +1,5 @@
 | @charset 'UTF-8';
-
+| 
 /* @FONT-FACE loads font into browser */
 | @font-face {
 |   font-family: '#{font.fontname}';
@@ -11,7 +11,7 @@
 |        url('#{font.fontname}.ttf') format('truetype'),
 |        url('#{font.fontname}.svg##{font.fontname}') format('svg');
 | }
-
+| 
 /* :before psuedo-selector inserts and styles icon */
 | .#{meta.css_prefix}:before {
 |   font-family: '#{font.fontname}';
@@ -28,13 +28,14 @@
 |   font-smoothing: antialiased;
 |   text-rendering: optimizeLegibility;
 | }
-
+| 
 /* Code for individual icons */
-- var i, g, css, hex, chr
-- for (i in glyphs)
-  - g = glyphs[i]
-  - css = meta.css_prefix + '-' + g.css
-  - hex = g.code.replace('0x','\\')
-  - chr = unichr(g.code)
-  != '\n'
-  | .#{css}:before { content: '#{hex}'; } /* '#{chr}' */
+for g, i in glyphs
+  - var css = meta.css_prefix + '-' + g.css;
+  - var hex = g.code.replace('0x','\\');
+  - var chr = unichr(g.code);
+  | 
+  | .#{css}:before { 
+  |   content: '#{hex}'; /* '#{chr}' */
+  | }
+
