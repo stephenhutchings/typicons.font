@@ -23,12 +23,12 @@ glyphs:
   -
     css: adjust-brightness
     code: '0xe000'
-    search: []
+    search: ['sun']
     uid: b9bd77c24c29b0de436189f0b4464d24
   -
     css: adjust-contrast
     code: '0xe001'
-    search: []
+    search: ['half']
     uid: ac0020eab87db07bb53a9c0dbc052ee3
   -
     css: anchor-outline
@@ -223,52 +223,52 @@ glyphs:
   -
     css: backspace-outline
     code: '0xe028'
-    search: []
+    search: ['delete']
     uid: 3cf5a043a9db0160fb84ac7e4f93dbcb
   -
     css: backspace
     code: '0xe029'
-    search: []
+    search: ['delete']
     uid: c76e609d24457f2ec2bac81db3b0a3a7
   -
     css: battery-charge
     code: '0xe02a'
-    search: []
+    search: ['power']
     uid: 173870048fb581887ac70bc34110f25c
   -
     css: battery-full
     code: '0xe02b'
-    search: []
+    search: ['power']
     uid: 992754f91a36833d501fdf845bf9b122
   -
     css: battery-high
     code: '0xe02c'
-    search: []
+    search: ['power']
     uid: 2587a5028c636c8d17e69d3065dbb20e
   -
     css: battery-low
     code: '0xe02d'
-    search: []
+    search: ['power']
     uid: 8aa2152f00f1504047e95b72421f7491
   -
     css: battery-mid
     code: '0xe02e'
-    search: []
+    search: ['power']
     uid: 58119cb802463cb1bd7c204dbb2ce465
   -
     css: beaker
     code: '0xe02f'
-    search: []
+    search: ['lab', 'beta', 'experiment']
     uid: 3d2ab95f035cd9dc89ebe469b8075fac
   -
     css: beer
     code: '0xe030'
-    search: []
+    search: ['ale', 'lager']
     uid: 58b8a41785dd93f9a1fd5efeaaf75454
   -
     css: bell
     code: '0xe031'
-    search: []
+    search: ['tone', 'alarm']
     uid: 23d61d9ecd7df97f1de60a7f89021e5f
   -
     css: book
@@ -278,7 +278,7 @@ glyphs:
   -
     css: bookmark
     code: '0xe033'
-    search: []
+    search: ['banner', 'flag']
     uid: 076b10c6ca2f6c94642be9701b145d39
   -
     css: briefcase
@@ -293,7 +293,7 @@ glyphs:
   -
     css: business-card
     code: '0xe036'
-    search: []
+    search: ['id']
     uid: f6a730a2a657f13cfd323f5da8c8f1ca
   -
     css: calculator
@@ -318,12 +318,12 @@ glyphs:
   -
     css: camera
     code: '0xe03b'
-    search: []
+    search: ['photo']
     uid: 08c7b7e624752f3ae177c26f88ddd14a
   -
     css: cancel-outline
     code: '0xe03c'
-    search: []
+    search: ['photo']
     uid: 6310885abed137c223b8edd480d9c9b6
   -
     css: cancel
@@ -333,72 +333,72 @@ glyphs:
   -
     css: chart-area-outline
     code: '0xe03e'
-    search: []
+    search: ['graph']
     uid: 376b45f10317a66636eafb14c85d3093
   -
     css: chart-area
     code: '0xe03f'
-    search: []
+    search: ['graph']
     uid: 1d31138468906c051c36f2748d8957d7
   -
     css: chart-bar-outline
     code: '0xe040'
-    search: []
+    search: ['graph']
     uid: 898c66dcfbbc66024120eca82ac11424
   -
     css: chart-bar
     code: '0xe041'
-    search: []
+    search: ['graph']
     uid: f71dceec6682d34a1b7c8bfe2ec63b4d
   -
     css: chart-line-outline
     code: '0xe042'
-    search: []
+    search: ['graph']
     uid: 75279a4120786742ba2679a739809548
   -
     css: chart-line
     code: '0xe043'
-    search: []
+    search: ['graph']
     uid: 2a2a053f6fca82693ff82956e2fc7e90
   -
     css: chart-pie-outline
     code: '0xe044'
-    search: []
+    search: ['graph']
     uid: 78cbe98ab9e8a20bbbf1e45d5b94e8a0
   -
     css: chart-pie
     code: '0xe045'
-    search: []
+    search: ['graph']
     uid: f62ffb8b31f42d24ef0b28771bd61b3c
   -
     css: chevron-left-outline
     code: '0xe046'
-    search: []
+    search: ['less than']
     uid: b6209397a9de9e71c7cf90cc0b7f1be5
   -
     css: chevron-left
     code: '0xe047'
-    search: []
+    search: ['less than']
     uid: 9b10834ed8434a67fa0b49c9ae350249
   -
     css: chevron-right-outline
     code: '0xe048'
-    search: []
+    search: ['greater than']
     uid: 4191765b8e8aa1eb6a80270ac0535307
   -
     css: chevron-right
     code: '0xe049'
-    search: []
+    search: ['greater than']
     uid: f1368116ccc420ba94f99f697cdf15f3
   -
     css: clipboard
     code: '0xe04a'
-    search: []
+    search: ['copy']
     uid: 26732379b15a12648c20b8f8c0be1bba
   -
     css: cloud-storage
     code: '0xe04b'
-    search: []
+    search: ['data', 'upload']
     uid: 88f024886e5807b4d24a8e34f67e5456
   -
     css: cloud-storage-outline
@@ -408,42 +408,42 @@ glyphs:
   -
     css: code-outline
     code: '0xe04c'
-    search: []
+    search: ['tag']
     uid: b5cffbf924e9e7b6a2189e2a411d3806
   -
     css: code
     code: '0xe04d'
-    search: []
+    search: ['tag']
     uid: af0f49033a6b434f641691baec782669
   -
     css: coffee
     code: '0xe04e'
-    search: []
+    search: ['beverage']
     uid: a75801d69a25f60124104cd129cda36a
   -
     css: cog-outline
     code: '0xe04f'
-    search: []
+    search: ['settings']
     uid: f4d87ad03169b2a8132438eab189c1f1
   -
     css: cog
     code: '0xe050'
-    search: []
+    search: ['settings']
     uid: 2439fa620fdb760beafd3c900692b2fd
   -
     css: compass
     code: '0xe051'
-    search: []
+    search: ['safari']
     uid: de18e7c7046c0b68612cb7036f03496a
   -
     css: contacts
     code: '0xe052'
-    search: []
+    search: ['address', 'book']
     uid: 63acf36cfcf7d2ca23b27e9f72202521
   -
     css: credit-card
     code: '0xe053'
-    search: []
+    search: ['payment']
     uid: 705bc3b19c667eeb2fa6179b5b6abde6
   -
     css: css3
@@ -453,37 +453,37 @@ glyphs:
   -
     css: database
     code: '0xe056'
-    search: []
+    search: ['db']
     uid: 874bc298ba90a4601f7bdf39e8170bab
   -
     css: delete-outline
     code: '0xe057'
-    search: []
+    search: ['cross', 'close']
     uid: 43604a077739fa1b2591beda1b8bb4f9
   -
     css: delete
     code: '0xe058'
-    search: []
+    search: ['cross', 'close']
     uid: cfcef84dde75250d425a795f760fde8e
   -
     css: device-desktop
     code: '0xe059'
-    search: []
+    search: ['pc', 'mac']
     uid: f93721391c54b7dfb32b71ba93c39fbf
   -
     css: device-laptop
     code: '0xe05a'
-    search: []
+    search: ['notebook', 'macbook']
     uid: 2993472cf743993efbc7e49d459ffd13
   -
     css: device-phone
     code: '0xe05b'
-    search: []
+    search: ['iphone']
     uid: 7c9e4c267104ff7632c61509d31fb9ec
   -
     css: device-tablet
     code: '0xe05c'
-    search: []
+    search: ['ipad']
     uid: 363a1186cb0e76996f9d041c18841109
   -
     css: directions
@@ -493,32 +493,32 @@ glyphs:
   -
     css: divide-outline
     code: '0xe05e'
-    search: []
+    search: ['division']
     uid: cb99e055c49c124d15ecd960c69449c8
   -
     css: divide
     code: '0xe05f'
-    search: []
+    search: ['division']
     uid: 8e0326e0e4f4dafaaae06666beebb588
   -
     css: document-add
     code: '0xe060'
-    search: []
+    search: ['file']
     uid: 952b60a1fe3c1e254379dc9504bcc1ac
   -
     css: document-delete
     code: '0xe061'
-    search: []
+    search: ['file']
     uid: 21f5d14dab4433c16aea2b6d5033e95f
   -
     css: document-text
     code: '0xe062'
-    search: []
+    search: ['file']
     uid: 69ec68235559898c6c5708a5ce8200e9
   -
     css: document
     code: '0xe063'
-    search: []
+    search: ['file']
     uid: e97d0a65db26b29b4328704a8b8a7d38
   -
     css: download-outline
@@ -538,17 +538,17 @@ glyphs:
   -
     css: edit
     code: '0xe067'
-    search: []
+    search: ['pencil']
     uid: 90e5bc92ab90944fbf1aeefb227ccfa6
   -
     css: eject-outline
     code: '0xe068'
-    search: []
+    search: ['export', 'log', 'off', 'out']
     uid: 07b08886a2a06f2bca467f5c9a927d4e
   -
     css: eject
     code: '0xe069'
-    search: []
+    search: ['export', 'log', 'off', 'out']
     uid: 553597a4535f27d7fa94cc47d97d6ece
   -
     css: equals-outline
@@ -563,22 +563,22 @@ glyphs:
   -
     css: export-outline
     code: '0xe06c'
-    search: []
+    search: ['share']
     uid: 20b32b57f57c13764c50bc0f4d83963a
   -
     css: export
     code: '0xe06d'
-    search: []
+    search: ['share']
     uid: 6210cf807ad9f0ca5d6a5165258ec558
   -
     css: eye-outline
     code: '0xe06e'
-    search: []
+    search: ['view']
     uid: 5521f4767cecd3c437cf170acc108b94
   -
     css: eye
     code: '0xe06f'
-    search: []
+    search: ['view']
     uid: e3b0edd962a6618d5e2e8856f92b8cf4
   -
     css: feather
@@ -588,12 +588,12 @@ glyphs:
   -
     css: film
     code: '0xe071'
-    search: []
+    search: ['strip']
     uid: aedfeb8f611f9149d4e54ee986d4b409
   -
     css: filter
     code: '0xe072'
-    search: []
+    search: ['funnel', 'refine']
     uid: 38517122f7e8aca23488d5d9aebe861a
   -
     css: flag-outline
@@ -608,12 +608,12 @@ glyphs:
   -
     css: flash-outline
     code: '0xe075'
-    search: []
+    search: ['power', 'lightning']
     uid: 0bdca1d8d001c039369f07079e3638e3
   -
     css: flash
     code: '0xe076'
-    search: []
+    search: ['power', 'lightning']
     uid: 3238fe7b7e63bee01c4c1a0a2ec5e5ff
   -
     css: flow-children
@@ -638,27 +638,27 @@ glyphs:
   -
     css: folder-add
     code: '0xe07b'
-    search: []
+    search: ['directory']
     uid: e99f3153fcc3f31ba3ccd95571e771d6
   -
     css: folder-delete
     code: '0xe07c'
-    search: []
+    search: ['directory']
     uid: cd19f98a28c9fbd63b5436eb249a91d4
   -
     css: folder-open
     code: '0xe07d'
-    search: []
+    search: ['directory']
     uid: af8d363f7389f4706e0ec3520cec7261
   -
     css: folder
     code: '0xe07e'
-    search: []
+    search: ['directory']
     uid: 195f040a54df33de0967f9f5b5edab35
   -
     css: gift
     code: '0xe07f'
-    search: []
+    search: ['present']
     uid: b60cda9726fcec9e00738e416dc4bd6b
   -
     css: globe-outline
@@ -673,12 +673,12 @@ glyphs:
   -
     css: group-outline
     code: '0xe082'
-    search: []
+    search: ['users']
     uid: f9c24297162f3bfe454644baaf826ef9
   -
     css: group
     code: '0xe083'
-    search: []
+    search: ['users']
     uid: b3126b19c2f6a0f0c461bca36bb2a423
   -
     css: headphones
@@ -688,22 +688,22 @@ glyphs:
   -
     css: heart-full-outline
     code: '0xe085'
-    search: []
+    search: ['like', 'favourite', 'love']
     uid: 6fabe1d7396154f670be2fda9986ad94
   -
     css: heart-half-outline
     code: '0xe086'
-    search: []
+    search: ['like', 'favourite', 'love']
     uid: 465c3549befdaca90676157b8ff82885
   -
     css: heart-outline
     code: '0xe087'
-    search: []
+    search: ['like', 'favourite', 'love']
     uid: 6bb6cde37fea92c72ab0f017bda3797d
   -
     css: heart
     code: '0xe088'
-    search: []
+    search: ['like', 'favourite', 'love']
     uid: ae69d6a828c0dac2d93065be77431300
   -
     css: home-outline
@@ -723,12 +723,12 @@ glyphs:
   -
     css: image-outline
     code: '0xe08c'
-    search: []
+    search: ['picture', 'photo']
     uid: 6065b24a0e5386a727d4566f7e084260
   -
     css: image
     code: '0xe08d'
-    search: []
+    search: ['picture', 'photo']
     uid: 2c9d8b2d22e6fa992fc9ea826074e334
   -
     css: infinity-outline
@@ -763,22 +763,22 @@ glyphs:
   -
     css: input-checked-outline
     code: '0xe094'
-    search: []
+    search: ['tick', 'correct']
     uid: 3c770862ef1876c49aa42680c4b6ad19
   -
     css: input-checked
     code: '0xe095'
-    search: []
+    search: ['tick', 'correct']
     uid: 9bba4dea0fb5d13e65a82f07e52afd90
   -
     css: key-outline
     code: '0xe096'
-    search: []
+    search: ['password', 'login']
     uid: e2dd15002895b951ab420f8d3559ea11
   -
     css: key
     code: '0xe097'
-    search: []
+    search: ['password', 'login']
     uid: e030ed514099801428ad649364aadf17
   -
     css: keyboard
@@ -793,47 +793,47 @@ glyphs:
   -
     css: lightbulb
     code: '0xe09a'
-    search: []
+    search: ['idea']
     uid: c76c88895501c1d97d02be1fc8b32c03
   -
     css: link-outline
     code: '0xe09b'
-    search: []
+    search: ['chain']
     uid: 2b584006d061d461927db83ada6042ff
   -
     css: link
     code: '0xe09c'
-    search: []
+    search: ['chain']
     uid: d74e53b2eccce057804f39d2bb961a46
   -
     css: location-arrow-outline
     code: '0xe09d'
-    search: []
+    search: ['direction']
     uid: e0643316ddc4584b5747e9139450948b
   -
     css: location-arrow
     code: '0xe09e'
-    search: []
+    search: ['direction']
     uid: 25ccda2ea62235be8add77b94b716324
   -
     css: location-outline
     code: '0xe09f'
-    search: []
+    search: ['map', 'pin']
     uid: 79b30eb7b1fd6d85e8f6079f31883747
   -
     css: location
     code: '0xe0a0'
-    search: []
+    search: ['map', 'pin']
     uid: 69554ba0563e37ac31c57c55951b45ac
   -
     css: lock-closed-outline
     code: '0xe0a1'
-    search: []
+    search: ['locked']
     uid: bc5ee15bbbc8e0b53d2e0b662fcb7df4
   -
     css: lock-closed
     code: '0xe0a2'
-    search: []
+    search: ['locked']
     uid: 271c8332b3ca17ac96ee0658ff9989c0
   -
     css: lock-open-outline
@@ -848,12 +848,12 @@ glyphs:
   -
     css: mail
     code: '0xe0a5'
-    search: []
+    search: ['email']
     uid: 3cc58c13ef5468100aaa6575d12b4336
   -
     css: map
     code: '0xe0a6'
-    search: []
+    search: ['brochure', 'pamphlet']
     uid: 601d015b16fdbd8f50287231dbcaa1b6
   -
     css: media-eject-outline
@@ -938,37 +938,37 @@ glyphs:
   -
     css: message-typing
     code: '0xe0b7'
-    search: []
+    search: ['msg', 'chat']
     uid: 0c933015b53e12afe7de356a66e9960b
   -
     css: message
     code: '0xe0b8'
-    search: []
+    search: ['msg', 'chat']
     uid: 3c7dfbe909ec6ad30f47e63c5a876520
   -
     css: messages
     code: '0xe0b9'
-    search: []
+    search: ['msg', 'chat']
     uid: e6aface70d7a3976068eb84cedb8c9d1
   -
     css: microphone-outline
     code: '0xe0ba'
-    search: []
+    search: ['record']
     uid: 50df0ab293d904c2a10b4c20cee7d1ef
   -
     css: microphone
     code: '0xe0bb'
-    search: []
+    search: ['record']
     uid: 66462b3da557e7f4927b5e4940e74d49
   -
     css: minus-outline
     code: '0xe0bc'
-    search: []
+    search: ['subtract']
     uid: eeb1846461110a212a6b574e1753f9fa
   -
     css: minus
     code: '0xe0bd'
-    search: []
+    search: ['subtract']
     uid: 6c3e295b0cd630c50f63b683a7b3d0e0
   -
     css: mortar-board
@@ -978,37 +978,37 @@ glyphs:
   -
     css: news
     code: '0xe0bf'
-    search: []
+    search: ['article']
     uid: 463ff32a34867e6f6ddc2e642727ef6c
   -
     css: notes-outline
     code: '0xe0c0'
-    search: []
+    search: ['music']
     uid: c14ee668c52dc951833ac2d2e569884a
   -
     css: notes
     code: '0xe0c1'
-    search: []
+    search: ['music']
     uid: de55efd6be426397038212f510fae207
   -
     css: pen
     code: '0xe0c2'
-    search: []
+    search: ['write', 'compose']
     uid: 0fee1adbf498f967540808e6f9369e47
   -
     css: pencil
     code: '0xe0c3'
-    search: []
+    search: ['write', 'compose']
     uid: ab18e0da65de53ae32bde5cf950e10b9
   -
     css: phone-outline
     code: '0xe0c4'
-    search: []
+    search: ['call', 'ring']
     uid: b1267b9fe7d0a0e84c3f49bfc5ce57c6
   -
     css: phone
     code: '0xe0c5'
-    search: []
+    search: ['call', 'ring']
     uid: 946d702d56ac8e2516980918b555184b
   -
     css: pi-outline
@@ -1033,107 +1033,107 @@ glyphs:
   -
     css: pipette
     code: '0xe0ca'
-    search: []
+    search: ['picker']
     uid: 1e2bc3ad0ebeddf39e8199f05a9b54ad
   -
     css: plane-outline
     code: '0xe0cb'
-    search: []
+    search: ['flight']
     uid: 6ce6c1122af76fac2f8fe5570cd9be6a
   -
     css: plane
     code: '0xe0cc'
-    search: []
+    search: ['flight']
     uid: b688aea525828cf9ce477ceb2257945a
   -
     css: plug
     code: '0xe0cd'
-    search: []
+    search: ['connect']
     uid: 5c76c41a19568695143cf75754278965
   -
     css: plus-outline
     code: '0xe0ce'
-    search: []
+    search: ['add']
     uid: afe84bfdb16158ba4fcd855a72c2588d
   -
     css: plus
     code: '0xe0cf'
-    search: []
+    search: ['add']
     uid: 64bdceb652ebcd62574192fce66f4c84
   -
     css: point-of-interest-outline
     code: '0xe0d0'
-    search: []
+    search: ['command']
     uid: b2493e4d160a430482621c26edb198ca
   -
     css: point-of-interest
     code: '0xe0d1'
-    search: []
+    search: ['command']
     uid: 8f4cb12ec8199147b068c9295645cb3c
   -
     css: power-outline
     code: '0xe0d2'
-    search: []
+    search: ['on', 'off']
     uid: a492033c6b067b44f1b3e9c0b4890466
   -
     css: power
     code: '0xe0d3'
-    search: []
+    search: ['on', 'off']
     uid: aa12259666a71299a972ec5005e0c5a4
   -
     css: printer
     code: '0xe0d4'
-    search: []
+    search: ['fax']
     uid: b8cef72e72e33a8f589feed285850776
   -
     css: puzzle-outline
     code: '0xe0d5'
-    search: []
+    search: ['jigsaw']
     uid: 956f37b3efabfd8f3f045b3ce39eff3f
   -
     css: puzzle
     code: '0xe0d6'
-    search: []
+    search: ['jigsaw']
     uid: c75ae2942823534ea485bec7e0e70b49
   -
     css: radar-outline
     code: '0xe0d7'
-    search: []
+    search: ['position']
     uid: a6dd1fe6fcd5abb36ea89f679c0d5688
   -
     css: radar
     code: '0xe0d8'
-    search: []
+    search: ['position']
     uid: a8c1b707f9b7d88c1f4c8b940cbffa77
   -
     css: refresh-outline
     code: '0xe0d9'
-    search: []
+    search: ['arrow']
     uid: e44650d8304518a0217bc1a1f51d4f25
   -
     css: refresh
     code: '0xe0da'
-    search: []
+    search: ['arrow']
     uid: 032b72108ca3b382d17f47e34472f62c
   -
     css: rss-outline
     code: '0xe0db'
-    search: []
+    search: ['feed']
     uid: 748a9ccafd326388c2ae2c270f9e4c45
   -
     css: rss
     code: '0xe0dc'
-    search: []
+    search: ['feed']
     uid: 5097c29122ba54226620b7245c850e55
   -
     css: scissors-outline
     code: '0xe0dd'
-    search: []
+    search: ['cut']
     uid: 2130ff330ebb5fccf1f5d7da69d893f5
   -
     css: scissors
     code: '0xe0de'
-    search: []
+    search: ['cut']
     uid: b23159c433723b6480c5a4fbb229a064
   -
     css: shopping-bag
@@ -1148,7 +1148,7 @@ glyphs:
   -
     css: social-at-circular
     code: '0xe0e1'
-    search: []
+    search: ['@', 'mail']
     uid: c4b344da4decf77d4a2f2ffc390558d5
   -
     css: social-dribbble-circular
@@ -1293,87 +1293,87 @@ glyphs:
   -
     css: sort-alphabetically-outline
     code: '0xe0fe'
-    search: []
+    search: ['a-z']
     uid: 21f73ce90a50be3a892be8e451e00320
   -
     css: sort-alphabetically
     code: '0xe0ff'
-    search: []
+    search: ['a-z']
     uid: a90a7759b32c2a338ffd33ca2d180840
   -
     css: sort-numerically-outline
     code: '0xe100'
-    search: []
+    search: ['123']
     uid: 288ae04e269295916db590c6f88ac8d1
   -
     css: sort-numerically
     code: '0xe101'
-    search: []
+    search: ['123']
     uid: cf33d7f2827e6d82f3bb3c2a6e808eac
   -
     css: spanner-outline
     code: '0xe102'
-    search: []
+    search: ['settings']
     uid: 5025b2ad4b12086c75901a3b7452b067
   -
     css: spanner
     code: '0xe103'
-    search: []
+    search: ['settings']
     uid: af3d738cda76998f896cb0bc9ddf85a3
   -
     css: spiral
     code: '0xe104'
-    search: []
+    search: ['curve']
     uid: 6017679a67141e3d7cdd9ee307889b24
   -
     css: star-full-outline
     code: '0xe105'
-    search: []
+    search: ['like', 'favourite', 'love', 'rate']
     uid: 46c123de608a03b03ec296899a6c0364
   -
     css: star-half-outline
     code: '0xe106'
-    search: []
+    search: ['like', 'favourite', 'love', 'rate']
     uid: 3620d450aa068a1951462de03f523a1c
   -
     css: star-half
     code: '0xe107'
-    search: []
+    search: ['like', 'favourite', 'love', 'rate']
     uid: 4b843317fba35f193959f57a3b119898
   -
     css: star-outline
     code: '0xe108'
-    search: []
+    search: ['like', 'favourite', 'love', 'rate']
     uid: 8a12233db92c115e041c33c38f572317
   -
     css: star
     code: '0xe109'
-    search: []
+    search: ['like', 'favourite', 'love', 'rate']
     uid: 69a05945d39b77f5af610e0c6c63bbab
   -
     css: starburst-outline
     code: '0xe10a'
-    search: []
+    search: ['banner', 'ribbon']
     uid: 27049bee9037381adbc82671cbe13f8a
   -
     css: starburst
     code: '0xe10b'
-    search: []
+    search: ['banner', 'ribbon']
     uid: 50ee485e8fe431e31c2654294619d906
   -
     css: stopwatch
     code: '0xe10c'
-    search: []
+    search: ['time']
     uid: 15200bcba7214b59bf43cc42f2cdfa69
   -
     css: support
     code: '0xe10d'
-    search: []
+    search: ['life', 'ring']
     uid: d20a64b338a4263e3087976fb799d411
   -
     css: tabs-outline
     code: '0xe10e'
-    search: []
+    search: ['expand', 'merge']
     uid: d230e092e092617f1d128e3eb17304f2
   -
     css: tag
@@ -1388,22 +1388,22 @@ glyphs:
   -
     css: th-large-outline
     code: '0xe111'
-    search: []
+    search: ['square', 'grid']
     uid: b3b0d4377b565b39fa9b5d05adf26b1a
   -
     css: th-large
     code: '0xe112'
-    search: []
+    search: ['square', 'grid']
     uid: 08ea8e65fcd8a0a538a918c3f7eef2b6
   -
     css: th-list-outline
     code: '0xe113'
-    search: []
+    search: ['thumbnail']
     uid: 1ff7b1e9dec1ad495e6616ff7e469ddd
   -
     css: th-list
     code: '0xe114'
-    search: []
+    search: ['thumbnail']
     uid: 9b4474ced26e8c693754c96207459f62
   -
     css: th-menu-outline
@@ -1418,67 +1418,67 @@ glyphs:
   -
     css: th-small-outline
     code: '0xe117'
-    search: []
+    search: ['square', 'grid']
     uid: ad8ce53ae473e2a7b826da10f4a61604
   -
     css: th-small
     code: '0xe118'
-    search: []
+    search: ['square', 'grid']
     uid: f37193952c35b441630a0985f9689b0e
   -
     css: thermometer
     code: '0xe119'
-    search: []
+    search: ['temperature']
     uid: 67d81a3c7c2bc6ca08b6a52c99a813a4
   -
     css: thumbs-down
     code: '0xe11a'
-    search: []
+    search: ['dislike']
     uid: d09e29876d8004ca782b3ccde27fbb7a
   -
     css: thumbs-ok
     code: '0xe11b'
-    search: []
+    search: ['average']
     uid: fdc6629c191e5145df05646a3ad1cd6f
   -
     css: thumbs-up
     code: '0xe11c'
-    search: []
+    search: ['like']
     uid: baefcb2b150a44fd269540689f1a5e5f
   -
     css: tick-outline
     code: '0xe11d'
-    search: []
+    search: ['ok', 'done', 'correct']
     uid: 1f61682aecd6507233401e0084518174
   -
     css: tick
     code: '0xe11e'
-    search: []
+    search: ['ok', 'done', 'correct']
     uid: 849fc7cf2a324e6048031ddaa428d9aa
   -
     css: ticket
     code: '0xe11f'
-    search: []
+    search: ['pass']
     uid: 135c87c9ed188abbfa6f84fba2401b0b
   -
     css: time
     code: '0xe120'
-    search: []
+    search: ['watch', 'clock']
     uid: d8cd5a0f0f9d7118822a8bc660a19c39
   -
     css: times-outline
     code: '0xe121'
-    search: []
+    search: ['cross', 'x']
     uid: 307bbf2ed1cdc350529870393d7a8e13
   -
     css: times
     code: '0xe122'
-    search: []
+    search: ['cross', 'x']
     uid: 521efdc415e1fe316962175587969231
   -
     css: trash
     code: '0xe123'
-    search: []
+    search: ['garbage', 'rubbish', 'delete']
     uid: 24785a3f86e22d46bd51e92c02773748
   -
     css: tree
@@ -1498,32 +1498,32 @@ glyphs:
   -
     css: user-add-outline
     code: '0xe127'
-    search: []
+    search: ['person']
     uid: fb5e9520dfd53a7484b3ee6039ddc7c3
   -
     css: user-add
     code: '0xe128'
-    search: []
+    search: ['person']
     uid: 51bb4fa4388f691b6d8f570c8d80dfa4
   -
     css: user-delete-outline
     code: '0xe129'
-    search: []
+    search: ['person']
     uid: dc50f951724aa405e161cc5624d38e3d
   -
     css: user-delete
     code: '0xe12a'
-    search: []
+    search: ['person']
     uid: dd7b649bea22871d1649b2a7b25b3bea
   -
     css: user-outline
     code: '0xe12b'
-    search: []
+    search: ['person']
     uid: 60565527efa323fa881bd4f8aa621f4a
   -
     css: user
     code: '0xe12c'
-    search: []
+    search: ['person']
     uid: 6cdec4b7d2916b1f9bb3e87881822ea2
   -
     css: vendor-android
@@ -1553,37 +1553,37 @@ glyphs:
   -
     css: volume-down
     code: '0xe132'
-    search: []
+    search: ['sound']
     uid: baf4be0340e414ee7384f153115f7ed8
   -
     css: volume-mute
     code: '0xe133'
-    search: []
+    search: ['sound']
     uid: f8654f1ac90b5ab101102c10b74c61a5
   -
     css: volume-up
     code: '0xe134'
-    search: []
+    search: ['sound']
     uid: bbcd5786cb3b162a6e73e426495a31f8
   -
     css: volume
     code: '0xe135'
-    search: []
+    search: ['sound']
     uid: e3738b5d58a9bd4ce99c8a714593af15
   -
     css: warning-outline
     code: '0xe136'
-    search: []
+    search: ['error', 'alert']
     uid: 40718ef4924a1efb710d040aa908cb54
   -
     css: warning
     code: '0xe137'
-    search: []
+    search: ['error', 'alert']
     uid: a244c91417fc6e44dbb1b3d21227e3eb
   -
     css: watch
     code: '0xe138'
-    search: []
+    search: ['time']
     uid: 630de147a43aa3b988f9912941706ab3
   -
     css: waves-outline
@@ -1648,17 +1648,17 @@ glyphs:
   -
     css: wi-fi-outline
     code: '0xe145'
-    search: []
+    search: ['internet', 'connection']
     uid: 0e30e6a0069483035a5f22503dd8f55a
   -
     css: wi-fi
     code: '0xe146'
-    search: []
+    search: ['internet', 'connection']
     uid: 448672bc3ad0665cc409c9ba34c5aa8a
   -
     css: wine
     code: '0xe147'
-    search: []
+    search: ['drink', 'beverage']
     uid: c08d5c49e4fad1dc7974437cb42adc22
   -
     css: world-outline
