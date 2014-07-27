@@ -401,6 +401,11 @@ glyphs:
     search: []
     uid: 88f024886e5807b4d24a8e34f67e5456
   -
+    css: cloud-storage-outline
+    code: '0xe054'
+    search: ['data', 'upload']
+    uid: 45cc6c807623fd499899d2112b3cd53e
+  -
     css: code-outline
     code: '0xe04c'
     search: []
@@ -440,11 +445,6 @@ glyphs:
     code: '0xe053'
     search: []
     uid: 705bc3b19c667eeb2fa6179b5b6abde6
-  -
-    css: cross
-    code: '0xe054'
-    search: []
-    uid: 45cc6c807623fd499899d2112b3cd53e
   -
     css: css3
     code: '0xe055'
