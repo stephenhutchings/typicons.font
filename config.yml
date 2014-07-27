@@ -301,12 +301,12 @@ glyphs:
     search: []
     uid: 06ee44fe347e36895e523871ec2436a0
   -
-    css: calender-outline
+    css: calendar-outline
     code: '0xe038'
     search: []
     uid: 7e57e738e6da5190eff23bc1860dd2e6
   -
-    css: calender
+    css: calendar
     code: '0xe039'
     search: []
     uid: ad759fc4ada94ceb5a7c0586a890af82
