@@ -198,10 +198,10 @@
 .typcn-calculator:before { 
   content: '\e037'; /* '' */
 } 
-.typcn-calender-outline:before { 
+.typcn-calendar-outline:before { 
   content: '\e038'; /* '' */
 } 
-.typcn-calender:before { 
+.typcn-calendar:before { 
   content: '\e039'; /* '' */
 } 
 .typcn-camera-outline:before { 
@@ -258,6 +258,9 @@
 .typcn-cloud-storage:before { 
   content: '\e04b'; /* '' */
 } 
+.typcn-cloud-storage-outline:before { 
+  content: '\e054'; /* '' */
+} 
 .typcn-code-outline:before { 
   content: '\e04c'; /* '' */
 } 
@@ -281,9 +284,6 @@
 } 
 .typcn-credit-card:before { 
   content: '\e053'; /* '' */
-} 
-.typcn-cross:before { 
-  content: '\e054'; /* '' */
 } 
 .typcn-css3:before { 
   content: '\e055'; /* '' */
