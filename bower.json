@@ -24,7 +24,6 @@
   ],
   "ignore": [
     "**/.*",
-    "src/svg",
     "src/demo",
     "src/png-24px",
     "src/png-48px",
