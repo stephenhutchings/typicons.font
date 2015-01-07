@@ -21,6 +21,9 @@ Info
 
 What's new in Typicons
 
+#### Version 2.0.7
+- Removed SVG ignores from Bower package for developer use.
+
 #### Version 2.0.6
 - This release fixes misspelled icons calendar and calendar-outline (Issue #9), renames incorrectly labelled cross to cloud-storage-outline (Issue #5) and adds search terms for many icons to make it easier to find the icon your looking for. It also adds higher decimal rounding for the social-youtube-circular icon to correct some node degradation in the SVG file.
 
