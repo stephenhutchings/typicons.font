@@ -16,6 +16,8 @@ Otherwise, the font and minified CSS can be found in [src/font/](https://github.
 
 SVG source files can be found in [src/svg/](https://github.com/stephenhutchings/typicons.font/tree/master/src/svg).
 
+If you're looking to use Typicons on iOS, you can find support [here](https://github.com/javaboyjunior/typicon-ios) thanks to [@javaboyjunior](https://github.com/javaboyjunior).
+
 Info
 ----
 
