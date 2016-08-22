@@ -6,10 +6,16 @@ Visit the [website](http://typicons.com/) for information on how to use Typicons
 Using Typicons
 ----
 
-Typicons can now be easily installed with [bower](http://www.bower.io/).
+Typicons can be easily installed with [bower](http://www.bower.io/)...
 
 ```bash
 $ bower install typicons
+```
+
+...or NPM.
+
+```bash
+$ npm install typicons.font
 ```
 
 Otherwise, the font and minified CSS can be found in [src/font/](https://github.com/stephenhutchings/typicons.font/tree/master/src/font).
@@ -22,6 +28,9 @@ Info
 ----
 
 What's new in Typicons
+
+#### Version 2.0.8
+- Fix `package.json` files entry for NPM.
 
 #### Version 2.0.7
 - Removed SVG ignores from Bower package for developer use.
