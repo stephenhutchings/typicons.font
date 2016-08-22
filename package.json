@@ -1,7 +1,7 @@
 {
   "name": "typicons.font",
   "description": "Typicons are free-to-use vector icons embedded in a webfont for easy use in your user interfaces, whether it be on the web or in a native application.",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "style": "src/font/typicons.css",
   "main": "src/font/typicons.css",
   "keywords": [
