@@ -31,6 +31,7 @@
     "src/font/typicons.svg",
     "src/font/typicons.eot",
     "src/font/typicons.ttf",
-    "src/font/typicons.woff"
+    "src/font/typicons.woff",
+    "src/svg/"
   ]
 }
