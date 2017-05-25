@@ -29,6 +29,9 @@ Info
 
 What's new in Typicons
 
+#### Version 2.0.9
+- Add source SVG files to `package.json`.
+
 #### Version 2.0.8
 - Fix `package.json` files entry for NPM.
 
