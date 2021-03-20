@@ -35,9 +35,3 @@ Distributed under
 
 Distributed under
 [SIL Open Font Licence](http://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web) licence.
-
-## Other
-
-#### Scripting
-
-This project uses [font-builder](https://github.com/fontello/font-builder) scripts to generate data. See DEVELOPMENT.MD for more information on how to build the font.
