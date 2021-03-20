@@ -11,27 +11,17 @@
     "src/font/typicons.min.css",
     "src/font/LICENCE.md"
   ],
-  "authors": [
-    "Stephen Hutchings <http://www.s-ings.com/>"
-  ],
+  "authors": ["Stephen Hutchings <http://www.s-ings.com/>"],
   "description": "Typicons are free-to-use vector icons embedded in a webfont for easy use in your user interfaces, whether it be on the web or in a native application.",
-  "keywords": [
-    "icon",
-    "fonts",
-    "icons",
-    "font-face",
-    "webfont"
-  ],
+  "keywords": ["icon", "fonts", "icons", "font-face", "webfont"],
   "ignore": [
     "**/.*",
     "src/demo",
     "src/png-24px",
     "src/png-48px",
-    "support",
-    "Makefile",
-    "config.yml",
-    "*.md"
+    "*.md",
+    "*.json"
   ],
-  "homepage": "http://typicons.com/",
-  "license": "CC BY-SA 4.0 / SIL"
+  "homepage": "https://www.s-ings.com/typicons",
+  "license": "CC BY-SA / SIL"
 }
