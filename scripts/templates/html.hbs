@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Typicons</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 1em;
+      font-family: system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 18px;
+      color: #333;
+      background-color: #fff;
+    }
+
+    header {
+      position: fixed;
+      left: 1em;
+      right: 1em;
+      top: 0;
+      background: #fff;
+      z-index: 1;
+    }
+
+    header .container {
+      border-bottom: 1px solid #ddd;
+    }
+
+    header h1 {
+      font: inherit;
+      font-weight: bold;
+      margin-top: 1em;
+    }
+
+    header p {
+      color: #666;
+      max-width: 500px;
+    }
+
+    .container {
+      max-width: 784px;
+      margin: auto;
+      position: relative;
+    }
+
+    #icons {
+      font-size: 24px;
+      display: flex;
+      margin: 92px -8px 0;
+      flex-flow: row wrap;
+    }
+
+    .icon {
+      width: 200px;
+      max-width: 50%;
+      box-sizing: border-box;
+      display: flex;
+      padding: 8px;
+    }
+
+    .label {
+      display: inline-block;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 4px 8px;
+      font-size: 12px;
+      font-family: Monaco, monospace;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      border-radius: 1px;
+      color: #666;
+    }
+
+    @media (max-width: 512px) {
+      #icons {
+        margin-top: 112px;
+      }
+    }
+    {{{ styles }}}
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>Typicons &middot; v{{ version }}</h1>
+      <p>{{ description }}</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <div id="icons">
+      {{# each names }}
+      <div class="icon">
+        <span class="{{ ../className }} {{ ../className }}-{{ this }}"></span>
+        <span class='label'>{{ this }}</span>
+      </div>
+      {{/ each }}
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>Created by
+        <a href="{{author.web}}">
+          {{author.name}}
+        </a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

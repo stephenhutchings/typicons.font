@@ -4,6 +4,8 @@
   "version": "2.0.9",
   "style": "src/font/typicons.css",
   "main": "src/font/typicons.css",
+  "copyright": "(c) Stephen Hutchings 2012-2021",
+  "className": "typcn",
   "keywords": [
     "icon",
     "fonts",
@@ -17,21 +19,25 @@
   },
   "author": {
     "name": "Stephen Hutchings",
-    "web": "http://www.s-ings.com"
+    "web": "https://www.s-ings.com"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/stephenhutchings/typicons.font"
   },
   "license": "(CC-BY-SA and SIL)",
-  "dependencies": {
-  },
   "files": [
     "src/font/typicons.css",
     "src/font/typicons.svg",
     "src/font/typicons.eot",
     "src/font/typicons.ttf",
-    "src/font/typicons.woff",
+    "src/font/typicons.json",
     "src/svg/"
-  ]
+  ],
+  "devDependencies": {
+    "webfonts-generator": "^0.4.0"
+  },
+  "scripts": {
+    "generate": "node ./scripts/generate.js"
+  }
 }

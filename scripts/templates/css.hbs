@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "{{ fontName }}";
+  src: {{{ src }}};
+}
+
+.{{className}}:before {
+  font-family: {{ fontName }} !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.{{className}}-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.{{className}}-2x {
+  font-size: 2em;
+}
+.{{className}}-3x {
+  font-size: 3em;
+}
+.{{className}}-4x {
+  font-size: 4em;
+}
+.{{className}}-5x {
+  font-size: 5em;
+}
+
+{{# each codepoints }}
+.{{ ../className }}-{{ @key }}:before {
+  content: "\\{{ this }}";
+}
+{{/ each }}
