@@ -1,6 +1,6 @@
 {
   "name": "typicons.font",
-  "version": "2.0.9",
+  "version": "2.1.0",
   "main": [
     "src/font/demo.html",
     "src/font/typicons.eot",
