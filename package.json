@@ -27,11 +27,7 @@
   },
   "license": "(CC-BY-SA and SIL)",
   "files": [
-    "src/font/typicons.css",
-    "src/font/typicons.svg",
-    "src/font/typicons.eot",
-    "src/font/typicons.ttf",
-    "src/font/typicons.json",
+    "src/font/",
     "src/svg/"
   ],
   "devDependencies": {
