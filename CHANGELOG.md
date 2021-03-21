@@ -1,3 +1,7 @@
+#### Version 2.1.1
+
+- Include all files from `src/fonts` in NPM package.
+
 #### Version 2.1.0
 
 - Icons no longer have zero sidebearings. Each icon is now equal width.
