@@ -26,6 +26,8 @@ What's new in Typicons? See the [changelog](https://github.com/stephenhutchings/
 
 ## License
 
+See the [licence](https://github.com/stephenhutchings/typicons.font/blob/master/LICENCE.md) for more details.
+
 #### Icons/Artwork
 
 Distributed under
